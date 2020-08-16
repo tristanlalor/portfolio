@@ -1,0 +1,125 @@
+<script id="_carbonads_projs" type="text/javascript" src="https://srv.carbonads.net/ads/CKYI5K7J.json?segment=placement:loadingio&amp;callback=_carbonads_go"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<div class="navbar two" id="navbar">
+  <div class="dropdown">
+    <a onmouseout="this.parentElement.children[1].style.display = 'none';" onmouseover="this.parentElement.children[1].style.display = 'block';" class="dropbtn">PORTFOLIO</a>
+    <div class="dropdown-content" onmouseover="this.parentElement.children[1].style.display = 'block';" onmouseout="this.style.display = 'none';">
+      <a href="#"><%= link_to "Java", portfolio_java_path  %></a>
+      <div href="#" id="python-dropdown">
+        <div id="dont-animate-on-leave4" onmouseout="shrinkPython(); spinBackP()" style="color: #6C6F71; height: 28px; font-weight: lighter; font-size: 14pt;">
+          Python
+          <svg height="16" width="17" style="pointer-events: none">
+            <polygon id ="pySVG" points="8 13.7, 13 5.2, 3 5.2" style="fill:#6C6F71;" />
+          </svg>
+        </div>
+        <span id="dont-animate-on-leave" onmouseover="expandPython();" onmouseout="shrinkPython(); spinBackP()"><%= link_to "Moving Average Algorithm & Visualization", portfolio_python_path  %></span>
+        <span id="dont-animate-on-leave2" onmouseover="expandPython();" onmouseout="shrinkPython(); spinBackP()"><%= link_to "Diversification and Portfolio Risk", portfolio_diversification_portfolio_risk_path  %></span>
+        <span id="dont-animate-on-leave3" onmouseover="expandPython();" onmouseout="shrinkPython(); spinBackP()"><%= link_to "Excel Automation", portfolio_automation_path  %></span>
+        <span id="dont-animate-on-leave8" onmouseover="expandPython();" onmouseout="shrinkPython(); spinBackP()"><%= link_to "Minimization Algorithm & Data Structuring", portfolio_sql_path  %></span>
+      </div>
+      <div href="#" id="excel-dropdown">
+        <div id="dont-animate-on-leave7" onmouseout="shrinkExcel(); spinBackE()" style="color: #6C6F71; height: 28px; font-weight: lighter; font-size: 14pt;">
+          Excel Modeling
+          <svg height="16" width="17" style="pointer-events: none">
+            <polygon id ="eSVG" points="8 13.7, 13 5.2, 3 5.2" style="fill:#6C6F71;" />
+          </svg>
+        </div>
+        <span id="dont-animate-on-leave5" onmouseover="expandExcel()" onmouseout="shrinkExcel(); spinBackE()"><%= link_to "Financial Analyses of Cisco Systems", portfolio_excel_path  %></span>
+        <span id="dont-animate-on-leave6" onmouseover="expandExcel()" onmouseout="shrinkExcel(); spinBackE()"><%= link_to "Credit Analysis of Tesla", portfolio_tesla_path  %></span>
+        <span id="dont-animate-on-leave6" onmouseover="expandExcel()" onmouseout="shrinkExcel(); spinBackE()"><%= link_to "Quantitative Optimization", portfolio_quantitative_optimization_path  %></span>
+      </div>
+      <a href="#" onmouseover="spinBack()"><%= link_to "SQL", portfolio_sql_path  %></a>
+      <a href="#"><%= link_to "Javascript/CSS/HTML", portfolio_js_css_html_path  %></a>
+      <a href="#"><%= link_to "Ruby on Rails", portfolio_ruby_rails_path  %></a>
+      <a href="#"><%= link_to "Other", portfolio_other_path  %></a>
+    </div>
+  </div>
+
+  <script>
+      let dumbo;
+      document.getElementById("dont-animate-on-leave7").addEventListener("mouseenter",function() {
+          dumbo = setTimeout(function(){
+              document.getElementById("excel-dropdown").style.height = "111.5px";
+              spinE();
+          }, 310);
+      });
+      document.getElementById("dont-animate-on-leave7").addEventListener("mouseleave",function() {
+          clearTimeout(dumbo);
+      });
+
+      let plumbo;
+      document.getElementById("dont-animate-on-leave4").addEventListener("mouseenter",function() {
+          plumbo = setTimeout(function(){
+              document.getElementById("python-dropdown").style.height = "139px";
+              spinP();
+          }, 310);
+      });
+      document.getElementById("dont-animate-on-leave4").addEventListener("mouseleave",function() {
+          clearTimeout(plumbo);
+      });
+
+
+
+      // function expandExcel() {
+      //     setTimeout('document.getElementById("excel-dropdown").style.height = "84px";', 250);
+      // }
+      function expandExcel() {
+          document.getElementById("excel-dropdown").style.height = "111.5px";
+      }
+      function shrinkExcel() {
+          document.getElementById("excel-dropdown").style.height = "27px";
+      }
+      function expandPython() {
+          document.getElementById("python-dropdown").style.height = "139px";
+          // setTimeout('document.getElementById("python-dropdown").style.height = "139px";',250);
+      }
+      // function expandPythonInstant() {
+      //     document.getElementById("python-dropdown").style.height = "139px";
+      // }
+      function shrinkPython() {
+          document.getElementById("python-dropdown").style.height = "27px";
+
+      }
+      function spinP() {
+          if (document.getElementById("pySVG").style.animation != "spin 400ms")
+              document.getElementById("pySVG").style.animation = "spin 400ms";
+      }
+      function spinBackP() {
+          if(!$("#dont-animate-on-leave").is(":hover") && !$("#dont-animate-on-leave2").is(":hover") && !$("#dont-animate-on-leave3").is(":hover") && !$("#dont-animate-on-leave4").is(":hover") && !$("#dont-animate-on-leave8").is(":hover")){
+              document.getElementById("pySVG").style.animation = "spin-back 400ms";
+              setTimeout((() => {
+                  document.getElementById("pySVG").style.animation = "none";
+              }), 400);
+          }
+      }
+      function spinE() {
+          if (document.getElementById("eSVG").style.animation != "spin 400ms")
+              document.getElementById("eSVG").style.animation = "spin 400ms";
+      }
+      function spinBackE() {
+          if(!$("#dont-animate-on-leave5").is(":hover") && !$("#dont-animate-on-leave6").is(":hover") && !$("#dont-animate-on-leave7").is(":hover")){
+              document.getElementById("eSVG").style.animation = "spin-back 400ms";
+              setTimeout((() => {
+                  document.getElementById("eSVG").style.animation = "none";
+              }), 400);
+          }
+      }
+  </script>
+  <div class="dropdown">
+    <a href="#main" class="dropbtn" onmouseout="this.parentElement.children[1].style.display = 'none';" onmouseover="this.parentElement.children[1].style.display = 'block';">EXPERIENCE</a>
+    <div class="dropdown-content" onmouseover="this.parentElement.children[1].style.display = 'block';" onmouseout="this.style.display = 'none';">
+      <a href="#main">Education</a>
+      <a href="#bcg-parallax2">Technical Skills</a>
+      <a href="#project01">Work Experience</a>
+      <a href="#project02">Leadership</a>
+      <a href="#project03">Other</a>
+    </div>
+  </div>
+  <div class="dropdown">
+    <a class="dropbtn" onmouseout="this.parentElement.children[1].style.display = 'none';" onmouseover="this.parentElement.children[1].style.display = 'block';">MORE</a>
+    <div class="dropdown-content" onmouseover="this.parentElement.children[1].style.display = 'block';" onmouseout="this.style.display = 'none';">
+      <a href="#" style="min-width: 0;"><%= link_to "Contact", welcome_contact_path  %></a>
+      <a href="/Tristan Lalor Resume.pdf" download="Tristan Lalor Resume.pdf" style="min-width: 0;">Download Resume</a>
+    </div>
+  </div>
+</div>

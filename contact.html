@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <link rel="stylesheet" href="welcome.css">
+  <link rel="stylesheet" href="application.css">
+  <link rel="stylesheet" href="portfolio.css">
+    <div id="title-port">Contact</div>
+    <div id="top-spacer" style="
+    height: 39px;
+        width: 100%;
+        /*border: solid green 3px;*/
+        background-color: white;
+        /*position: sticky; */
+        /*top: 0;*/
+    "></div>
+    <div id="navbar-home-container"></div>
+    <div style="width: 100vw; height: 100vh; position: fixed; z-index: 999; pointer-events: none;">
+      <div style="display: inline-block; position: relative; top: 31vh; font-weight: lighter; color: white; text-align: center; font-size: 64pt;">
+        <div style="display: inline-block; width: 100vw; font-weight: lighter;">Tristan Lalor</div>
+  <!--      <br style="display: inline-block"/>-->
+        <div style="display: inline-block; position: relative; font-weight: lighter; font-size: 32pt">
+          Phone: 802-379-0997
+          <br />
+          Email: tristanlalor@gmail.com
+        </div>
+      </div>
+    </div>
+  
+  
+    <style>
+      #button-border {
+        stroke-dasharray: 1200;
+        stroke-dashoffset: 1200;
+        stroke-width: 4px;
+        -webkit-animation: dash-back 1.0s;
+        animation: dash-back 1.0s;
+        fill: none;
+        pointer-events: all;
+        transition: stroke-dashoffset 1s;
+        -webkit-transition: stroke-dashoffset 1s;
+      }
+      #button-border:hover {
+        stroke-dashoffset: 0;
+        pointer-events: all;
+      }
+      @-webkit-keyframes dash-back {
+        from {
+          stroke-dashoffset: 0;
+        }
+        to {
+          stroke-dashoffset: 1200;
+        }
+      }
+      @keyframes dash-back {
+        from {
+          stroke-dashoffset: 0;
+        }
+        to {
+          stroke-dashoffset: 1200;
+        }
+      }
+    </style>
+  
+  
+    <div style="width: 100vw; height: calc(100vh - 66px); background-image: url('https://images.unsplash.com/photo-1532563026501-f00b6f187c42?ixlib=rb-1.2.1&amp;q=85&amp;fm=jpg&amp;crop=entropy&amp;cs=srgb&amp;w=2400'); background-size: cover;">
+      <div style="font-size: 64px; height: 100%; width: 100%; text-align: center; animation: darken 2s; animation-fill-mode: forwards !important;">
+        <div style="top: 25vh; height: 400px; width: 800px; position: relative; display: inline-block;">
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="800.00000" height="400.00000" id="svg1" version="1.1" viewBox="0 0 800 400" enable-background="new 0 0 200 100" xml:space="preserve">
+            <g id="button-border">
+              <path class="path" style="fill:none;stroke:white;stroke-opacity:1" d="m 800,400.0 0,-400.00000 -800,00.00000" id="path2983" />
+              <path class="path" style="fill:none;stroke:white;stroke-opacity:1" d="m 0,0 0,400 800,0" id="path2984" />
+    <!--          <text x="30" y="30" font-family="Verdana" font-size="15" fill="blue">Hello</text>-->
+            </g>
+          </svg>
+        </div>
+      </div>
+    </div>
+    <script src="navbarHome.js" type="text/javascript"></script>
+
+  
+</body>  
+</html>
+
+

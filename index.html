@@ -1,0 +1,186 @@
+
+<!DOCTYPE html>
+<link rel="stylesheet" href="welcome.css">
+<link rel="stylesheet" href="application.css">
+
+<img src="public/fisticon.png" id="fist" onclick="function f() {
+    window.location.href = 'blm.html';
+    }; f();">
+<img src="public/fisticon.png" id="fist1" onclick="function f() {
+    window.location.href = 'blm.html';
+    }; f();" onmouseover="function f() {
+    document.querySelector('#fist').classList.toggle('fistHover1');
+    }; f();" onmouseout="function f() {
+    document.querySelector('#fist').classList.toggle('fistHover1');
+    }; f();">
+<div style="left: 0; top: 66px; z-index: 0; position: fixed; background-color: white; width: 100vw; height: 94px;"></div>
+<div style="left: 0; top: 160px; z-index: 0; position: fixed; background-color: #222222; width: 100vw; height: 10px;"></div>
+<div style="left: 0; top: calc(190px + 60vh); z-index: 0; position: fixed; background-color: #222222; width: 100vw; height: 10px;"></div>
+<div style="left: 0; top: calc(200px + 60vh); z-index: 0; position: fixed; background-color: white; width: 100vw; height: 94px;"></div>
+
+<div id="intro">
+  <div class="bcg"></div>
+  <div id="bio">
+    <h1 id="bio-item-1" class="bio-item" style="font-weight: bolder; font-size: xx-large;">Hi, my name is Tristan Lalor. I am
+      a senior at the University of Vermont studying finance,
+      data analytics, and computer science. I am a creator at
+      heart and am pursuing a career in software development.</h1>
+    <h1 id="bio-item-2" class="bio-item"></h1>
+  </div>
+</div>
+
+
+<body id="body-outer">
+
+  <div id="title">Tristan Lalor</div>
+  <div id="top-spacer" style="
+height: 66px;
+    width: 100%;
+    /*border: solid green 3px;*/
+    background-color: white;
+    /*position: sticky; */
+    /*top: 0;*/
+"></div>
+  <div style="
+  height: calc(100vh - 66px - 27px);
+/*height: calc(100vh - 66px - 27px - 24px);*/
+    width: 100%;
+    /*border: solid blue 3px;*/
+    background-color: transparent;
+"></div>
+  <div id="main" class="main-container">
+
+    <div id="navbar-container"></div>
+
+
+  <div class="project" id="bcg-parallax">
+    <div class="bcg2"></div>
+    <div class="content-wrapper" id="test1">
+      <h1>Education</h1>
+      <h2>University of Vermont Grossman School of Business, Burlington, VT</h2>
+      <h3>Bachelor of Science in Business Administration, Data Analytics and Finance Concentrations</h3>
+      <h3>Minor in Psychological Science</h3>
+      <h3 style="margin-top: 40px">Overall GPA: 3.72/4.0</h3>
+      <h3>Computer Science GPA: 4.0/4.0</h3>
+      <h3>Finance GPA: 4.0/4.0</h3>
+      <h3>Dean’s List, Fall 2016 - Present</h3>
+<!--      <h3>CFA Level 1 Candidate - June 2020 Exam Date</h3>-->
+    </div>
+  </div>
+
+  <div class="project" id="bcg-parallax2">
+    <div class="bcg3"></div>
+    <div class="content-wrapper1" id="test1">
+      <h1>Technical Skills</h1>
+      <h2>Java, IntelliJ IDEA</h2>
+      <h3>Object Oriented Programming, Recursion, Abstraction, JLink, JPackage, some GIT</h3>
+      <h3>Created a standalone battleship application with programmed computer intelligence</h3>
+
+      <h2 style="margin-top: 20px">Ruby on Rails, Javascript, CSS, HTML</h2>
+      <h3>The backend of this site runs on Rails</h3>
+      <h3>The frontend uses custom Javascript, CSS, & HTML authored by me</h3>
+
+      <h2 style="margin-top: 20px">Python, Pycharm</h2>
+      <h3>Numpy, data structuring, visualization, modularization</h3>
+      <h3>Wrote a program to derive relationship between number of stocks in a portfolio and the average standard deviation of that portfolio</h3>
+
+      <h2 style="margin-top: 20px">Structured Query Language, SQL Server Management Studio</h2>
+      <h3>Relational Database Design & Creation, Data Structures</h3>
+
+      <h2 style="margin-top: 20px">Excel</h2>
+      <h3>Advanced Financial Modeling: valuation, macros, financial statement integration, proformas</h3>
+      <h3>Optimization Modeling: Built an investment model to maximize return/minimize standard deviation for any set of publicly traded securities</h3>
+
+    </div>
+  </div>
+
+  <div id="project01" class="project">
+    <div class="content-wrapper1" id="test1">
+      <h1 class="fade">Experience</h1>
+
+      <h2 class="fade">The Wall Street Seminar, Morgan Stanley & The Grossman School of Business, Burlington, VT</h2>
+      <h4 class="fade">Selected Equity Research Analyst</h4>
+      <div style="width: 60%; display: inline-block;">
+        <h3 class="fade" style="margin-top: 10px">Partner with Morgan Stanley Equity Research Associates to create a professional financial model, conduct extensive analyses on the company and industry, and value the equity on an intrinsic and relative basis</h3>
+        <h3 class="fade" style="margin-top: 10px">Evaluate a potential acquisition for a sell-side M&A deal, looking at precedent transactions, comparable
+          companies, accretion/dilution analysis, and LBO modeling</h3>
+      </div>
+
+
+
+
+
+      <h2 class="fade" style="margin-top: 20px">Vermont Country Store, Corporate Headquarters, Manchester, VT</h2>
+      <h4 class="fade">Data Analytics Intern</h4>
+      <div style="width: 60%; display: inline-block;">
+        <h3 class="fade" style="margin-top: 10px">Created a relational weather database to be utilized in the company’s marketing</h3>
+        <h3 class="fade" style="margin-top: 10px">Analyzed the company’s recent retail acquisition to provide data-driven performance recommendations</h3>
+        <h3 class="fade" style="margin-top: 10px">Assessed relationships between catalog factors such as item placement and end demand to achieve meaningful projections for inventory forecasting</h3>
+        <h3 class="fade" style="margin-top: 10px">Created a forecasting tool for the marketing department to dynamically modify projected earnings based on various macro and internal factors</h3>
+      </div>
+
+      <h2 class="fade" style="margin-top: 20px">CFA Institute, Equity Research Challenge, Burlington, VT</h2>
+      <h4 class="fade">Selected Participant</h4>
+      <div style="width: 60%; display: inline-block;">
+        <h3 class="fade" style="margin-top: 10px">Conducted equity research for a $933 million company and wrote a comprehensive initiation-of-coverage report</h3>
+        <h3 class="fade" style="margin-top: 10px">Accumulated available information into financial forecasts to determine intrinsic value of company’s equity</h3>
+        <h3 class="fade" style="margin-top: 10px">Presented investment thesis, key drivers, and risks to panel of CFA judges</h3>
+      </div>
+
+    </div>
+  </div>
+
+  <div id="project02" class="project">
+    <div class="content-wrapper1" id="test1">
+      <h1 class="fade">Leadership</h1>
+
+      <h2 class="fade">Sustainable Innovation MBA Program, UVM Grossman School of Business, Burlington, VT</h2>
+      <h4 class="fade">Finance Teaching Assistant</h4>
+      <div style="width: 60%; display: inline-block;">
+        <h3 class="fade" style="margin-top: 10px">Tutor MBA students on advanced valuation, accounting, and mathematical concepts</h3>
+        <h3 class="fade" style="margin-top: 10px">Answer questions, grade assessments and give feedback</h3>
+      </div>
+
+      <h2 class="fade" style="margin-top: 20px">Digital Media Academy, Harvard University, Cambridge, MA</h2>
+      <h4 class="fade">Music Production Teaching Assistant</h4>
+      <div style="width: 60%; display: inline-block;">
+        <h3 class="fade" style="margin-top: 10px">Presented material on production software and theory</h3>
+        <h3 class="fade" style="margin-top: 10px">Worked with students to give feedback on projects and answer technical questions<br /><br /></h3>
+      </div>
+
+    </div>
+  </div>
+
+  <div id="project03" class="project">
+    <div class="content-wrapper1" id="test1">
+      <h1 class="fade">Other</h1>
+      <h4 class="fade">General Info</h4>
+      <div style="width: 50%; display: inline-block;">
+        <h3 class="fade" style="margin-top: 10px">I love music production! I am a creator through and through whether that be on the technical side or the creative (like music & front end web dev). My life philosphy is to keep learning and creating and eventually be able to have a large positive impact on the world. Please feel free to reach out to me at any time – all my contact info is in the contact page under 'More' in the navigation bar.</h3>
+        <h3 class="fade" style="margin-top: 10px"></h3>
+      </div>
+    </div>
+  </div>
+
+</div> <!-- #main-container -->
+
+<div class="footer-container">
+  <footer class="wrapper">
+</footer>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenMax.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.js"></script>
+</body>
+</html>
+<script src="zmain.js" type="text/javascript"></script>
+<script src="navbar.js" type="text/javascript"></script>

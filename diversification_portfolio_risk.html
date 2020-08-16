@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="welcome.css">
+  <link rel="stylesheet" href="application.css">
+  <link rel="stylesheet" href="portfolio.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.js"></script>
+</head>
+<body>
+  
+  
+    <div id="title-port">Python Projects</div>
+    <div id="top-spacer" style="
+    height: 66px;
+        width: 100%;
+        /*border: solid green 3px;*/
+        background-color: white;
+        /*position: sticky; */
+        /*top: 0;*/
+    "></div>
+  
+  <div id="navbar-home-container"></div>
+
+  
+    <div class="additional-pages-two">
+      Other Python Projects<br />
+      <a href="python.html">Moving Average Algorithm & Visualization</a>
+      <br />
+      <a href="automation.html">Excel Automation</a>
+      <br />
+      <a href="sql.html">Minimization Algorithm & Data Structuring</a>
+    </div>
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.js"></script>
+    <script>
+        $(document).ready(function() {
+            var div = new ScrollMagic.Controller();
+            var parallaxDiv = new TimelineMax();
+            parallaxDiv
+                .from('#parallax-div', 1, {y: '-50%'}, 0);
+            var slideParallaxScene = new ScrollMagic.Scene({
+                triggerHook: 0,
+                duration: '80%',
+                offset: -186,
+            })
+                .setTween(parallaxDiv)
+                .addTo(div);});
+    </script>
+    <body class="notion-body">
+    <style>body{background:#fff}.initial-loading-spinner{-webkit-animation:rotate 1s linear infinite;animation:rotate 1s linear infinite;-webkit-transform-origin:center center;transform-origin:center center;width:1em;height:1em;opacity:.5;display:block;pointer-events:none}@-webkit-keyframes rotate{0%{-webkit-transform:rotate(0) translateZ(0);transform:rotate(0) translateZ(0)}100%{-webkit-transform:rotate(360deg) translateZ(0);transform:rotate(360deg) translateZ(0)}}@keyframes rotate{0%{-webkit-transform:rotate(0) translateZ(0);transform:rotate(0) translateZ(0)}100%{-webkit-transform:rotate(360deg) translateZ(0);transform:rotate(360deg) translateZ(0)}}</style>
+    <script type="text/javascript">var isElectron="undefined"!=typeof global||window.__isElectron,isCordova=/Cordova/.test(navigator.userAgent),isReactNative=/ReactNative/.test(navigator.userAgent),showSpinner=isCordova||isElectron||isReactNative;if(showSpinner){var spinner=document.getElementById("initial-loading-spinner");spinner&&(spinner.style.opacity=1)}</script><script type="text/javascript">var theme="light",localThemeKey="theme",themeRecord=localStorage.getItem("theme");if(themeRecord){var parsed=JSON.parse(themeRecord);parsed&&parsed.mode&&(theme=parsed.mode)}"dark"===theme&&document.body.classList.add("dark")</script>
+    <div id="notion-app">
+      <div class="notion-app-inner notion-light-theme" style="color: rgb(55, 53, 47); fill: currentcolor; line-height: 1.5; font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Helvetica, &quot;Apple Color Emoji&quot;, Arial, sans-serif, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; -webkit-font-smoothing: auto;">
+        <div class="notion-cursor-listener" style="width: 100vw; height: 100%; position: relative; display: flex; flex: 1 1 0%; background: white; cursor: text;">
+          <!--      <div class="notion-frame" style="flex-grow: 1; flex-shrink: 1; display: flex; flex-direction: column; background: white; z-index: 1; width: calc(100vw - 240px); height: 100vh; max-height: 100%;">-->
+          <!--        <div style="width: 100%; max-width: 100vw; z-index: 9;">-->
+          <!--          <div class="notion-topbar" style="width: 100%; max-width: 100vw; height: 45px; opacity: 1; transition: opacity 700ms ease 0s, color 700ms ease 0s; position: relative;">-->
+          <!--            <div style="display: flex; justify-content: space-between; align-items: center; position: absolute; overflow: hidden; height: 45px; left: 0px; right: 0px; bottom: 0px; padding-left: 12px; padding-right: 10px;">-->
+          <!--              <div style="display: flex; align-items: center; line-height: 1.2; font-size: 14px; height: 100%; flex-grow: 0; margin-right: 8px; min-width: 0px;">-->
+          <!--                <div data-block-id="3efa8fdf-2a8f-46f7-84bf-d57c8f83d59c" class="notion-selectable" style="display: flex; align-items: center; min-width: 0px;">-->
+          <!--                  <a href="/Portfolio-3efa8fdf2a8f46f784bfd57c8f83d59c" rel="noopener noreferrer" style="display: flex; text-decoration: none; user-select: none; cursor: pointer; color: inherit; min-width: 0px;">-->
+          <!--                    <div role="button" style="user-select: none; transition: background 120ms ease-in 0s; cursor: pointer; display: inline-flex; align-items: center; flex-shrink: 1; white-space: nowrap; height: 24px; border-radius: 3px; font-size: inherit; line-height: 1.2; min-width: 0px; padding-left: 6px; padding-right: 6px; color: rgb(55, 53, 47);">-->
+          <!--                      <div style="display: flex; align-items: center; min-width: 0px;">-->
+          <!--                        <div style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 160px;">Portfolio</div>-->
+          <!--                      </div>-->
+          <!--                    </div>-->
+          <!--                  </a>-->
+          <!--                </div>-->
+          <!--                <span style="margin-left: 2px; margin-right: 2px; color: rgba(55, 53, 47, 0.4);">/</span>-->
+          <!--                <div role="button" aria-disabled="true" style="user-select: none; transition: background 120ms ease-in 0s; display: inline-flex; align-items: center; flex-shrink: 1; white-space: nowrap; height: 24px; border-radius: 3px; font-size: 14px; line-height: 1.2; min-width: 0px; padding-left: 6px; padding-right: 6px; color: rgb(55, 53, 47);">-->
+          <!--                  <div style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 240px;">Diversification and Portfolio Risk</div>-->
+          <!--                </div>-->
+          <!--              </div>-->
+          <!--              <div style="flex-grow: 1; flex-shrink: 1;"></div>-->
+          <!--              <div role="button" style="user-select: none; transition: background 120ms ease-in 0s; cursor: pointer; display: inline-flex; align-items: center; flex-shrink: 0; white-space: nowrap; height: 28px; border-radius: 3px; font-size: 14px; line-height: 1.2; min-width: 0px; padding-left: 8px; padding-right: 8px; color: rgb(55, 53, 47);">-->
+          <!--                <svg viewBox="0 0 17 17" class="searchNew" style="width: 14px; height: 14px; display: block; fill: inherit; flex-shrink: 0; backface-visibility: hidden; margin-right: 6px;">-->
+          <!--                  <path d="M6.78027 13.6729C8.24805 13.6729 9.60156 13.1982 10.709 12.4072L14.875 16.5732C15.0684 16.7666 15.3232 16.8633 15.5957 16.8633C16.167 16.8633 16.5713 16.4238 16.5713 15.8613C16.5713 15.5977 16.4834 15.3516 16.29 15.1582L12.1504 11.0098C13.0205 9.86719 13.5391 8.45215 13.5391 6.91406C13.5391 3.19629 10.498 0.155273 6.78027 0.155273C3.0625 0.155273 0.0214844 3.19629 0.0214844 6.91406C0.0214844 10.6318 3.0625 13.6729 6.78027 13.6729ZM6.78027 12.2139C3.87988 12.2139 1.48047 9.81445 1.48047 6.91406C1.48047 4.01367 3.87988 1.61426 6.78027 1.61426C9.68066 1.61426 12.0801 4.01367 12.0801 6.91406C12.0801 9.81445 9.68066 12.2139 6.78027 12.2139Z"></path>-->
+          <!--                </svg>-->
+          <!--                Search-->
+          <!--              </div>-->
+          <!--              <div style="flex: 0 0 auto; width: 1px; height: 16px; margin-left: 8px; margin-right: 8px; background: rgba(55, 53, 47, 0.16);"></div>-->
+          <!--              <div role="button" style="user-select: none; transition: background 120ms ease-in 0s; cursor: pointer; display: inline-flex; align-items: center; flex-shrink: 0; white-space: nowrap; height: 28px; border-radius: 3px; font-size: 14px; line-height: 1.2; min-width: 0px; padding-left: 8px; padding-right: 8px; color: rgb(55, 53, 47);">-->
+          <!--                <svg viewBox="0 0 120 126" class="notionLogo" style="width: 18px; height: 18px; display: block; fill: inherit; flex-shrink: 0; backface-visibility: hidden; margin-right: 6px;">-->
+          <!--                  <path d="M 20.6927 21.9315C 24.5836 25.0924 26.0432 24.8512 33.3492 24.3638L 102.228 20.2279C 103.689 20.2279 102.474 18.7705 101.987 18.5283L 90.5477 10.2586C 88.3558 8.55699 85.4356 6.60818 79.8387 7.09563L 13.1433 11.9602C 10.711 12.2014 10.2251 13.4175 11.1939 14.3924L 20.6927 21.9315ZM 24.8281 37.9835L 24.8281 110.456C 24.8281 114.351 26.7745 115.808 31.1553 115.567L 106.853 111.187C 111.236 110.946 111.724 108.267 111.724 105.103L 111.724 33.1169C 111.724 29.958 110.509 28.2544 107.826 28.4976L 28.721 33.1169C 25.8018 33.3622 24.8281 34.8225 24.8281 37.9835ZM 99.5567 41.8711C 100.042 44.0622 99.5567 46.2512 97.3618 46.4974L 93.7143 47.2241L 93.7143 100.728C 90.5477 102.43 87.6275 103.403 85.1942 103.403C 81.2983 103.403 80.3226 102.186 77.4044 98.54L 53.5471 61.087L 53.5471 97.3239L 61.0964 99.0275C 61.0964 99.0275 61.0964 103.403 55.0057 103.403L 38.2148 104.377C 37.727 103.403 38.2148 100.973 39.9179 100.486L 44.2996 99.2717L 44.2996 51.36L 38.2158 50.8725C 37.728 48.6815 38.9431 45.5225 42.3532 45.2773L 60.3661 44.0631L 85.1942 82.0036L 85.1942 48.4402L 78.864 47.7136C 78.3781 45.0351 80.3226 43.0902 82.7569 42.849L 99.5567 41.8711ZM 7.5434 5.39404L 76.9175 0.285276C 85.4366 -0.445402 87.6285 0.0440428 92.983 3.93368L 115.128 19.4982C 118.782 22.1747 120 22.9034 120 25.8211L 120 111.187C 120 116.537 118.051 119.701 111.237 120.185L 30.6734 125.05C 25.5584 125.294 23.124 124.565 20.4453 121.158L 4.13735 99.9994C 1.21516 96.1048 0 93.191 0 89.7819L 0 13.903C 0 9.5279 1.94945 5.8785 7.5434 5.39404Z"></path>-->
+          <!--                </svg>-->
+          <!--                Notion-->
+          <!--              </div>-->
+          <!--            </div>-->
+          <!--          </div>-->
+          <!--          <div style="width: 100%; user-select: none;"></div>-->
+          <!--        </div>-->
+          <div class="notion-scroller vertical horizontal" style="display: flex; flex-direction: column; z-index: 1; flex-grow: 1; position: relative; align-items: center; overflow: auto; margin-right: 0px; margin-bottom: 0px;">
+            <div style="width: 100%; display: flex; flex-direction: column; align-items: center; flex-shrink: 0; flex-grow: 0;">
+              <div style="position: relative; width: 100%; display: flex; flex-direction: column; align-items: center; height: 30vh; cursor: default; overflow: hidden;">
+                <div style="width: 100%; cursor: inherit;">
+                  <div style="width: 100%; height: 100%;"><img id="parallax-div" src="public/met.jpg" style="display: block; object-fit: cover; border-radius: 0px; width: 100%; height: 50vh; opacity: 1; object-position: center 50%;"></div>
+                </div>
+                <div style="background: rgba(0, 0, 0, 0.4); border-radius: 3px; color: white; font-size: 12px; font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Helvetica, &quot;Apple Color Emoji&quot;, Arial, sans-serif, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; width: 180px; left: calc(50% - 90px); padding: 0.3em 1.5em; pointer-events: none; position: absolute; top: calc(50% - 10px); text-align: center; opacity: 0;">Drag Image to Reposition</div>
+              </div>
+              <div style="padding-left: 96px; padding-right: 96px; max-width: 100%; margin-bottom: 0.5em; width: 900px;">
+                <div class="notion-page-controls" style="display: flex; align-items: center; justify-content: flex-start; color: rgba(55, 53, 47, 0.4); opacity: 0; pointer-events: none; transition: opacity 300ms ease-out 0s; min-height: 28px; margin-top: 16px; margin-bottom: 4px; margin-left: -1px; font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Helvetica, &quot;Apple Color Emoji&quot;, Arial, sans-serif, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;;"></div>
+                <div data-block-id="6dba6ae0-583a-4bc7-8c9d-6b1096dd4c02" class="notion-selectable" style="color: rgb(55, 53, 47); font-weight: 700; letter-spacing: -0.003em; line-height: 1.1; margin-bottom: 0.25em; font-size: 2.5em; font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Helvetica, &quot;Apple Color Emoji&quot;, Arial, sans-serif, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; cursor: text; display: flex; align-items: center;">
+                  <div contenteditable="false" spellcheck="true" placeholder="Untitled" data-root="true" style="max-width: 100%; width: 100%; white-space: pre-wrap; word-break: break-word; caret-color: rgb(55, 53, 47); padding: 3px 2px;">Diversification and Portfolio Risk</div>
+                </div>
+              </div>
+            </div>
+            <div class="notion-page-content" style="flex-shrink: 0; flex-grow: 1; width: 900px; max-width: 100%; display: flex; align-items: center; flex-direction: column; font-size: 16px; color: rgb(55, 53, 47); padding: 0px 96px 30vh;">
+              <iframe src="public/DiversificationandPorfolioRisk.pdf#toolbar=0" width="820px" height="1050px"></iframe>
+              <div data-block-id="01915303-5f42-4890-b70a-33d47961326a" class="notion-selectable" style="width: 100%; max-width: calc((100vw - 0px) - 192px); margin-top: 1px; margin-bottom: 1px;">
+                <div class="notion-cursor-default" style="display: flex; align-items: center; justify-content: center; pointer-events: auto; width: 100%; height: 13px; flex: 0 0 auto; color: rgb(228, 227, 226);">
+                  <div style="width: 100%; height: 1px; visibility: visible; border-bottom: 1px solid rgba(55, 53, 47, 0.09);"></div>
+                </div>
+              </div>
+              <div data-block-id="2cbc541a-c152-4f59-9208-6c5221dca432" class="notion-selectable" style="width: 100%; max-width: calc((100vw - 0px) - 192px); margin-top: 1px; margin-bottom: 1px;">
+                <div style="color: inherit; fill: inherit;">
+                  <div style="display: flex;">
+                    <div contenteditable="false" spellcheck="true" placeholder=" " data-root="true" style="max-width: 100%; width: 100%; white-space: pre-wrap; word-break: break-word; caret-color: rgb(55, 53, 47); padding: 3px 2px;">Feel free to download the bundle below!</div>
+                  </div>
+                </div>
+              </div>
+              <div data-block-id="a45cea8b-78ae-4e1f-9c68-1209a804c7f2" class="notion-selectable" style="width: 100%; max-width: calc(100vw - 0px); margin-top: 1px; margin-bottom: 1px;">
+                <div>
+                  <div style="display: flex;">
+                    <div role="button" style="user-select: none; transition: background 120ms ease-in 0s; cursor: pointer; flex-grow: 1; min-width: 0px; border-radius: 3px; color: inherit; fill: inherit;">
+                      <div style="display: flex; align-items: center; width: 100%; padding-top: 3px; padding-bottom: 3px; padding-left: 2px;">
+                        <div style="margin-right: 4px; width: 1.35em; display: flex; align-items: center; justify-content: center; flex-grow: 0; flex-shrink: 0; min-height: calc(1.5em + 3px + 3px); height: 1.35em;">
+                          <svg viewBox="0 0 30 30" class="file" style="width: 100%; height: 100%; display: block; fill: inherit; flex-shrink: 0; backface-visibility: hidden;">
+                            <path d="M22,8v12c0,3.866-3.134,7-7,7s-7-3.134-7-7V8c0-2.762,2.238-5,5-5s5,2.238,5,5v12c0,1.657-1.343,3-3,3s-3-1.343-3-3V8h-2v12c0,2.762,2.238,5,5,5s5-2.238,5-5V8c0-3.866-3.134-7-7-7S6,4.134,6,8v12c0,4.971,4.029,9,9,9s9-4.029,9-9V8H22z"></path>
+                          </svg>
+                        </div>
+                        <div style="flex: 1 1 0px; min-width: 1px;">
+                          <div style="display: flex; align-items: baseline;">
+                            <a style="color: black !important; font-size: 16px; font-weight: normal; text-underline: none !important; text-decoration: none !important; " href="public/Diversification & Portfolio Risk.zip">Diversification & Portfolio Risk.zip</a>
+                            <div style="font-size: 12px; line-height: 16px; color: rgba(55, 53, 47, 0.6); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; margin-left: 6px;">26507.7KB</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div data-block-id="5f5140c0-aa84-459b-bb7b-180c5f4b2135" class="notion-selectable" style="width: 100%; max-width: calc((100vw - 0px) - 192px); margin-top: 1px; margin-bottom: 1px;">
+                <div class="notion-cursor-default" style="display: flex; align-items: center; justify-content: center; pointer-events: auto; width: 100%; height: 13px; flex: 0 0 auto; color: rgb(228, 227, 226);">
+                  <div style="width: 100%; height: 1px; visibility: visible; border-bottom: 1px solid rgba(55, 53, 47, 0.09);"></div>
+                </div>
+              </div>
+              <div data-block-id="e8f88a7a-ec72-4668-9ee7-30146c0ba84c" class="notion-selectable" style="width: 100%; max-width: calc((100vw - 0px) - 192px); margin-top: 1em; margin-bottom: 1px; color: rgb(55, 53, 47);">
+                <div style="display: flex; width: 100%; font-weight: 600; font-size: 1.5em; letter-spacing: -0.002em; line-height: 1.2; color: inherit; fill: inherit;">
+                  <div contenteditable="false" spellcheck="true" placeholder="Heading 2" data-root="true" style="max-width: 100%; width: 100%; white-space: pre-wrap; word-break: break-word; caret-color: rgb(55, 53, 47); padding: 3px 2px;">The Code</div>
+                </div>
+              </div>
+              <div data-block-id="1589878e-98ed-43c5-97c0-75acbcd291d7" class="notion-selectable" style="width: 100%; max-width: calc((100vw - 0px) - 192px); margin-top: 4px; margin-bottom: 4px;">
+                <div style="display: flex;">
+                  <div style="flex-grow: 1; border-radius: 3px; text-align: left; position: relative; background: rgb(247, 246, 243); min-width: 0px; width: 100%;">
+                    <div class="line-numbers notion-code-block" style="display: flex; overflow-x: auto;">
+                      <div contenteditable="false" spellcheck="false" autocorrect="off" autocapitalize="off" data-root="true" style="flex-grow: 1; flex-shrink: 1; text-align: left; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, Courier, monospace; font-size: 85%; tab-size: 2; padding: 30px 16px 30px 20px; min-height: 1em; color: rgb(55, 53, 47); white-space: pre;">#The purpose of this program is to analyze the relationship between the number of assets in a portfolio,
+  #and the average standard deviation of that portfolio. Users are promopted to choose between 5 different
+  #asset classes, but can also analyze custom data sets.
+  
+  
+  
+  
+  def Introduction():
+      #This function propts the user to enter a specified set of data. After user-entry,
+      # the function collects the corresponding data from their file locations, and returns
+      # the daily and monthly data.
+  
+  
+      choice = '?' #initiate choice
+  
+      #print intro message
+      print("Hello. This program analyzes the relationship between the number of assets in a portfolio, and the average standard deviation of that portfolio.")
+      # Obtain User Input
+      choice = input("Please choose between the following asset classes to analyze:\n\nFor a representative sample of the stock market over the last 20 years, enter\033[1m 'SP500'\033[0m (This will use the oldest 400 securities in the S&P500). \nFor the 200 largest Exchange Traded Funds, diversified by asset class, enter\033[1m '200 ETFs'\033[0m.\nFor all of the ETFs traded on the Nasdaq that are at least 5 years old, enter\033[1m 'Nasdaq ETFs'\033[0m. *WARNING* This is an extremely large data set. Analysis is extremely CPU intensive and could take an extended period of time.\nFor a small-scale relationship analysis of only 3 ETFs, enter\033[1m '3 ETFs'\033[0m.\nFor the 200 largest Real Estate Investment Trusts, enter\033[1m 'REIT'\033[0m.\n")
+      #input validation
+      while choice != 'SP500' and choice != 'REIT' and choice != '200 ETFs' and choice != 'Nasdaq ETFs' and choice != '3 ETFs' and choice != 'Custom':
+          choice = input('Please make a valid selection. ')
+  
+      #collect the corresponding files
+      if choice == 'SP500':
+          daily_data = 'SP 500 daily.txt'
+          monthly_data = 'SP 500 monthly.txt'
+      elif choice == 'REIT':
+          daily_data = 'REIT daily.txt'
+          monthly_data = 'REIT monthly.txt'
+      elif choice == '200 ETFs':
+          daily_data = '200 daily.txt'
+          monthly_data = '200 monthly.txt'
+      elif choice == 'Nasdaq ETFs':
+          daily_data = 'Nasdaq daily.txt'
+          monthly_data = 'Nasdaq monthly.txt'
+      elif choice == '3 ETFs':
+          daily_data = 'Three daily.txt'
+          monthly_data = 'Three monthly.txt'
+      elif choice == 'Custom':
+          daily_data = input('Enter filename for daily data: ')
+          monthly_data = input('Enter filename for monthly data: ')
+      print("processing...")
+      #return the data
+      return daily_data, monthly_data
+  def relationship_analysis(daily_data, monthly_data):
+      #This function does the bulk of the processing of the program. It takes the daily and monthly datasets
+      #and stores them in corresponding dictionaries. The daily return data is used to derive the correlations
+      #between each of the assets, and the monthly return data is used to derive the standard deviations
+      #and then convert the correlation matrix into a covariance matrix.
+  
+      #It then propts the user for how many trials they would like to run for each possible value of stocks in
+      #the portfolio, and begins the simulation.
+  
+      #For each trial, stocks are selected at random. For each set of trials for a given value
+      #of n, the calculated portfolio standard deviations are averaged and appended to the standard deviations
+      #list. After the simulation is finished, this list of average standard deviations for each value of n
+      #stocks is returned along with the list of generated x values.
+  
+  
+  
+      #Initiate the daily data dictionary, d
+      #open the file with the daily data
+      three = open(daily_data, 'r')
+      d = dict()
+      titles = three.readline()
+      titles = titles.split('\t')     #collect all the data titles to a list
+  
+      #make each title the key for the data in the dictionary
+      for i in range(len(titles)):
+          titles[i] = titles[i].rstrip('\n')
+          d[titles[i]] = []
+  
+  
+  
+  
+      #Populate the dictionary
+      three = open(daily_data, 'r')
+      line_number = 0
+      length = len(three.readlines())
+      three = open(daily_data, 'r')
+  
+  
+      while line_number < length:
+  
+          if line_number > 0:
+              line = three.readline().rstrip('\n').rstrip('%').split('\t')
+              number_in_list = 0
+              for item in d:
+                  try:
+                      d[item].append(float(line[number_in_list]))
+                      number_in_list += 1
+                  except:
+                      d[item].append(line[number_in_list])
+                      number_in_list += 1
+              line_number += 1
+  
+          else:
+              three.readline()
+              line_number += 1
+  
+      #format info for matrix
+      import numpy as np
+      matrix_input = []
+      for i in titles:
+          if i != 'Dates':
+              matrix_input.append(d[i])
+  
+      #calculate matrix
+      comatrix = np.corrcoef(matrix_input)
+  
+  
+  
+  
+      ########################################################################################################################
+  
+      #Obtain the standard deviations for all of the assets
+  
+      import statistics as stat #for standard deviation calculation
+  
+  
+      #initiate the monthly data dictionary, m
+      four = open(monthly_data, 'r')
+      m = dict()
+      titles = four.readline()
+      titles = titles.split('\t')
+      #set all the titles as keys in the dictionary
+      for i in range(len(titles)):
+          titles[i] = titles[i].rstrip('\n')
+          m[titles[i]] = []
+  
+  
+  
+  
+      #Populate the dictionary
+      four = open(monthly_data, 'r')
+      line_number = 0
+      length = len(four.readlines())
+      four = open(monthly_data, 'r')
+  
+  
+      while line_number < length:
+  
+          if line_number > 0:
+              line = four.readline().rstrip('\n').rstrip('%').split('\t')
+              number_in_list = 0
+              for item in m:
+                  try:
+                      if line[number_in_list] != '#N/A N/A':
+                          m[item].append(float(line[number_in_list]))
+                          number_in_list += 1
+                      elif line[number_in_list] == '#N/A N/A':
+                          m[item].append(0)
+                          number_in_list += 1
+                  except: #for all the dates
+  
+                      m[item].append(line[number_in_list])
+                      number_in_list += 1
+              line_number += 1
+  
+          else:
+              four.readline()
+              line_number += 1
+  
+      from statistics import stdev #to obtain all the standard deviations
+      import math #to use the square root function
+      #initiate dictionary to hold all of the standard deviations, s
+      s = m
+  
+      count = 0
+  
+      #delete the dates key
+      del s['Dates']
+      for key in s:
+          try:
+              if key != 'Dates':
+                  s[key] = stdev(s[key]) * math.sqrt(12) / 100    #replace all of the lists with the annualized standard deviation of that list
+          except:
+              print("There was an error.")
+  
+  
+  
+  
+      ###########################################################################################
+  
+      #Covariance Matrix
+  
+  
+      from numpy import array
+  
+      #initiate the covariance matrix
+      cvmatrix = array(list(comatrix))
+      stdvs = list(s.values()) #pop out all the standard deviations as a list
+  
+      #convert the correlation between each two assets into a covariance by multiplying it by the standard deviation of each asset
+      for i in range(len(stdvs)):
+          cvmatrix[i] *= stdvs[i]
+  
+          for x in range(len(stdvs)):
+              cvmatrix[i][x] *= stdvs[x]
+  
+  
+  
+  
+      ###########################################################################################
+  
+      #The Simulation
+  
+      #Portfolio Standard Deviation
+      import random
+      #initiate lists
+      standard_deviations = []
+      iteration_average = []
+      #prompt for number of trials
+      print("Please enter the number of trials you would like to run for each number of assets. The more iterations per value of n, the more accurate the relationship will be, but the longer it will take to run. \nI suggest using smaller values for the larger data sets. Running the analysis on all Nasdaq ETFs with 10+ trials could take hundreds of hours to process on a high-performance computer.\n")
+      while True: #make sure input is valid, do not accept ValueErrors
+          try:
+              trials = int(input("Trials:"))
+              while trials < 1 or trials > 1000000000:
+                  trials = int(input("Trials must be an integer between one and a billion. (Good luck running a billion trials without a supercomputer)\nTrials: "))
+          except ValueError:
+              print("Value must be an integer.")
+  
+          else:
+              break #break if no error
+  
+      print("Thank you. Analysis in progress, this may take a while...")
+      number_of_stocks_in_portfolio = []
+      #randomly select portfolio
+      picks = set()
+  
+      for i in range(len(stdvs)): #this iterates for the total stock selection, once per portfolio stdv calculation
+          number_of_stocks_in_portfolio.append(i+1)
+          for z in range(trials):
+              while len(picks) <= i:
+                  num = random.randrange(0,len(stdvs))
+                  picks.add(num)
+              #at this point the picks for this number of assets are set
+              #Calc Standard Deviaiton for the random portfolio
+              terms = []
+              for n in picks:
+                  for x in range(0,len(cvmatrix[n])):
+                      if x in picks:
+                          terms.append(cvmatrix[n][x])
+              #at this point all of the terms are in the terms list
+              #calculate the weight per asset, assuming an equally weighted portfolio
+              weights = 1/len(picks)
+  
+  
+              #weight each term and append to list
+              weighted_terms = []
+              for y in terms:
+                  weighted_terms.append(y*(weights**2))
+              #calculate portfolio variance
+              variance = sum(weighted_terms)
+              #calculate portfolio standard deviation, *FOR THIS TRIAL AT THIS VALUE OF N STOCKS*
+              standard_deviation = math.sqrt(variance)
+              #add to list of all standard deviations for this value of n
+              iteration_average.append(standard_deviation)
+          #calculate the average standard deviation for this value of n stocks
+          average_for_trial = sum(iteration_average) / len(iteration_average)
+          #add the average standard deviation of n stocks to the list of all y values
+          standard_deviations.append(average_for_trial)
+          #reset iteration average to use for the next iteration of t trials for n stocks
+          iteration_average = []
+  
+      return number_of_stocks_in_portfolio, standard_deviations  # return x and y variables
+  def graph_results(number_of_stocks_in_portfolio, standard_deviations):
+      #This function takes the x and y values as parameters, and creates a scatterplot of the data
+  
+      #import packages
+      import matplotlib
+      import matplotlib.pyplot as plt
+  
+      matplotlib.style.use('ggplot')
+  
+      plt.ylabel('Standard Deviation')
+      plt.xlabel('Number of Assets in Portfolio')
+      plt.title('Diversification and Portfolio Risk')
+      plt.scatter(number_of_stocks_in_portfolio, standard_deviations)  # send data to function
+      plt.show() #show the plot
+  def main():
+      #This function calles the introduction function, makes sure that all custom files exist, and then
+      #calls the relationship analysis function, and graph results function. After the analysis is complete,
+      #the user is notified.
+  
+      #call the intro
+      daily_data, monthly_data = Introduction()
+      while True: #validate files for Custom entries
+          try:
+              three = open(daily_data, 'r')
+              four = open(monthly_data, 'r')
+          except FileNotFoundError: #do not accept files that don't exist
+              print("Make sure you have the correct filenames for custom entries. ")
+              daily_data = input('Enter filename for daily data: ')
+              monthly_data = input('Enter filename for monthly data: ')
+          else:
+              break
+      try: #try suite
+  
+          number_of_stocks_in_portfolio, standard_deviations = relationship_analysis(daily_data, monthly_data)
+          graph_results(number_of_stocks_in_portfolio,standard_deviations)
+          print("Analysis complete.")
+  
+      except Exception:  # catch exceptions for bad data
+          print("Make sure custom data is correctly formatted.")
+  
+  main()
+                        <span>
+                                      </span>
+                      </div>
+                    </div>
+                    <div style="position: absolute; top: 0px; right: 0px; color: rgba(55, 53, 47, 0.6); display: flex; align-items: center; justify-content: flex-end; height: 30px;"></div>
+                    <div style="position: absolute; bottom: 0px; right: 0px; color: rgba(55, 53, 47, 0.6); display: flex; align-items: center; justify-content: flex-end; height: 30px;">
+                      <div role="button" aria-disabled="true" style="user-select: none; transition: background 120ms ease-in 0s; display: inline-flex; align-items: center; white-space: nowrap; height: 20px; border-radius: 3px; font-size: 12px; line-height: 1.2; padding-left: 5px; padding-right: 5px; color: rgba(55, 53, 47, 0.6); margin-right: 5px;">
+                        Python
+                        <svg viewBox="0 0 30 30" class="chevronDown" style="width: 10px; height: 100%; display: block; fill: rgba(55, 53, 47, 0.3); flex-shrink: 0; backface-visibility: hidden; margin-left: 4px;">
+                          <polygon points="15,17.4 4.8,7 2,9.8 15,23 28,9.8 25.2,7 "></polygon>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div data-block-id="e382e634-7613-4237-a806-208cbd850d6d" class="notion-selectable" style="width: 100%; max-width: calc((100vw - 0px) - 192px); margin-top: 1em; margin-bottom: 1px; color: rgb(55, 53, 47);">
+                <div style="display: flex; width: 100%; font-weight: 600; font-size: 1.5em; letter-spacing: -0.002em; line-height: 1.2; color: inherit; fill: inherit;">
+                  <div contenteditable="false" spellcheck="true" placeholder="Heading 2" data-root="true" style="max-width: 100%; width: 100%; white-space: pre-wrap; word-break: break-word; caret-color: rgb(55, 53, 47); padding: 3px 2px;">Sample Output</div>
+                </div>
+              </div>
+              <div data-block-id="8651b3bd-77db-486c-8f06-ceb28a2cf78d" class="notion-selectable" style="width: 100%; max-width: calc(100vw - 0px); align-self: center; margin-top: 0.5em; margin-bottom: 0px;">
+                <div>
+                  <div style="display: flex;">
+                    <div class="notion-cursor-default" style="position: relative; overflow: hidden; flex-grow: 1;">
+                      <div style="position: relative;">
+                        <div style="height: 100%; width: 100%;"><img src="public/output.png" style="display: block; object-fit: cover; border-radius: 1px; width: 100%; pointer-events: auto;"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="notion-presence-container" style="position: absolute; top: 0px; left: 0px; pointer-events: none; z-index: 1;">
+              <div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="notion-overlay-container notion-default-overlay-container" style="position: fixed; top: 0px; left: 0px; right: 0px; bottom: 0px; z-index: 999; pointer-events: none; overflow: hidden;">
+        <div style="position: relative; z-index: 0;"></div>
+      </div>
+      <div class="notion-overlay-container" style="position: fixed; top: 0px; left: 0px; right: 0px; bottom: 0px; z-index: 1001; pointer-events: none; overflow: hidden;">
+        <div style="position: relative; z-index: 0;"></div>
+      </div>
+    </div>
+    </div>
+    <script type="text/javascript" src="/pdf-extra-7da2ff60987fcde492c6.js"></script><script type="text/javascript" src="/vendors-41e1ad79216a8c6a20f4.js"></script><script type="text/javascript" src="/app-a476c6761226b3cb651a.js"></script>
+    <textarea style="opacity: 0; pointer-events: none; position: fixed; left: 0px; top: 0px;"></textarea>
+    <textarea style="opacity: 0; pointer-events: none; position: fixed; left: 0px; top: 0px;"></textarea>
+    <iframe id="intercom-frame" style="position: absolute !important; opacity: 0 !important; width: 1px !important; height: 1px !important; top: 0 !important; left: 0 !important; border: none !important; display: block !important; z-index: -1 !important;" aria-hidden="true" tabindex="-1" title="Intercom"></iframe>
+    <div id="intercom-css-container">
+      <style data-emotion="intercom-global"></style>
+    </div>
+    <div id="intercom-container" class="intercom-namespace">
+      <style>html.intercom-mobile-messenger-active,html.intercom-mobile-messenger-active > body,html.intercom-modal-open,#intercom-container-body{overflow:hidden !important;}html.intercom-mobile-messenger-active,html.intercom-mobile-messenger-active > body{position:static !important;}html.intercom-mobile-messenger-active > body{height:0 !important;margin:0 !important;}iframe#intercom-frame{position:absolute !important;opacity:0 !important;width:1px !important;height:1px !important;top:0 !important;left:0 !important;border:none !important;display:block !important;z-index:-1 !important;}</style>
+      <div class="intercom-app" aria-live="polite">
+        <div id="intercom-modal-container"></div>
+      </div>
+      <!--</div>-->
+    </body>
+    <script src="navbarHome.js" type="text/javascript"></script>
+
+</body>
+</html>

@@ -1,0 +1,942 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="welcome.css">
+  <link rel="stylesheet" href="application.css">
+  <link rel="stylesheet" href="portfolio.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.js"></script>
+  </head>
+<body>
+  
+  
+    <div id="title-port">Python Projects</div>
+    <div id="top-spacer" style="
+    height: 66px;
+        width: 100%;
+        /*border: solid green 3px;*/
+        background-color: white;
+        /*position: sticky; */
+        /*top: 0;*/
+    "></div>
+    <div id="navbar-home-container"></div>
+  
+  
+    <div class="additional-pages-two">
+      Other Python Projects<br />
+      <a href="diversification_portfolio_risk.html">Diversification & Porfolio Risk</a>
+      <br />
+      <a href="automation.html">Excel Automation</a>
+      <br />
+      <a href="sql.html">Minimization Algorithm & Data Structuring</a>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.js"></script>
+    <script>
+        $(document).ready(function() {
+            var python = new ScrollMagic.Controller();
+            var parallaxPython = new TimelineMax();
+            parallaxPython
+                .from('#parallax-python', 1, {y: '-50%'}, 0);
+            var slideParallaxScene = new ScrollMagic.Scene({
+                triggerHook: 0,
+                duration: '80%',
+                offset: -186,
+            })
+                .setTween(parallaxPython)
+                .addTo(python);});
+    </script>
+    <body class="notion-body">
+    <style>
+      body {
+        background: #fff
+      }
+  
+      .initial-loading-spinner {
+        -webkit-animation: rotate 1s linear infinite;
+        animation: rotate 1s linear infinite;
+        -webkit-transform-origin: center center;
+        transform-origin: center center;
+        width: 1em;
+        height: 1em;
+        opacity: .5;
+        display: block;
+        pointer-events: none
+      }
+  
+      @-webkit-keyframes rotate {
+        0% {
+          -webkit-transform: rotate(0) translateZ(0);
+          transform: rotate(0) translateZ(0)
+        }
+        100% {
+          -webkit-transform: rotate(360deg) translateZ(0);
+          transform: rotate(360deg) translateZ(0)
+        }
+      }
+  
+      @keyframes rotate {
+        0% {
+          -webkit-transform: rotate(0) translateZ(0);
+          transform: rotate(0) translateZ(0)
+        }
+        100% {
+          -webkit-transform: rotate(360deg) translateZ(0);
+          transform: rotate(360deg) translateZ(0)
+        }
+      }
+    </style>
+    <script type="text/javascript">
+        var isElectron = "undefined" != typeof global || window.__isElectron,
+            isCordova = /Cordova/.test(navigator.userAgent),
+            isReactNative = /ReactNative/.test(navigator.userAgent),
+            showSpinner = isCordova || isElectron || isReactNative;
+        if (showSpinner) {
+            var spinner = document.getElementById("initial-loading-spinner");
+            spinner && (spinner.style.opacity = 1)
+        }
+    </script>
+    <script type="text/javascript">
+        var theme = "light",
+            localThemeKey = "theme",
+            themeRecord = localStorage.getItem("theme");
+        if (themeRecord) {
+            var parsed = JSON.parse(themeRecord);
+            parsed && parsed.mode && (theme = parsed.mode)
+        }
+        "dark" === theme && document.body.classList.add("dark")
+    </script>
+    <div id="notion-app">
+      <div class="notion-app-inner notion-light-theme" style="color: rgb(55, 53, 47); fill: currentcolor; line-height: 1.5; font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Helvetica, &quot;Apple Color Emoji&quot;, Arial, sans-serif, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; -webkit-font-smoothing: auto;">
+        <div class="notion-cursor-listener" style="width: 100vw; height: 100%; position: relative; display: flex; flex: 1 1 0%; background: white; cursor: text;">
+          <!--        <div class="notion-frame" style="flex-grow: 1; flex-shrink: 1; display: flex; flex-direction: column; background: white; z-index: 1; width: calc(100vw - 240px); height: 100vh; max-height: 100%;">-->
+          <!--          <div style="width: 100%; max-width: 100vw; z-index: 9;">-->
+          <!--            <div class="notion-topbar" style="width: 100%; max-width: 100vw; height: 45px; opacity: 1; transition: opacity 700ms ease 0s, color 700ms ease 0s; position: relative;">-->
+          <!--              <div style="display: flex; justify-content: space-between; align-items: center; position: absolute; overflow: hidden; height: 45px; left: 0px; right: 0px; bottom: 0px; padding-left: 12px; padding-right: 10px;">-->
+          <!--                <div style="display: flex; align-items: center; line-height: 1.2; font-size: 14px; height: 100%; flex-grow: 0; margin-right: 8px; min-width: 0px;">-->
+          <!--                  <div role="button" aria-disabled="true" style="user-select: none; transition: background 120ms ease-in 0s; display: inline-flex; align-items: center; flex-shrink: 1; white-space: nowrap; height: 24px; border-radius: 3px; font-size: 14px; line-height: 1.2; min-width: 0px; padding-left: 6px; padding-right: 6px; color: rgb(55, 53, 47);">-->
+          <!--                    <div style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 240px;">How to Create an Animated Choropleth from an Adobe Analytics Data Dump</div>-->
+          <!--                  </div>-->
+          <!--                </div>-->
+          <!--                <div style="flex-grow: 1; flex-shrink: 1;"></div>-->
+          <!--                <div role="button" style="user-select: none; transition: background 120ms ease-in 0s; cursor: pointer; display: inline-flex; align-items: center; flex-shrink: 0; white-space: nowrap; height: 28px; border-radius: 3px; font-size: 14px; line-height: 1.2; min-width: 0px; padding-left: 8px; padding-right: 8px; color: rgb(55, 53, 47);"><svg viewBox="0 0 17 17" class="searchNew" style="width: 14px; height: 14px; display: block; fill: inherit; flex-shrink: 0; backface-visibility: hidden; margin-right: 6px;"><path d="M6.78027 13.6729C8.24805 13.6729 9.60156 13.1982 10.709 12.4072L14.875 16.5732C15.0684 16.7666 15.3232 16.8633 15.5957 16.8633C16.167 16.8633 16.5713 16.4238 16.5713 15.8613C16.5713 15.5977 16.4834 15.3516 16.29 15.1582L12.1504 11.0098C13.0205 9.86719 13.5391 8.45215 13.5391 6.91406C13.5391 3.19629 10.498 0.155273 6.78027 0.155273C3.0625 0.155273 0.0214844 3.19629 0.0214844 6.91406C0.0214844 10.6318 3.0625 13.6729 6.78027 13.6729ZM6.78027 12.2139C3.87988 12.2139 1.48047 9.81445 1.48047 6.91406C1.48047 4.01367 3.87988 1.61426 6.78027 1.61426C9.68066 1.61426 12.0801 4.01367 12.0801 6.91406C12.0801 9.81445 9.68066 12.2139 6.78027 12.2139Z"></path></svg>Search</div>-->
+          <!--                <div style="flex: 0 0 auto; width: 1px; height: 16px; margin-left: 8px; margin-right: 8px; background: rgba(55, 53, 47, 0.16);"></div>-->
+          <!--                <div role="button" style="user-select: none; transition: background 120ms ease-in 0s; cursor: pointer; display: inline-flex; align-items: center; flex-shrink: 0; white-space: nowrap; height: 28px; border-radius: 3px; font-size: 14px; line-height: 1.2; min-width: 0px; padding-left: 8px; padding-right: 8px; color: rgb(55, 53, 47);"><svg viewBox="0 0 120 126" class="notionLogo" style="width: 18px; height: 18px; display: block; fill: inherit; flex-shrink: 0; backface-visibility: hidden; margin-right: 6px;"><path d="M 20.6927 21.9315C 24.5836 25.0924 26.0432 24.8512 33.3492 24.3638L 102.228 20.2279C 103.689 20.2279 102.474 18.7705 101.987 18.5283L 90.5477 10.2586C 88.3558 8.55699 85.4356 6.60818 79.8387 7.09563L 13.1433 11.9602C 10.711 12.2014 10.2251 13.4175 11.1939 14.3924L 20.6927 21.9315ZM 24.8281 37.9835L 24.8281 110.456C 24.8281 114.351 26.7745 115.808 31.1553 115.567L 106.853 111.187C 111.236 110.946 111.724 108.267 111.724 105.103L 111.724 33.1169C 111.724 29.958 110.509 28.2544 107.826 28.4976L 28.721 33.1169C 25.8018 33.3622 24.8281 34.8225 24.8281 37.9835ZM 99.5567 41.8711C 100.042 44.0622 99.5567 46.2512 97.3618 46.4974L 93.7143 47.2241L 93.7143 100.728C 90.5477 102.43 87.6275 103.403 85.1942 103.403C 81.2983 103.403 80.3226 102.186 77.4044 98.54L 53.5471 61.087L 53.5471 97.3239L 61.0964 99.0275C 61.0964 99.0275 61.0964 103.403 55.0057 103.403L 38.2148 104.377C 37.727 103.403 38.2148 100.973 39.9179 100.486L 44.2996 99.2717L 44.2996 51.36L 38.2158 50.8725C 37.728 48.6815 38.9431 45.5225 42.3532 45.2773L 60.3661 44.0631L 85.1942 82.0036L 85.1942 48.4402L 78.864 47.7136C 78.3781 45.0351 80.3226 43.0902 82.7569 42.849L 99.5567 41.8711ZM 7.5434 5.39404L 76.9175 0.285276C 85.4366 -0.445402 87.6285 0.0440428 92.983 3.93368L 115.128 19.4982C 118.782 22.1747 120 22.9034 120 25.8211L 120 111.187C 120 116.537 118.051 119.701 111.237 120.185L 30.6734 125.05C 25.5584 125.294 23.124 124.565 20.4453 121.158L 4.13735 99.9994C 1.21516 96.1048 0 93.191 0 89.7819L 0 13.903C 0 9.5279 1.94945 5.8785 7.5434 5.39404Z"></path></svg>Notion</div>-->
+          <!--              </div>-->
+          <!--            </div>-->
+          <!--            <div style="width: 100%; user-select: none;"></div>-->
+          <!--          </div>-->
+          <div class="notion-scroller vertical horizontal" style="display: flex; flex-direction: column; z-index: 1; flex-grow: 1; position: relative; align-items: center; overflow: auto; margin-right: 0px; margin-bottom: 0px;">
+            <div style="width: 100%; display: flex; flex-direction: column; align-items: center; flex-shrink: 0; flex-grow: 0;">
+              <div style="position: relative; width: 100%; display: flex; flex-direction: column; align-items: center; height: 30vh; cursor: default; overflow: hidden">
+                <div style="width: 100%; cursor: inherit;">
+                  <div style="width: 100%; height: 100%;"><img id="parallax-python" src="https://images.unsplash.com/photo-1446776653964-20c1d3a81b06?ixlib=rb-1.2.1&amp;q=85&amp;fm=jpg&amp;crop=entropy&amp;cs=srgb&amp;w=1200" style="display: block; object-fit: cover; border-radius: 0px; width: 100%; height: 50vh; opacity: 1; object-position: center 50%;"></div>
+                </div>
+                <div style="background: rgba(0, 0, 0, 0.4); border-radius: 3px; color: white; font-size: 12px; font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Helvetica, &quot;Apple Color Emoji&quot;, Arial, sans-serif, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; width: 180px; left: calc(50% - 90px); padding: 0.3em 1.5em; pointer-events: none; position: absolute; top: calc(50% - 10px); text-align: center; opacity: 0;">Drag Image to Reposition</div>
+              </div>
+              <div style="padding-left: 96px; padding-right: 96px; max-width: 100%; margin-bottom: 0.5em; width: 900px;">
+                <div class="notion-page-controls" style="display: flex; align-items: center; justify-content: flex-start; color: rgba(55, 53, 47, 0.4); opacity: 0; pointer-events: none; transition: opacity 300ms ease-out 0s; min-height: 28px; margin-top: 16px; margin-bottom: 4px; margin-left: -1px; font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Helvetica, &quot;Apple Color Emoji&quot;, Arial, sans-serif, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;;"></div>
+                <div data-block-id="c34217a1-2e9a-404b-ade8-ce2982120588" class="notion-selectable" style="color: rgb(55, 53, 47); font-weight: 700; letter-spacing: -0.003em; line-height: 1.1; margin-bottom: 0.25em; font-size: 2.5em; font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Helvetica, &quot;Apple Color Emoji&quot;, Arial, sans-serif, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; cursor: text; display: flex; align-items: center;">
+                  <div contenteditable="false" spellcheck="true" placeholder="Untitled" data-root="true" style="max-width: 100%; width: 100%; white-space: pre-wrap; word-break: break-word; caret-color: rgb(55, 53, 47); padding: 3px 2px;">How to Create an Animated Choropleth from an Adobe Analytics Data Dump</div>
+                </div>
+              </div>
+            </div>
+            <div class="notion-page-content" style="flex-shrink: 0; flex-grow: 1; width: 900px; max-width: 100%; display: flex; align-items: center; flex-direction: column; font-size: 16px; color: rgb(55, 53, 47); padding: 0px 96px 30vh;">
+              <div data-block-id="6168b486-9b07-45ec-85cd-90a0e6efab3e" class="notion-selectable" style="width: 100%; max-width: calc((100vw - 0px) - 192px); margin-top: 2px; margin-bottom: 1px;">
+                <div style="color: rgba(55, 53, 47, 0.6); fill: rgba(55, 53, 47, 0.6);">
+                  <div style="display: flex;">
+                    <div contenteditable="false" spellcheck="true" placeholder=" " data-root="true" style="max-width: 100%; width: 100%; white-space: pre-wrap; word-break: break-word; caret-color: rgb(55, 53, 47); padding: 3px 2px;"><span style="font-style:italic" data-token-index="0">Tristan Lalor</span></div>
+                  </div>
+                </div>
+              </div>
+              <div data-block-id="a3430854-bc39-47ec-af94-c5feecc44edf" class="notion-selectable" style="width: 100%; max-width: calc((100vw - 0px) - 192px); margin-top: 1px; margin-bottom: 1px;">
+                <div style="color: inherit; fill: inherit;">
+                  <div style="display: flex;">
+                    <div contenteditable="false" spellcheck="true" placeholder=" " data-root="true" style="max-width: 100%; width: 100%; white-space: pre-wrap; word-break: break-word; caret-color: rgb(55, 53, 47); padding: 3px 2px; min-height: 1em; color: rgb(55, 53, 47); -webkit-text-fill-color: rgba(55, 53, 47, 0.4);"></div>
+                  </div>
+                </div>
+              </div>
+              <div data-block-id="e90a7f17-d270-42ef-898f-a8a436c71b86" class="notion-selectable" style="width: 100%; max-width: calc((100vw - 0px) - 192px); margin-top: 1px; margin-bottom: 1px;">
+                <div style="color: inherit; fill: inherit;">
+                  <div style="display: flex;">
+                    <div contenteditable="false" spellcheck="true" placeholder=" " data-root="true" style="max-width: 100%; width: 100%; white-space: pre-wrap; word-break: break-word; caret-color: rgb(55, 53, 47); padding: 3px 2px;">Note: Data has been altered and all company-sensitive information has been obscured to respect the privacy of internal company data.</div>
+                  </div>
+                </div>
+              </div>
+              <div data-block-id="1f707f8c-931a-4203-a147-1742f6b7ae48" class="notion-selectable" style="width: 100%; max-width: calc((100vw - 0px) - 192px); margin-top: 1px; margin-bottom: 1px;">
+                <div style="color: inherit; fill: inherit;">
+                  <div style="display: flex;">
+                    <div contenteditable="false" spellcheck="true" placeholder=" " data-root="true" style="max-width: 100%; width: 100%; white-space: pre-wrap; word-break: break-word; caret-color: rgb(55, 53, 47); padding: 3px 2px; min-height: 1em; color: rgb(55, 53, 47); -webkit-text-fill-color: rgba(55, 53, 47, 0.4);"></div>
+                  </div>
+                </div>
+              </div>
+              <div data-block-id="b76cde51-65dc-42c7-9f88-64836efa3261" class="notion-selectable" style="width: 100%; max-width: calc((100vw - 0px) - 192px); margin-top: 1px; margin-bottom: 1px;">
+                <div style="color: inherit; fill: inherit;">
+                  <div style="display: flex;">
+                    <div contenteditable="false" spellcheck="true" placeholder=" " data-root="true" style="max-width: 100%; width: 100%; white-space: pre-wrap; word-break: break-word; caret-color: rgb(55, 53, 47); padding: 3px 2px;">Here is a look at what we will be creating. This is a data visualization of 14 period moving averages of units sold, by state, with daily granularity. It is broken up by category for the X segment of the business. The top left choropleth is X sales overall, the top right is the A segment, bottom left is B, and bottom right is C. </div>
+                  </div>
+                </div>
+              </div>
+  <!--            <div data-block-id="bb135d98-6dd1-4a3f-9576-01b49e97e88c" class="notion-selectable" style="width: 100%; max-width: calc(100vw - 0px); align-self: center; margin-top: 0.5em; margin-bottom: 0.5em;">-->
+  <!--              <div>-->
+  <!--                <div style="display: flex;">-->
+  <!--                  <div class="notion-cursor-default" style="position: relative; overflow: hidden; flex-grow: 1;">-->
+  <!--                    <div style="position: relative;">-->
+  <!--                      <div style="height: 0px; padding-bottom: 56.25%; background: rgb(247, 246, 245);"><img src="/p1.gif" style="display: block; object-fit: cover; border-radius: 1px; background: white; width: 100%; pointer-events: auto;"></div>-->
+  <!--                    </div>-->
+  <!--                  </div>-->
+  <!--                </div>-->
+  <!--              </div>-->
+  <!--            </div>-->
+              <div data-block-id="7e53ae0c-2461-492d-98ec-e5db752bfd73" class="notion-selectable" style="width: 100%; max-width: calc(100vw - 0px); align-self: center; margin-top: 2px; margin-bottom: 4px;">
+                <!--                <div embed-ghost="">-->
+                <!--                  <div style="display: flex;">-->
+                <!--                    <div class="notion-cursor-default" style="position: relative; overflow: hidden; flex-grow: 1;">-->
+                <div style="position: relative;">
+                  <div style="position: relative;">
+                    <video autoplay loop muted playsinline controls="" preload="auto" style="display: block; width: 100%; pointer-events: none; background-color: rgb(247, 246, 245);">
+                      <source src="public/p8.mp4">
+                    </video>
+                    <!--                          <div style="position: absolute; top: 0px; left: 0px; right: 0px; bottom: 0px; display: flex; align-items: center; justify-content: center; cursor: pointer;">-->
+                    <!--                            <div style="position: relative; height: 70px; width: 70px; border-width: 3px; border-style: solid; border-color: rgb(51, 51, 51); border-radius: 70px;">-->
+                    <!--                              <div style="position: absolute; left: 50%; top: 50%; transform: translate(-30%, -50%); height: 0px; width: 0px; border-style: solid; border-color: transparent rgb(51, 51, 51); border-width: 16.1px 0px 16.1px 24.5px;"></div>-->
+                    <!--                            </div>-->
+                    <!--                          </div>-->
+                  </div>
+                  <!--                      </div>-->
+                  <!--                    </div>-->
+                </div>
+                <!--                </div>-->
+              </div>
+              <div data-block-id="2ddf77c4-aa2d-4463-aeda-4ea39faddaad" class="notion-selectable" style="width: 100%; max-width: calc((100vw - 0px) - 192px); margin-top: 1px; margin-bottom: 1px;">
+                <div style="color: inherit; fill: inherit;">
+                  <div style="display: flex;">
+                    <div contenteditable="false" spellcheck="true" placeholder=" " data-root="true" style="max-width: 100%; width: 100%; white-space: pre-wrap; word-break: break-word; caret-color: rgb(55, 53, 47); padding: 3px 2px;">This visualization is valuable to observe what kind of differences there are geographically among these difference segments, as well as what changes are occurring throughout the year. This is one clue to answering the question: how&nbsp;can we best specialize marketing for certain X products geographically and seasonally?</div>
+                  </div>
+                </div>
+              </div>
+              <div data-block-id="c4d0bcd9-2740-45b0-8f00-9ccb2958f986" class="notion-selectable" style="width: 100%; max-width: calc((100vw - 0px) - 192px); margin-top: 1px; margin-bottom: 1px;">
+                <div style="color: inherit; fill: inherit;">
+                  <div style="display: flex;">
+                    <div contenteditable="false" spellcheck="true" placeholder=" " data-root="true" style="max-width: 100%; width: 100%; white-space: pre-wrap; word-break: break-word; caret-color: rgb(55, 53, 47); padding: 3px 2px;">The first step in building this visualization is obtaining a data mart from Adobe Analytics (or any other data one might wish to use; however, the program outlined below is built for processing data dumps from the Adobe Data Warehouse). Notice the data’s original output format. There are NULL fields above each group of states, which need to be accounted for. This will be one of the first things we do once we start normalizing the table. </div>
+                  </div>
+                </div>
+              </div>
+              <div data-block-id="74e4709f-ac80-4dcd-9672-058cc2f4153e" class="notion-selectable" style="width: 456px; max-width: calc(100vw - 0px); align-self: center; margin-top: 0.5em; margin-bottom: 0.5em;">
+                <div>
+                  <div style="display: flex;">
+                    <div class="notion-cursor-default" style="position: relative; overflow: hidden; flex-grow: 1;">
+                      <div style="position: relative;">
+                        <div style="height: 100%; width: 100%;"><img src="public/p2.png" style="display: block; object-fit: cover; border-radius: 1px; width: 100%; pointer-events: auto;"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div data-block-id="fdaf128a-5f89-4ca5-9dce-bc744255273f" class="notion-selectable" style="width: 100%; max-width: calc((100vw - 0px) - 192px); margin-top: 1px; margin-bottom: 1px;">
+                <div style="color: inherit; fill: inherit;">
+                  <div style="display: flex;">
+                    <div contenteditable="false" spellcheck="true" placeholder=" " data-root="true" style="max-width: 100%; width: 100%; white-space: pre-wrap; word-break: break-word; caret-color: rgb(55, 53, 47); padding: 3px 2px;">The first thing we want to do is open up our integrated development environment for working with Python (I use PyCharm), and&nbsp;import 2 classic data science packages that we will be using right off the bat:&nbsp;Numpy&nbsp;and Pandas.</div>
+                  </div>
+                </div>
+              </div>
+              <div data-block-id="4d5c9817-7b2b-4f7b-b06d-26684841ffb8" class="notion-selectable" style="width: 100%; max-width: calc((100vw - 0px) - 192px); margin-top: 1px; margin-bottom: 1px;">
+                <div style="color: inherit; fill: inherit;">
+                  <div style="display: flex;">
+                    <div contenteditable="false" spellcheck="true" placeholder=" " data-root="true" style="max-width: 100%; width: 100%; white-space: pre-wrap; word-break: break-word; caret-color: rgb(55, 53, 47); padding: 3px 2px;">The first obejctive of the code is to make the imports and define a function to return CSV data files as a numpy array.</div>
+                  </div>
+                </div>
+              </div>
+              <div data-block-id="df080639-6927-482c-a1eb-86c4bc4b54e2" class="notion-selectable" style="width: 100%; max-width: calc((100vw - 0px) - 192px); margin-top: 4px; margin-bottom: 4px;">
+                <div style="display: flex;">
+                  <div style="flex-grow: 1; border-radius: 3px; text-align: left; position: relative; background: rgb(247, 246, 243); min-width: 0px; width: 100%;">
+                    <div class="line-numbers notion-code-block" style="display: flex; overflow-x: auto;">
+                      <div contenteditable="false" spellcheck="false" autocorrect="off" autocapitalize="off" data-root="true" style="flex-grow: 1; flex-shrink: 1; text-align: left; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, Courier, monospace; font-size: 85%; tab-size: 2; padding: 30px 16px 30px 20px; min-height: 1em; color: rgb(55, 53, 47); white-space: pre;"><span class="token keyword" data-token-index="0">import</span><span data-token-index="0"> pandas </span><span class="token keyword" data-token-index="0">as</span><span data-token-index="0"> pd
+  </span><span class="token keyword" data-token-index="0">import</span><span data-token-index="0"> numpy </span><span class="token keyword" data-token-index="0">as</span><span data-token-index="0"> np
+  </span><span class="token keyword" data-token-index="0">def</span><span data-token-index="0"> </span><span class="token function" data-token-index="0">readcsv</span><span class="token punctuation" data-token-index="0">(</span><span data-token-index="0">filename</span><span class="token punctuation" data-token-index="0">)</span><span class="token punctuation" data-token-index="0">:</span><span data-token-index="0">
+    data </span><span class="token operator" data-token-index="0">=</span><span data-token-index="0"> pd</span><span class="token punctuation" data-token-index="0">.</span><span data-token-index="0">read_csv</span><span class="token punctuation" data-token-index="0">(</span><span data-token-index="0">filename</span><span class="token punctuation" data-token-index="0">)</span><span data-token-index="0">
+    </span><span class="token keyword" data-token-index="0">return</span><span class="token punctuation" data-token-index="0">(</span><span data-token-index="0">np</span><span class="token punctuation" data-token-index="0">.</span><span data-token-index="0">array</span><span class="token punctuation" data-token-index="0">(</span><span data-token-index="0">data</span><span class="token punctuation" data-token-index="0">)</span><span class="token punctuation" data-token-index="0">)</span><span>
+  </span></div>
+                    </div>
+                    <div style="position: absolute; top: 0px; right: 0px; color: rgba(55, 53, 47, 0.6); display: flex; align-items: center; justify-content: flex-end; height: 30px;"></div>
+                    <div style="position: absolute; bottom: 0px; right: 0px; color: rgba(55, 53, 47, 0.6); display: flex; align-items: center; justify-content: flex-end; height: 30px;">
+                      <div role="button" aria-disabled="true" style="user-select: none; transition: background 120ms ease-in 0s; display: inline-flex; align-items: center; white-space: nowrap; height: 20px; border-radius: 3px; font-size: 12px; line-height: 1.2; padding-left: 5px; padding-right: 5px; color: rgba(55, 53, 47, 0.6); margin-right: 5px;">Python
+                        <svg viewBox="0 0 30 30" class="chevronDown" style="width: 10px; height: 100%; display: block; fill: rgba(55, 53, 47, 0.3); flex-shrink: 0; backface-visibility: hidden; margin-left: 4px;">
+                          <polygon points="15,17.4 4.8,7 2,9.8 15,23 28,9.8 25.2,7 "></polygon>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div data-block-id="598b0a72-e0a9-423e-815b-d3a93d8155fe" class="notion-selectable" style="width: 100%; max-width: calc((100vw - 0px) - 192px); margin-top: 1px; margin-bottom: 1px;">
+                <div style="color: inherit; fill: inherit;">
+                  <div style="display: flex;">
+                    <div contenteditable="false" spellcheck="true" placeholder=" " data-root="true" style="max-width: 100%; width: 100%; white-space: pre-wrap; word-break: break-word; caret-color: rgb(55, 53, 47); padding: 3px 2px;">Next, we will load in our data dump from Adobe Analytics and remove all rows for which there is no associated state. This will also remove all aggregate rows that Adobe gives us.</div>
+                  </div>
+                </div>
+              </div>
+              <div data-block-id="e696ef5b-9b75-4660-8573-632340fc4459" class="notion-selectable" style="width: 100%; max-width: calc((100vw - 0px) - 192px); margin-top: 4px; margin-bottom: 4px;">
+                <div style="display: flex;">
+                  <div style="flex-grow: 1; border-radius: 3px; text-align: left; position: relative; background: rgb(247, 246, 243); min-width: 0px; width: 100%;">
+                    <div class="line-numbers notion-code-block" style="display: flex; overflow-x: auto;">
+                      <div contenteditable="false" spellcheck="false" autocorrect="off" autocapitalize="off" data-root="true" style="flex-grow: 1; flex-shrink: 1; text-align: left; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, Courier, monospace; font-size: 85%; tab-size: 2; padding: 30px 16px 30px 20px; min-height: 1em; color: rgb(55, 53, 47); white-space: pre;"><span class="token comment" data-token-index="0">#Obtain the report</span><span data-token-index="0">
+  Comp_Array </span><span class="token operator" data-token-index="0">=</span><span data-token-index="0"> readcsv</span><span class="token punctuation" data-token-index="0">(</span><span data-token-index="0">Report</span><span class="token punctuation" data-token-index="0">)</span><span data-token-index="0">
+  
+  </span><span class="token comment" data-token-index="0"># cut out all null values</span><span data-token-index="0">
+  Comp_Array </span><span class="token operator" data-token-index="0">=</span><span data-token-index="0"> Comp_Array</span><span class="token punctuation" data-token-index="0">[</span><span class="token operator" data-token-index="0">~</span><span data-token-index="0">pd</span><span class="token punctuation" data-token-index="0">.</span><span data-token-index="0">isnull</span><span class="token punctuation" data-token-index="0">(</span><span data-token-index="0">Comp_Array</span><span class="token punctuation" data-token-index="0">)</span><span class="token punctuation" data-token-index="0">.</span><span class="token builtin" data-token-index="0">any</span><span class="token punctuation" data-token-index="0">(</span><span data-token-index="0">axis</span><span class="token operator" data-token-index="0">=</span><span class="token number" data-token-index="0">1</span><span class="token punctuation" data-token-index="0">)</span><span class="token punctuation" data-token-index="0">]</span><span data-token-index="0">
+  </span><span class="token comment" data-token-index="0"># take out all commas</span><span data-token-index="0">
+  </span><span class="token keyword" data-token-index="0">for</span><span data-token-index="0"> i </span><span class="token keyword" data-token-index="0">in</span><span data-token-index="0"> </span><span class="token builtin" data-token-index="0">range</span><span class="token punctuation" data-token-index="0">(</span><span class="token number" data-token-index="0">0</span><span class="token punctuation" data-token-index="0">,</span><span data-token-index="0"> np</span><span class="token punctuation" data-token-index="0">.</span><span data-token-index="0">size</span><span class="token punctuation" data-token-index="0">(</span><span data-token-index="0">Comp_Array</span><span class="token punctuation" data-token-index="0">,</span><span class="token number" data-token-index="0">0</span><span class="token punctuation" data-token-index="0">)</span><span class="token punctuation" data-token-index="0">)</span><span class="token punctuation" data-token-index="0">:</span><span data-token-index="0">
+      Comp_Array</span><span class="token punctuation" data-token-index="0">[</span><span data-token-index="0">i</span><span class="token punctuation" data-token-index="0">,</span><span class="token number" data-token-index="0">0</span><span class="token punctuation" data-token-index="0">]</span><span data-token-index="0"> </span><span class="token operator" data-token-index="0">=</span><span data-token-index="0"> Comp_Array</span><span class="token punctuation" data-token-index="0">[</span><span data-token-index="0">i</span><span class="token punctuation" data-token-index="0">,</span><span class="token number" data-token-index="0">0</span><span class="token punctuation" data-token-index="0">]</span><span class="token punctuation" data-token-index="0">.</span><span data-token-index="0">replace</span><span class="token punctuation" data-token-index="0">(</span><span class="token string" data-token-index="0">","</span><span class="token punctuation" data-token-index="0">,</span><span class="token string" data-token-index="0">""</span><span class="token punctuation" data-token-index="0">)</span><span>
+  </span></div>
+                    </div>
+                    <div style="position: absolute; top: 0px; right: 0px; color: rgba(55, 53, 47, 0.6); display: flex; align-items: center; justify-content: flex-end; height: 30px;"></div>
+                    <div style="position: absolute; bottom: 0px; right: 0px; color: rgba(55, 53, 47, 0.6); display: flex; align-items: center; justify-content: flex-end; height: 30px;">
+                      <div role="button" aria-disabled="true" style="user-select: none; transition: background 120ms ease-in 0s; display: inline-flex; align-items: center; white-space: nowrap; height: 20px; border-radius: 3px; font-size: 12px; line-height: 1.2; padding-left: 5px; padding-right: 5px; color: rgba(55, 53, 47, 0.6); margin-right: 5px;">Python
+                        <svg viewBox="0 0 30 30" class="chevronDown" style="width: 10px; height: 100%; display: block; fill: rgba(55, 53, 47, 0.3); flex-shrink: 0; backface-visibility: hidden; margin-left: 4px;">
+                          <polygon points="15,17.4 4.8,7 2,9.8 15,23 28,9.8 25.2,7 "></polygon>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div data-block-id="a9342642-0b01-4a57-a4c7-77de1d841131" class="notion-selectable" style="width: 100%; max-width: calc((100vw - 0px) - 192px); margin-top: 1px; margin-bottom: 1px;">
+                <div style="color: inherit; fill: inherit;">
+                  <div style="display: flex;">
+                    <div contenteditable="false" spellcheck="true" placeholder=" " data-root="true" style="max-width: 100%; width: 100%; white-space: pre-wrap; word-break: break-word; caret-color: rgb(55, 53, 47); padding: 3px 2px;">The next task is to generate a list of dates to be used to collect daily data for each date in the list we will generate. This snippet of code will generate a list of every date for the time period of our data dump; there are also extra dates, but we will cut those out later.</div>
+                  </div>
+                </div>
+              </div>
+              <div data-block-id="db202d2c-fba9-48b8-99b3-2514974c5818" class="notion-selectable" style="width: 100%; max-width: calc((100vw - 0px) - 192px); margin-top: 4px; margin-bottom: 4px;">
+                <div style="display: flex;">
+                  <div style="flex-grow: 1; border-radius: 3px; text-align: left; position: relative; background: rgb(247, 246, 243); min-width: 0px; width: 100%;">
+                    <div class="line-numbers notion-code-block" style="display: flex; overflow-x: auto;">
+                      <div contenteditable="false" spellcheck="false" autocorrect="off" autocapitalize="off" data-root="true" style="flex-grow: 1; flex-shrink: 1; text-align: left; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, Courier, monospace; font-size: 85%; tab-size: 2; padding: 30px 16px 30px 20px; min-height: 1em; color: rgb(55, 53, 47); white-space: pre;"><span data-token-index="0">day_lst </span><span class="token operator" data-token-index="0">=</span><span data-token-index="0"> </span><span class="token builtin" data-token-index="0">range</span><span class="token punctuation" data-token-index="0">(</span><span class="token number" data-token-index="0">1</span><span class="token punctuation" data-token-index="0">,</span><span class="token number" data-token-index="0">32</span><span class="token punctuation" data-token-index="0">)</span><span data-token-index="0">
+  month_lst </span><span class="token operator" data-token-index="0">=</span><span data-token-index="0"> </span><span class="token punctuation" data-token-index="0">[</span><span class="token string" data-token-index="0">'January'</span><span class="token punctuation" data-token-index="0">,</span><span data-token-index="0"> </span><span class="token string" data-token-index="0">'February'</span><span class="token punctuation" data-token-index="0">,</span><span data-token-index="0"> </span><span class="token string" data-token-index="0">'March'</span><span class="token punctuation" data-token-index="0">,</span><span data-token-index="0"> </span><span class="token string" data-token-index="0">'April'</span><span class="token punctuation" data-token-index="0">,</span><span data-token-index="0"> </span><span class="token string" data-token-index="0">'May'</span><span class="token punctuation" data-token-index="0">,</span><span data-token-index="0"> </span><span class="token string" data-token-index="0">'June'</span><span class="token punctuation" data-token-index="0">,</span><span data-token-index="0"> </span><span class="token string" data-token-index="0">'July'</span><span class="token punctuation" data-token-index="0">,</span><span data-token-index="0">
+                </span><span class="token string" data-token-index="0">'August'</span><span class="token punctuation" data-token-index="0">,</span><span data-token-index="0"> </span><span class="token string" data-token-index="0">'September'</span><span class="token punctuation" data-token-index="0">,</span><span data-token-index="0"> </span><span class="token string" data-token-index="0">'October'</span><span class="token punctuation" data-token-index="0">,</span><span data-token-index="0"> </span><span class="token string" data-token-index="0">'November'</span><span class="token punctuation" data-token-index="0">,</span><span data-token-index="0"> </span><span class="token string" data-token-index="0">'December'</span><span class="token punctuation" data-token-index="0">]</span><span data-token-index="0">
+  year_lst </span><span class="token operator" data-token-index="0">=</span><span data-token-index="0"> </span><span class="token punctuation" data-token-index="0">(</span><span class="token number" data-token-index="0">2018</span><span class="token punctuation" data-token-index="0">,</span><span data-token-index="0"> </span><span class="token number" data-token-index="0">2019</span><span class="token punctuation" data-token-index="0">)</span><span data-token-index="0">
+  dates_lst </span><span class="token operator" data-token-index="0">=</span><span data-token-index="0"> </span><span class="token punctuation" data-token-index="0">[</span><span class="token punctuation" data-token-index="0">]</span><span data-token-index="0">
+  </span><span class="token keyword" data-token-index="0">for</span><span data-token-index="0"> year </span><span class="token keyword" data-token-index="0">in</span><span data-token-index="0"> year_lst</span><span class="token punctuation" data-token-index="0">:</span><span data-token-index="0">
+          </span><span class="token keyword" data-token-index="0">for</span><span data-token-index="0"> month </span><span class="token keyword" data-token-index="0">in</span><span data-token-index="0"> month_lst</span><span class="token punctuation" data-token-index="0">:</span><span data-token-index="0">
+                  </span><span class="token keyword" data-token-index="0">for</span><span data-token-index="0"> day </span><span class="token keyword" data-token-index="0">in</span><span data-token-index="0"> day_lst</span><span class="token punctuation" data-token-index="0">:</span><span data-token-index="0">
+                          date </span><span class="token operator" data-token-index="0">=</span><span data-token-index="0"> </span><span class="token builtin" data-token-index="0">str</span><span class="token punctuation" data-token-index="0">(</span><span data-token-index="0">month</span><span class="token punctuation" data-token-index="0">)</span><span class="token operator" data-token-index="0">+</span><span class="token string" data-token-index="0">" "</span><span class="token operator" data-token-index="0">+</span><span class="token builtin" data-token-index="0">str</span><span class="token punctuation" data-token-index="0">(</span><span data-token-index="0">day</span><span class="token punctuation" data-token-index="0">)</span><span class="token operator" data-token-index="0">+</span><span class="token string" data-token-index="0">" "</span><span class="token operator" data-token-index="0">+</span><span class="token builtin" data-token-index="0">str</span><span class="token punctuation" data-token-index="0">(</span><span data-token-index="0">year</span><span class="token punctuation" data-token-index="0">)</span><span data-token-index="0">
+                          dates_lst</span><span class="token punctuation" data-token-index="0">.</span><span data-token-index="0">append</span><span class="token punctuation" data-token-index="0">(</span><span data-token-index="0">date</span><span class="token punctuation" data-token-index="0">)</span><span>
+  </span></div>
+                    </div>
+                    <div style="position: absolute; top: 0px; right: 0px; color: rgba(55, 53, 47, 0.6); display: flex; align-items: center; justify-content: flex-end; height: 30px;"></div>
+                    <div style="position: absolute; bottom: 0px; right: 0px; color: rgba(55, 53, 47, 0.6); display: flex; align-items: center; justify-content: flex-end; height: 30px;">
+                      <div role="button" aria-disabled="true" style="user-select: none; transition: background 120ms ease-in 0s; display: inline-flex; align-items: center; white-space: nowrap; height: 20px; border-radius: 3px; font-size: 12px; line-height: 1.2; padding-left: 5px; padding-right: 5px; color: rgba(55, 53, 47, 0.6); margin-right: 5px;">Python
+                        <svg viewBox="0 0 30 30" class="chevronDown" style="width: 10px; height: 100%; display: block; fill: rgba(55, 53, 47, 0.3); flex-shrink: 0; backface-visibility: hidden; margin-left: 4px;">
+                          <polygon points="15,17.4 4.8,7 2,9.8 15,23 28,9.8 25.2,7 "></polygon>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div data-block-id="9c48026f-d9fb-44fc-a159-8eb04a655c5f" class="notion-selectable" style="width: 100%; max-width: calc((100vw - 0px) - 192px); margin-top: 1px; margin-bottom: 1px;">
+                <div style="color: inherit; fill: inherit;">
+                  <div style="display: flex;">
+                    <div contenteditable="false" spellcheck="true" placeholder=" " data-root="true" style="max-width: 100%; width: 100%; white-space: pre-wrap; word-break: break-word; caret-color: rgb(55, 53, 47); padding: 3px 2px;">Notice how in the image below, each state is colored inside the gradient and outlined in white.</div>
+                  </div>
+                </div>
+              </div>
+              <div data-block-id="a8d2456e-7b37-4e83-83a5-b8eaa9ceddb6" class="notion-selectable" style="width: 100%; max-width: calc(100vw - 0px); align-self: center; margin-top: 0.5em; margin-bottom: 0.5em;">
+                <div>
+                  <div style="display: flex;">
+                    <div class="notion-cursor-default" style="position: relative; overflow: hidden; flex-grow: 1;">
+                      <div style="position: relative;">
+                        <div style="height: 100%; width: 100%;"><img src="public/p3.jpg" style="display: block; object-fit: cover; border-radius: 1px; width: 100%; pointer-events: auto;"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div data-block-id="d6aaf09a-8f2b-4d43-b5b7-8468eb0f6faa" class="notion-selectable" style="width: 100%; max-width: calc((100vw - 0px) - 192px); margin-top: 1px; margin-bottom: 1px;">
+                <div style="color: inherit; fill: inherit;">
+                  <div style="display: flex;">
+                    <div contenteditable="false" spellcheck="true" placeholder=" " data-root="true" style="max-width: 100%; width: 100%; white-space: pre-wrap; word-break: break-word; caret-color: rgb(55, 53, 47); padding: 3px 2px;">For this to be the case, we need to have plottable values for each state in this choropleth, and unfortunately they cannot be null or zero in order for them to show up consistent with the color scale. To accomodate this limitation, we will go through and add values to each day for all of the states that are not included in the data, and add the value .00001 in place of their actual revenue of 0. The logic behind this code is to obtain the difference between the active state codes for a given day, and the inactive (null) state codes for a given day – that is to say the states which we did not do business. With this difference size, we can generate a new array filled with plottable values, and then stack them together to create a full array with each state included, for each day of the year. </div>
+                  </div>
+                </div>
+              </div>
+              <div data-block-id="ce83d27e-f6c4-4beb-a6f8-c538d09ee3c9" class="notion-selectable" style="width: 100%; max-width: calc((100vw - 0px) - 192px); margin-top: 4px; margin-bottom: 4px;">
+                <div style="display: flex;">
+                  <div style="flex-grow: 1; border-radius: 3px; text-align: left; position: relative; background: rgb(247, 246, 243); min-width: 0px; width: 100%;">
+                    <div class="line-numbers notion-code-block" style="display: flex; overflow-x: auto;">
+                      <div contenteditable="false" spellcheck="false" autocorrect="off" autocapitalize="off" data-root="true" style="flex-grow: 1; flex-shrink: 1; text-align: left; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, Courier, monospace; font-size: 85%; tab-size: 2; padding: 30px 16px 30px 20px; min-height: 1em; color: rgb(55, 53, 47); white-space: pre;"><span data-token-index="0">files </span><span class="token operator" data-token-index="0">=</span><span data-token-index="0"> </span><span class="token punctuation" data-token-index="0">[</span><span class="token punctuation" data-token-index="0">]</span><span data-token-index="0">
+  all_codes </span><span class="token operator" data-token-index="0">=</span><span data-token-index="0"> readcsv</span><span class="token punctuation" data-token-index="0">(</span><span class="token string" data-token-index="0">"0codes.csv"</span><span class="token punctuation" data-token-index="0">)</span><span data-token-index="0">
+  
+  </span><span class="token keyword" data-token-index="0">for</span><span data-token-index="0"> date </span><span class="token keyword" data-token-index="0">in</span><span data-token-index="0"> dates_lst</span><span class="token punctuation" data-token-index="0">:</span><span data-token-index="0">
+          indices </span><span class="token operator" data-token-index="0">=</span><span data-token-index="0"> np</span><span class="token punctuation" data-token-index="0">.</span><span data-token-index="0">where</span><span class="token punctuation" data-token-index="0">(</span><span class="token punctuation" data-token-index="0">(</span><span data-token-index="0">Comp_Array</span><span class="token punctuation" data-token-index="0">[</span><span class="token punctuation" data-token-index="0">:</span><span class="token punctuation" data-token-index="0">,</span><span data-token-index="0"> </span><span class="token number" data-token-index="0">0</span><span class="token punctuation" data-token-index="0">]</span><span data-token-index="0"> </span><span class="token operator" data-token-index="0">==</span><span data-token-index="0"> date</span><span class="token punctuation" data-token-index="0">)</span><span class="token punctuation" data-token-index="0">)</span><span data-token-index="0">
+          datedList </span><span class="token operator" data-token-index="0">=</span><span data-token-index="0"> Comp_Array</span><span class="token punctuation" data-token-index="0">[</span><span data-token-index="0">indices</span><span class="token punctuation" data-token-index="0">]</span><span data-token-index="0">
+  
+          headers </span><span class="token operator" data-token-index="0">=</span><span data-token-index="0"> np</span><span class="token punctuation" data-token-index="0">.</span><span data-token-index="0">array</span><span class="token punctuation" data-token-index="0">(</span><span data-token-index="0">headers</span><span class="token punctuation" data-token-index="0">)</span><span data-token-index="0">
+          </span><span class="token keyword" data-token-index="0">if</span><span data-token-index="0"> datedList</span><span class="token punctuation" data-token-index="0">.</span><span data-token-index="0">size </span><span class="token operator" data-token-index="0">!=</span><span data-token-index="0"> </span><span class="token number" data-token-index="0">0</span><span class="token punctuation" data-token-index="0">:</span><span data-token-index="0">
+  
+                  active_codes </span><span class="token operator" data-token-index="0">=</span><span data-token-index="0"> datedList</span><span class="token punctuation" data-token-index="0">[</span><span class="token punctuation" data-token-index="0">:</span><span class="token punctuation" data-token-index="0">,</span><span data-token-index="0"> </span><span class="token number" data-token-index="0">1</span><span class="token punctuation" data-token-index="0">]</span><span data-token-index="0">
+                  difference </span><span class="token operator" data-token-index="0">=</span><span data-token-index="0"> np</span><span class="token punctuation" data-token-index="0">.</span><span data-token-index="0">setdiff1d</span><span class="token punctuation" data-token-index="0">(</span><span data-token-index="0">all_codes</span><span class="token punctuation" data-token-index="0">,</span><span data-token-index="0"> active_codes</span><span class="token punctuation" data-token-index="0">)</span><span data-token-index="0">
+  
+                  array_with_correct_dimensions </span><span class="token operator" data-token-index="0">=</span><span data-token-index="0"> np</span><span class="token punctuation" data-token-index="0">.</span><span data-token-index="0">full</span><span class="token punctuation" data-token-index="0">(</span><span class="token punctuation" data-token-index="0">(</span><span data-token-index="0">difference</span><span class="token punctuation" data-token-index="0">.</span><span data-token-index="0">size</span><span class="token punctuation" data-token-index="0">,</span><span data-token-index="0"> </span><span class="token number" data-token-index="0">7</span><span class="token punctuation" data-token-index="0">)</span><span class="token punctuation" data-token-index="0">,</span><span data-token-index="0"> </span><span class="token number" data-token-index="0">.00001</span><span class="token punctuation" data-token-index="0">,</span><span data-token-index="0"> dtype</span><span class="token operator" data-token-index="0">=</span><span data-token-index="0">np</span><span class="token punctuation" data-token-index="0">.</span><span data-token-index="0">float32</span><span class="token punctuation" data-token-index="0">)</span><span class="token punctuation" data-token-index="0">.</span><span data-token-index="0">astype</span><span class="token punctuation" data-token-index="0">(</span><span class="token builtin" data-token-index="0">str</span><span class="token punctuation" data-token-index="0">)</span><span data-token-index="0">
+                  </span><span class="token keyword" data-token-index="0">for</span><span data-token-index="0"> i </span><span class="token keyword" data-token-index="0">in</span><span data-token-index="0"> </span><span class="token builtin" data-token-index="0">range</span><span class="token punctuation" data-token-index="0">(</span><span class="token number" data-token-index="0">0</span><span class="token punctuation" data-token-index="0">,</span><span data-token-index="0"> difference</span><span class="token punctuation" data-token-index="0">.</span><span data-token-index="0">size</span><span class="token operator" data-token-index="0">-</span><span class="token number" data-token-index="0">1</span><span class="token punctuation" data-token-index="0">)</span><span class="token punctuation" data-token-index="0">:</span><span data-token-index="0">
+                      array_with_correct_dimensions</span><span class="token punctuation" data-token-index="0">[</span><span data-token-index="0">i</span><span class="token punctuation" data-token-index="0">,</span><span class="token number" data-token-index="0">1</span><span class="token punctuation" data-token-index="0">]</span><span data-token-index="0"> </span><span class="token operator" data-token-index="0">=</span><span data-token-index="0"> difference</span><span class="token punctuation" data-token-index="0">[</span><span data-token-index="0">i</span><span class="token punctuation" data-token-index="0">]</span><span data-token-index="0">
+                  </span><span class="token keyword" data-token-index="0">for</span><span data-token-index="0"> i </span><span class="token keyword" data-token-index="0">in</span><span data-token-index="0"> </span><span class="token builtin" data-token-index="0">range</span><span class="token punctuation" data-token-index="0">(</span><span class="token number" data-token-index="0">0</span><span class="token punctuation" data-token-index="0">,</span><span data-token-index="0"> difference</span><span class="token punctuation" data-token-index="0">.</span><span data-token-index="0">size</span><span class="token punctuation" data-token-index="0">)</span><span class="token punctuation" data-token-index="0">:</span><span data-token-index="0">
+                      array_with_correct_dimensions</span><span class="token punctuation" data-token-index="0">[</span><span data-token-index="0">i</span><span class="token punctuation" data-token-index="0">,</span><span data-token-index="0"> </span><span class="token number" data-token-index="0">0</span><span class="token punctuation" data-token-index="0">]</span><span data-token-index="0"> </span><span class="token operator" data-token-index="0">=</span><span data-token-index="0"> datedList</span><span class="token punctuation" data-token-index="0">[</span><span class="token number" data-token-index="0">0</span><span class="token punctuation" data-token-index="0">,</span><span data-token-index="0"> </span><span class="token number" data-token-index="0">0</span><span class="token punctuation" data-token-index="0">]</span><span data-token-index="0">
+                  array_with_correct_dimensions</span><span class="token punctuation" data-token-index="0">[</span><span class="token punctuation" data-token-index="0">:</span><span class="token punctuation" data-token-index="0">,</span><span data-token-index="0"> </span><span class="token number" data-token-index="0">1</span><span class="token punctuation" data-token-index="0">]</span><span data-token-index="0"> </span><span class="token operator" data-token-index="0">=</span><span data-token-index="0"> difference  </span><span class="token comment" data-token-index="0"># this might not work</span><span data-token-index="0">
+                  datedList </span><span class="token operator" data-token-index="0">=</span><span data-token-index="0"> np</span><span class="token punctuation" data-token-index="0">.</span><span data-token-index="0">vstack</span><span class="token punctuation" data-token-index="0">(</span><span class="token punctuation" data-token-index="0">(</span><span data-token-index="0">datedList</span><span class="token punctuation" data-token-index="0">,</span><span data-token-index="0"> array_with_correct_dimensions</span><span class="token punctuation" data-token-index="0">)</span><span class="token punctuation" data-token-index="0">)</span><span data-token-index="0">
+  
+                  datedList </span><span class="token operator" data-token-index="0">=</span><span data-token-index="0"> np</span><span class="token punctuation" data-token-index="0">.</span><span data-token-index="0">vstack</span><span class="token punctuation" data-token-index="0">(</span><span data-token-index="0"> </span><span class="token punctuation" data-token-index="0">(</span><span data-token-index="0">headers</span><span class="token punctuation" data-token-index="0">,</span><span data-token-index="0"> datedList</span><span class="token punctuation" data-token-index="0">)</span><span data-token-index="0"> </span><span class="token punctuation" data-token-index="0">)</span><span data-token-index="0">
+                  filename </span><span class="token operator" data-token-index="0">=</span><span data-token-index="0"> </span><span class="token builtin" data-token-index="0">str</span><span class="token punctuation" data-token-index="0">(</span><span data-token-index="0">date</span><span class="token punctuation" data-token-index="0">)</span><span data-token-index="0"> </span><span class="token operator" data-token-index="0">+</span><span data-token-index="0"> </span><span class="token string" data-token-index="0">".csv"</span><span data-token-index="0">
+                  filename </span><span class="token operator" data-token-index="0">=</span><span data-token-index="0"> filename</span><span class="token punctuation" data-token-index="0">.</span><span data-token-index="0">replace</span><span class="token punctuation" data-token-index="0">(</span><span class="token string" data-token-index="0">","</span><span class="token punctuation" data-token-index="0">,</span><span class="token string" data-token-index="0">""</span><span class="token punctuation" data-token-index="0">)</span><span data-token-index="0">
+                  files</span><span class="token punctuation" data-token-index="0">.</span><span data-token-index="0">append</span><span class="token punctuation" data-token-index="0">(</span><span data-token-index="0">filename</span><span class="token punctuation" data-token-index="0">)</span><span data-token-index="0">
+                  np</span><span class="token punctuation" data-token-index="0">.</span><span data-token-index="0">savetxt</span><span class="token punctuation" data-token-index="0">(</span><span data-token-index="0">filename</span><span class="token punctuation" data-token-index="0">,</span><span data-token-index="0"> datedList</span><span class="token punctuation" data-token-index="0">.</span><span data-token-index="0">astype</span><span class="token punctuation" data-token-index="0">(</span><span data-token-index="0">np</span><span class="token punctuation" data-token-index="0">.</span><span class="token builtin" data-token-index="0">str</span><span class="token punctuation" data-token-index="0">)</span><span class="token punctuation" data-token-index="0">,</span><span data-token-index="0"> fmt</span><span class="token operator" data-token-index="0">=</span><span class="token string" data-token-index="0">'%s'</span><span class="token punctuation" data-token-index="0">,</span><span data-token-index="0"> delimiter</span><span class="token operator" data-token-index="0">=</span><span class="token string" data-token-index="0">","</span><span class="token punctuation" data-token-index="0">)</span><span>
+  </span></div>
+                    </div>
+                    <div style="position: absolute; top: 0px; right: 0px; color: rgba(55, 53, 47, 0.6); display: flex; align-items: center; justify-content: flex-end; height: 30px;"></div>
+                    <div style="position: absolute; bottom: 0px; right: 0px; color: rgba(55, 53, 47, 0.6); display: flex; align-items: center; justify-content: flex-end; height: 30px;">
+                      <div role="button" aria-disabled="true" style="user-select: none; transition: background 120ms ease-in 0s; display: inline-flex; align-items: center; white-space: nowrap; height: 20px; border-radius: 3px; font-size: 12px; line-height: 1.2; padding-left: 5px; padding-right: 5px; color: rgba(55, 53, 47, 0.6); margin-right: 5px;">Python
+                        <svg viewBox="0 0 30 30" class="chevronDown" style="width: 10px; height: 100%; display: block; fill: rgba(55, 53, 47, 0.3); flex-shrink: 0; backface-visibility: hidden; margin-left: 4px;">
+                          <polygon points="15,17.4 4.8,7 2,9.8 15,23 28,9.8 25.2,7 "></polygon>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div data-block-id="7f774224-d41d-499c-ab4e-ce36f285121c" class="notion-selectable" style="width: 100%; max-width: calc((100vw - 0px) - 192px); margin-top: 1px; margin-bottom: 1px;">
+                <div style="color: inherit; fill: inherit;">
+                  <div style="display: flex;">
+                    <div contenteditable="false" spellcheck="true" placeholder=" " data-root="true" style="max-width: 100%; width: 100%; white-space: pre-wrap; word-break: break-word; caret-color: rgb(55, 53, 47); padding: 3px 2px;">The last code segment dumps each day of data into its own CSV in the directory we are working from. The last step is to compile them back together into a comprehensive array with every state for each day. this can be accomplished by iterating over ther filenames:</div>
+                  </div>
+                </div>
+              </div>
+              <div data-block-id="65eeee1a-69a0-45de-9717-553c6b7824f7" class="notion-selectable" style="width: 100%; max-width: calc((100vw - 0px) - 192px); margin-top: 4px; margin-bottom: 4px;">
+                <div style="display: flex;">
+                  <div style="flex-grow: 1; border-radius: 3px; text-align: left; position: relative; background: rgb(247, 246, 243); min-width: 0px; width: 100%;">
+                    <div class="line-numbers notion-code-block" style="display: flex; overflow-x: auto;">
+                      <div contenteditable="false" spellcheck="false" autocorrect="off" autocapitalize="off" data-root="true" style="flex-grow: 1; flex-shrink: 1; text-align: left; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, Courier, monospace; font-size: 85%; tab-size: 2; padding: 30px 16px 30px 20px; min-height: 1em; color: rgb(55, 53, 47); white-space: pre;"><span data-token-index="0">Comp_Array_with_0s </span><span class="token operator" data-token-index="0">=</span><span data-token-index="0"> headers
+  
+  </span><span class="token comment" data-token-index="0">#CREATE Comp_Array WITH 0s - ALL STATES ALL DATES</span><span data-token-index="0">
+  </span><span class="token keyword" data-token-index="0">for</span><span data-token-index="0"> filename </span><span class="token keyword" data-token-index="0">in</span><span data-token-index="0"> files</span><span class="token punctuation" data-token-index="0">:</span><span data-token-index="0">
+      infile </span><span class="token operator" data-token-index="0">=</span><span data-token-index="0"> pd</span><span class="token punctuation" data-token-index="0">.</span><span data-token-index="0">read_csv</span><span class="token punctuation" data-token-index="0">(</span><span data-token-index="0">filename</span><span class="token punctuation" data-token-index="0">)</span><span data-token-index="0">
+      Comp_Array_with_0s </span><span class="token operator" data-token-index="0">=</span><span data-token-index="0"> np</span><span class="token punctuation" data-token-index="0">.</span><span data-token-index="0">vstack</span><span class="token punctuation" data-token-index="0">(</span><span class="token punctuation" data-token-index="0">(</span><span data-token-index="0">Comp_Array_with_0s</span><span class="token punctuation" data-token-index="0">,</span><span data-token-index="0"> infile</span><span class="token punctuation" data-token-index="0">)</span><span class="token punctuation" data-token-index="0">)</span><span data-token-index="0">
+  np</span><span class="token punctuation" data-token-index="0">.</span><span data-token-index="0">savetxt</span><span class="token punctuation" data-token-index="0">(</span><span class="token string" data-token-index="0">'Comp_Array_with_0s.csv'</span><span class="token punctuation" data-token-index="0">,</span><span data-token-index="0"> Comp_Array_with_0s</span><span class="token punctuation" data-token-index="0">.</span><span data-token-index="0">astype</span><span class="token punctuation" data-token-index="0">(</span><span data-token-index="0">np</span><span class="token punctuation" data-token-index="0">.</span><span class="token builtin" data-token-index="0">str</span><span class="token punctuation" data-token-index="0">)</span><span class="token punctuation" data-token-index="0">,</span><span data-token-index="0"> fmt</span><span class="token operator" data-token-index="0">=</span><span class="token string" data-token-index="0">'%s'</span><span class="token punctuation" data-token-index="0">,</span><span data-token-index="0"> delimiter</span><span class="token operator" data-token-index="0">=</span><span class="token string" data-token-index="0">","</span><span class="token punctuation" data-token-index="0">)</span><span>
+  </span></div>
+                    </div>
+                    <div style="position: absolute; top: 0px; right: 0px; color: rgba(55, 53, 47, 0.6); display: flex; align-items: center; justify-content: flex-end; height: 30px;"></div>
+                    <div style="position: absolute; bottom: 0px; right: 0px; color: rgba(55, 53, 47, 0.6); display: flex; align-items: center; justify-content: flex-end; height: 30px;">
+                      <div role="button" aria-disabled="true" style="user-select: none; transition: background 120ms ease-in 0s; display: inline-flex; align-items: center; white-space: nowrap; height: 20px; border-radius: 3px; font-size: 12px; line-height: 1.2; padding-left: 5px; padding-right: 5px; color: rgba(55, 53, 47, 0.6); margin-right: 5px;">Python
+                        <svg viewBox="0 0 30 30" class="chevronDown" style="width: 10px; height: 100%; display: block; fill: rgba(55, 53, 47, 0.3); flex-shrink: 0; backface-visibility: hidden; margin-left: 4px;">
+                          <polygon points="15,17.4 4.8,7 2,9.8 15,23 28,9.8 25.2,7 "></polygon>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div data-block-id="04cc1c06-f21a-423d-903a-0823cdbb87cd" class="notion-selectable" style="width: 100%; max-width: calc((100vw - 0px) - 192px); margin-top: 1px; margin-bottom: 1px;">
+                <div style="color: inherit; fill: inherit;">
+                  <div style="display: flex;">
+                    <div contenteditable="false" spellcheck="true" placeholder=" " data-root="true" style="max-width: 100%; width: 100%; white-space: pre-wrap; word-break: break-word; caret-color: rgb(55, 53, 47); padding: 3px 2px;">Now that we have the comprehensive array, with neat, tidy, and normal formatting, we can create an <span style="font-style:italic" data-token-index="1">n-</span>period moving average for each row. This will allow us to maintain daily granularity while simultaneously representing extended timeframes with each frame of the animation. To create a moving average we need to keep track of the last <span style="font-style:italic" data-token-index="3">n </span>instances of data for each state. We can create a dictionary which will pair a state code with a list of <span style="font-style:italic" data-token-index="5">n</span> instances that updates for each row – dynamically adding in the most current value and removing the oldest from the list. Here's a simplified look at what the dictionary is doing.</div>
+                  </div>
+                </div>
+              </div>
+              <div data-block-id="1afddb15-681c-48e3-87a2-9a6bb1d2c2b8" class="notion-selectable" style="width: 100%; max-width: calc((100vw - 0px) - 192px); align-self: center; margin-top: 1px; margin-bottom: 1px;">
+                <div style="display: flex;">
+                  <div style="padding-top: 12px; padding-bottom: 12px; flex-grow: 0; flex-shrink: 0; width: calc((100% - 46px) * 0.25);">
+                    <div data-block-id="42aa43be-1cf7-4fe5-95ba-fb81e3c502e9" class="notion-selectable" style="display: flex; flex-direction: column;">
+                      <div data-block-id="eea8591a-0c34-42d9-9058-73d0fb29d018" class="notion-selectable" style="width: 100%; max-width: 100%; margin-top: 2px; margin-bottom: 1px;">
+                        <div style="color: inherit; fill: inherit;">
+                          <div style="display: flex;">
+                            <div contenteditable="false" spellcheck="true" placeholder=" " data-root="true" style="max-width: 100%; width: 100%; white-space: pre-wrap; word-break: break-word; caret-color: rgb(55, 53, 47); padding: 3px 2px;">It pulls the state-specific fields and appends them to a list (n in this example is 3) that is paired with each state. The moving average for that day will be the average of the 3 items in the list.</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div data-block-id="0f2766d3-2475-4611-84e1-91f0e9ededd1" class="notion-selectable" style="width: 100%; max-width: 100%; margin-top: 1px; margin-bottom: 0px;">
+                        <div style="color: inherit; fill: inherit;">
+                          <div style="display: flex;">
+                            <div contenteditable="false" spellcheck="true" placeholder=" " data-root="true" style="max-width: 100%; width: 100%; white-space: pre-wrap; word-break: break-word; caret-color: rgb(55, 53, 47); padding: 3px 2px; min-height: 1em; color: rgb(55, 53, 47); -webkit-text-fill-color: rgba(55, 53, 47, 0.4);"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div style="position: relative; width: 46px; flex-grow: 0; flex-shrink: 0; transition: opacity 200ms ease-out 0s; opacity: 0;"></div>
+                  <div style="padding-top: 12px; padding-bottom: 12px; flex-grow: 0; flex-shrink: 0; width: calc((100% - 46px) * 0.75);">
+                    <div data-block-id="a49bc941-6633-49c6-b1cc-a2f382cbcfa7" class="notion-selectable" style="display: flex; flex-direction: column;">
+                      <div data-block-id="3da01827-254b-478a-9f12-002bd9d87b97" class="notion-selectable" style="width: 384px; max-width: 100%; align-self: flex-start; margin-top: 2px; margin-bottom: 0px;">
+                        <div>
+                          <div style="display: flex;">
+                            <div class="notion-cursor-default" style="position: relative; overflow: hidden; flex-grow: 1;">
+                              <div style="position: relative;">
+                                <div style="height: 100%; width: 100%;"><img src="public/p4.png" style="display: block; object-fit: cover; border-radius: 1px; width: 100%; pointer-events: auto;"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div data-block-id="f1302ca6-75cd-4afc-9bd9-6b3666b5bd42" class="notion-selectable" style="width: 100%; max-width: calc((100vw - 0px) - 192px); margin-top: 1px; margin-bottom: 1px;">
+                <div style="color: inherit; fill: inherit;">
+                  <div style="display: flex;">
+                    <div contenteditable="false" spellcheck="true" placeholder=" " data-root="true" style="max-width: 100%; width: 100%; white-space: pre-wrap; word-break: break-word; caret-color: rgb(55, 53, 47); padding: 3px 2px;">Here is the code to accomplish this in the larger context. <span style="font-style:italic" data-token-index="1">Note: MA_PERIODS is the variable that determines the periods of the moving averages.</span></div>
+                  </div>
+                </div>
+              </div>
+              <div data-block-id="0f3a44a7-3dff-487c-8c9b-ab9d167a0f1a" class="notion-selectable" style="width: 100%; max-width: calc((100vw - 0px) - 192px); margin-top: 4px; margin-bottom: 4px;">
+                <div style="display: flex;">
+                  <div style="flex-grow: 1; border-radius: 3px; text-align: left; position: relative; background: rgb(247, 246, 243); min-width: 0px; width: 100%;">
+                    <div class="line-numbers notion-code-block" style="display: flex; overflow-x: auto;">
+                      <div contenteditable="false" spellcheck="false" autocorrect="off" autocapitalize="off" data-root="true" style="flex-grow: 1; flex-shrink: 1; text-align: left; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, Courier, monospace; font-size: 85%; tab-size: 2; padding: 30px 16px 30px 20px; min-height: 1em; color: rgb(55, 53, 47); white-space: pre;"><span data-token-index="0">Dictionary </span><span class="token operator" data-token-index="0">=</span><span data-token-index="0"> </span><span class="token builtin" data-token-index="0">dict</span><span class="token punctuation" data-token-index="0">(</span><span class="token punctuation" data-token-index="0">)</span><span data-token-index="0">
+  </span><span class="token keyword" data-token-index="0">for</span><span data-token-index="0"> code </span><span class="token keyword" data-token-index="0">in</span><span data-token-index="0"> all_codes</span><span class="token punctuation" data-token-index="0">.</span><span data-token-index="0">tolist</span><span class="token punctuation" data-token-index="0">(</span><span class="token punctuation" data-token-index="0">)</span><span class="token punctuation" data-token-index="0">:</span><span data-token-index="0">
+      Dictionary</span><span class="token punctuation" data-token-index="0">[</span><span data-token-index="0">code</span><span class="token punctuation" data-token-index="0">[</span><span class="token number" data-token-index="0">0</span><span class="token punctuation" data-token-index="0">]</span><span class="token punctuation" data-token-index="0">]</span><span data-token-index="0"> </span><span class="token operator" data-token-index="0">=</span><span data-token-index="0"> </span><span class="token punctuation" data-token-index="0">[</span><span class="token punctuation" data-token-index="0">]</span><span data-token-index="0">
+  mas </span><span class="token operator" data-token-index="0">=</span><span data-token-index="0"> </span><span class="token punctuation" data-token-index="0">[</span><span class="token punctuation" data-token-index="0">]</span><span data-token-index="0">
+  
+  </span><span class="token comment" data-token-index="0">#iterate thru rows</span><span data-token-index="0">
+  </span><span class="token keyword" data-token-index="0">for</span><span data-token-index="0"> row </span><span class="token keyword" data-token-index="0">in</span><span data-token-index="0"> Comp_Array_with_0s</span><span class="token punctuation" data-token-index="0">:</span><span data-token-index="0">
+      state_of_this_row </span><span class="token operator" data-token-index="0">=</span><span data-token-index="0"> row</span><span class="token punctuation" data-token-index="0">[</span><span data-token-index="0">states_index</span><span class="token punctuation" data-token-index="0">]</span><span data-token-index="0">
+      </span><span class="token keyword" data-token-index="0">if</span><span data-token-index="0"> </span><span class="token keyword" data-token-index="0">not</span><span data-token-index="0"> Dictionary</span><span class="token punctuation" data-token-index="0">.</span><span data-token-index="0">get</span><span class="token punctuation" data-token-index="0">(</span><span data-token-index="0">state_of_this_row</span><span class="token punctuation" data-token-index="0">)</span><span class="token punctuation" data-token-index="0">:</span><span data-token-index="0"> </span><span class="token comment" data-token-index="0">#if list is empty</span><span data-token-index="0">
+          idk </span><span class="token operator" data-token-index="0">=</span><span data-token-index="0"> </span><span class="token punctuation" data-token-index="0">[</span><span class="token punctuation" data-token-index="0">]</span><span data-token-index="0">
+          </span><span class="token keyword" data-token-index="0">if</span><span data-token-index="0"> state_of_this_row </span><span class="token operator" data-token-index="0">==</span><span data-token-index="0"> </span><span class="token string" data-token-index="0">'States'</span><span class="token punctuation" data-token-index="0">:</span><span data-token-index="0">
+  
+              mas</span><span class="token punctuation" data-token-index="0">.</span><span data-token-index="0">append</span><span class="token punctuation" data-token-index="0">(</span><span class="token string" data-token-index="0">'Moving Average'</span><span class="token punctuation" data-token-index="0">)</span><span data-token-index="0">
+          </span><span class="token keyword" data-token-index="0">else</span><span class="token punctuation" data-token-index="0">:</span><span data-token-index="0">
+              idk</span><span class="token punctuation" data-token-index="0">.</span><span data-token-index="0">append</span><span class="token punctuation" data-token-index="0">(</span><span data-token-index="0">row</span><span class="token punctuation" data-token-index="0">[</span><span data-token-index="0">column_index</span><span class="token punctuation" data-token-index="0">]</span><span class="token punctuation" data-token-index="0">)</span><span data-token-index="0">
+              Dictionary</span><span class="token punctuation" data-token-index="0">[</span><span data-token-index="0">state_of_this_row</span><span class="token punctuation" data-token-index="0">]</span><span data-token-index="0"> </span><span class="token operator" data-token-index="0">=</span><span data-token-index="0"> idk
+              mas</span><span class="token punctuation" data-token-index="0">.</span><span data-token-index="0">append</span><span class="token punctuation" data-token-index="0">(</span><span class="token boolean" data-token-index="0">None</span><span class="token punctuation" data-token-index="0">)</span><span data-token-index="0">
+      </span><span class="token keyword" data-token-index="0">elif</span><span data-token-index="0"> </span><span class="token builtin" data-token-index="0">len</span><span class="token punctuation" data-token-index="0">(</span><span data-token-index="0">Dictionary</span><span class="token punctuation" data-token-index="0">.</span><span data-token-index="0">get</span><span class="token punctuation" data-token-index="0">(</span><span data-token-index="0">state_of_this_row</span><span class="token punctuation" data-token-index="0">)</span><span class="token punctuation" data-token-index="0">)</span><span data-token-index="0"> </span><span class="token operator" data-token-index="0">==</span><span data-token-index="0"> MA_PERIODS</span><span class="token punctuation" data-token-index="0">:</span><span data-token-index="0">
+          idk </span><span class="token operator" data-token-index="0">=</span><span data-token-index="0"> Dictionary</span><span class="token punctuation" data-token-index="0">.</span><span data-token-index="0">get</span><span class="token punctuation" data-token-index="0">(</span><span data-token-index="0">state_of_this_row</span><span class="token punctuation" data-token-index="0">)</span><span data-token-index="0">
+          </span><span class="token comment" data-token-index="0"># pop first val into trash</span><span data-token-index="0">
+          trashcan </span><span class="token operator" data-token-index="0">=</span><span data-token-index="0"> idk</span><span class="token punctuation" data-token-index="0">.</span><span data-token-index="0">pop</span><span class="token punctuation" data-token-index="0">(</span><span class="token number" data-token-index="0">0</span><span class="token punctuation" data-token-index="0">)</span><span data-token-index="0">
+          </span><span class="token comment" data-token-index="0"># append with current val</span><span data-token-index="0">
+          idk</span><span class="token punctuation" data-token-index="0">.</span><span data-token-index="0">append</span><span class="token punctuation" data-token-index="0">(</span><span data-token-index="0">row</span><span class="token punctuation" data-token-index="0">[</span><span data-token-index="0">column_index</span><span class="token punctuation" data-token-index="0">]</span><span class="token punctuation" data-token-index="0">)</span><span data-token-index="0">
+          </span><span class="token comment" data-token-index="0"># send back to dict with current list</span><span data-token-index="0">
+          Dictionary</span><span class="token punctuation" data-token-index="0">[</span><span data-token-index="0">state_of_this_row</span><span class="token punctuation" data-token-index="0">]</span><span data-token-index="0"> </span><span class="token operator" data-token-index="0">=</span><span data-token-index="0"> idk
+          </span><span class="token comment" data-token-index="0"># cpt and append moving average</span><span data-token-index="0">
+          ma </span><span class="token operator" data-token-index="0">=</span><span data-token-index="0"> st</span><span class="token punctuation" data-token-index="0">.</span><span data-token-index="0">mean</span><span class="token punctuation" data-token-index="0">(</span><span data-token-index="0">idk</span><span class="token punctuation" data-token-index="0">)</span><span data-token-index="0">
+          mas</span><span class="token punctuation" data-token-index="0">.</span><span data-token-index="0">append</span><span class="token punctuation" data-token-index="0">(</span><span data-token-index="0">ma</span><span class="token punctuation" data-token-index="0">)</span><span data-token-index="0">
+      </span><span class="token keyword" data-token-index="0">else</span><span class="token punctuation" data-token-index="0">:</span><span data-token-index="0"> </span><span class="token comment" data-token-index="0">#if list is less than ma_periods</span><span data-token-index="0">
+          idk </span><span class="token operator" data-token-index="0">=</span><span data-token-index="0"> Dictionary</span><span class="token punctuation" data-token-index="0">.</span><span data-token-index="0">get</span><span class="token punctuation" data-token-index="0">(</span><span data-token-index="0">state_of_this_row</span><span class="token punctuation" data-token-index="0">)</span><span data-token-index="0">
+  
+          idk</span><span class="token punctuation" data-token-index="0">.</span><span data-token-index="0">append</span><span class="token punctuation" data-token-index="0">(</span><span data-token-index="0">row</span><span class="token punctuation" data-token-index="0">[</span><span data-token-index="0">column_index</span><span class="token punctuation" data-token-index="0">]</span><span class="token punctuation" data-token-index="0">)</span><span data-token-index="0">
+          Dictionary</span><span class="token punctuation" data-token-index="0">[</span><span data-token-index="0">state_of_this_row</span><span class="token punctuation" data-token-index="0">]</span><span data-token-index="0"> </span><span class="token operator" data-token-index="0">=</span><span data-token-index="0"> idk
+          mas</span><span class="token punctuation" data-token-index="0">.</span><span data-token-index="0">append</span><span class="token punctuation" data-token-index="0">(</span><span class="token boolean" data-token-index="0">None</span><span class="token punctuation" data-token-index="0">)</span><span data-token-index="0">
+  
+  mas </span><span class="token operator" data-token-index="0">=</span><span data-token-index="0"> np</span><span class="token punctuation" data-token-index="0">.</span><span data-token-index="0">array</span><span class="token punctuation" data-token-index="0">(</span><span data-token-index="0">mas</span><span class="token punctuation" data-token-index="0">)</span><span class="token punctuation" data-token-index="0">.</span><span data-token-index="0">reshape</span><span class="token punctuation" data-token-index="0">(</span><span class="token operator" data-token-index="0">-</span><span class="token number" data-token-index="0">1</span><span class="token punctuation" data-token-index="0">,</span><span class="token number" data-token-index="0">1</span><span class="token punctuation" data-token-index="0">)</span><span data-token-index="0">
+  
+  </span><span class="token keyword" data-token-index="0">print</span><span class="token punctuation" data-token-index="0">(</span><span data-token-index="0">mas</span><span class="token punctuation" data-token-index="0">.</span><span data-token-index="0">ndim</span><span class="token punctuation" data-token-index="0">)</span><span data-token-index="0">
+  </span><span class="token keyword" data-token-index="0">print</span><span class="token punctuation" data-token-index="0">(</span><span data-token-index="0">Comp_Array_with_0s</span><span class="token punctuation" data-token-index="0">.</span><span data-token-index="0">ndim</span><span class="token punctuation" data-token-index="0">)</span><span data-token-index="0">
+  Array_w_mas </span><span class="token operator" data-token-index="0">=</span><span data-token-index="0"> np</span><span class="token punctuation" data-token-index="0">.</span><span data-token-index="0">hstack</span><span class="token punctuation" data-token-index="0">(</span><span class="token punctuation" data-token-index="0">(</span><span data-token-index="0">Comp_Array_with_0s</span><span class="token punctuation" data-token-index="0">,</span><span data-token-index="0"> mas</span><span class="token punctuation" data-token-index="0">)</span><span class="token punctuation" data-token-index="0">)</span><span data-token-index="0">
+  Array_w_mas </span><span class="token operator" data-token-index="0">=</span><span data-token-index="0"> Array_w_mas</span><span class="token punctuation" data-token-index="0">[</span><span class="token operator" data-token-index="0">~</span><span data-token-index="0">pd</span><span class="token punctuation" data-token-index="0">.</span><span data-token-index="0">isnull</span><span class="token punctuation" data-token-index="0">(</span><span data-token-index="0">Array_w_mas</span><span class="token punctuation" data-token-index="0">)</span><span class="token punctuation" data-token-index="0">.</span><span class="token builtin" data-token-index="0">any</span><span class="token punctuation" data-token-index="0">(</span><span data-token-index="0">axis</span><span class="token operator" data-token-index="0">=</span><span class="token number" data-token-index="0">1</span><span class="token punctuation" data-token-index="0">)</span><span class="token punctuation" data-token-index="0">]</span><span data-token-index="0">
+  np</span><span class="token punctuation" data-token-index="0">.</span><span data-token-index="0">savetxt</span><span class="token punctuation" data-token-index="0">(</span><span class="token string" data-token-index="0">'Array_w_mas.csv'</span><span class="token punctuation" data-token-index="0">,</span><span data-token-index="0"> Array_w_mas</span><span class="token punctuation" data-token-index="0">.</span><span data-token-index="0">astype</span><span class="token punctuation" data-token-index="0">(</span><span data-token-index="0">np</span><span class="token punctuation" data-token-index="0">.</span><span class="token builtin" data-token-index="0">str</span><span class="token punctuation" data-token-index="0">)</span><span class="token punctuation" data-token-index="0">,</span><span data-token-index="0"> fmt</span><span class="token operator" data-token-index="0">=</span><span class="token string" data-token-index="0">'%s'</span><span class="token punctuation" data-token-index="0">,</span><span data-token-index="0"> delimiter</span><span class="token operator" data-token-index="0">=</span><span class="token string" data-token-index="0">","</span><span class="token punctuation" data-token-index="0">)</span><span data-token-index="0">
+  </span><span>
+  </span></div>
+                    </div>
+                    <div style="position: absolute; top: 0px; right: 0px; color: rgba(55, 53, 47, 0.6); display: flex; align-items: center; justify-content: flex-end; height: 30px;"></div>
+                    <div style="position: absolute; bottom: 0px; right: 0px; color: rgba(55, 53, 47, 0.6); display: flex; align-items: center; justify-content: flex-end; height: 30px;">
+                      <div role="button" aria-disabled="true" style="user-select: none; transition: background 120ms ease-in 0s; display: inline-flex; align-items: center; white-space: nowrap; height: 20px; border-radius: 3px; font-size: 12px; line-height: 1.2; padding-left: 5px; padding-right: 5px; color: rgba(55, 53, 47, 0.6); margin-right: 5px;">Python
+                        <svg viewBox="0 0 30 30" class="chevronDown" style="width: 10px; height: 100%; display: block; fill: rgba(55, 53, 47, 0.3); flex-shrink: 0; backface-visibility: hidden; margin-left: 4px;">
+                          <polygon points="15,17.4 4.8,7 2,9.8 15,23 28,9.8 25.2,7 "></polygon>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div data-block-id="9661f5e7-93bf-4e37-98f0-7249b4e453dd" class="notion-selectable" style="width: 100%; max-width: calc((100vw - 0px) - 192px); margin-top: 1px; margin-bottom: 1px;">
+                <div style="color: inherit; fill: inherit;">
+                  <div style="display: flex;">
+                    <div contenteditable="false" spellcheck="true" placeholder=" " data-root="true" style="max-width: 100%; width: 100%; white-space: pre-wrap; word-break: break-word; caret-color: rgb(55, 53, 47); padding: 3px 2px;">It is also prudent to reference each value against the popultion of the state, to account for scale and circulation. We can load in state populations to reference against the moving averages here:</div>
+                  </div>
+                </div>
+              </div>
+              <div data-block-id="c12b2246-b6b0-40bd-b61c-0fb6c6c8ae2c" class="notion-selectable" style="width: 100%; max-width: calc((100vw - 0px) - 192px); margin-top: 4px; margin-bottom: 4px;">
+                <div style="display: flex;">
+                  <div style="flex-grow: 1; border-radius: 3px; text-align: left; position: relative; background: rgb(247, 246, 243); min-width: 0px; width: 100%;">
+                    <div class="line-numbers notion-code-block" style="display: flex; overflow-x: auto;">
+                      <div contenteditable="false" spellcheck="false" autocorrect="off" autocapitalize="off" data-root="true" style="flex-grow: 1; flex-shrink: 1; text-align: left; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, Courier, monospace; font-size: 85%; tab-size: 2; padding: 30px 16px 30px 20px; min-height: 1em; color: rgb(55, 53, 47); white-space: pre;"><span data-token-index="0">population </span><span class="token operator" data-token-index="0">=</span><span data-token-index="0"> readcsv</span><span class="token punctuation" data-token-index="0">(</span><span class="token string" data-token-index="0">'population.csv'</span><span class="token punctuation" data-token-index="0">)</span><span data-token-index="0">
+  popdict </span><span class="token operator" data-token-index="0">=</span><span data-token-index="0"> </span><span class="token builtin" data-token-index="0">dict</span><span class="token punctuation" data-token-index="0">(</span><span class="token punctuation" data-token-index="0">)</span><span data-token-index="0">
+  
+  </span><span class="token keyword" data-token-index="0">for</span><span data-token-index="0"> row </span><span class="token keyword" data-token-index="0">in</span><span data-token-index="0"> population</span><span class="token punctuation" data-token-index="0">:</span><span data-token-index="0">
+      popdict</span><span class="token punctuation" data-token-index="0">[</span><span data-token-index="0">row</span><span class="token punctuation" data-token-index="0">[</span><span class="token number" data-token-index="0">0</span><span class="token punctuation" data-token-index="0">]</span><span class="token punctuation" data-token-index="0">]</span><span data-token-index="0"> </span><span class="token operator" data-token-index="0">=</span><span data-token-index="0"> row</span><span class="token punctuation" data-token-index="0">[</span><span class="token number" data-token-index="0">1</span><span class="token punctuation" data-token-index="0">]</span><span data-token-index="0">
+  
+  headers </span><span class="token operator" data-token-index="0">=</span><span data-token-index="0"> pd</span><span class="token punctuation" data-token-index="0">.</span><span data-token-index="0">read_csv</span><span class="token punctuation" data-token-index="0">(</span><span class="token string" data-token-index="0">'Array_w_mas.csv'</span><span class="token punctuation" data-token-index="0">)</span><span class="token punctuation" data-token-index="0">.</span><span data-token-index="0">columns
+  ma_index </span><span class="token operator" data-token-index="0">=</span><span data-token-index="0"> </span><span class="token builtin" data-token-index="0">list</span><span class="token punctuation" data-token-index="0">(</span><span data-token-index="0">headers</span><span class="token punctuation" data-token-index="0">)</span><span class="token punctuation" data-token-index="0">.</span><span data-token-index="0">index</span><span class="token punctuation" data-token-index="0">(</span><span class="token string" data-token-index="0">'Moving Average'</span><span class="token punctuation" data-token-index="0">)</span><span data-token-index="0">
+  
+  new_ratio_column </span><span class="token operator" data-token-index="0">=</span><span data-token-index="0"> </span><span class="token punctuation" data-token-index="0">[</span><span class="token string" data-token-index="0">'Moving Average : Population'</span><span class="token punctuation" data-token-index="0">]</span><span data-token-index="0">
+  </span><span class="token keyword" data-token-index="0">for</span><span data-token-index="0"> row </span><span class="token keyword" data-token-index="0">in</span><span data-token-index="0"> Array_w_mas</span><span class="token punctuation" data-token-index="0">:</span><span data-token-index="0">
+      </span><span class="token keyword" data-token-index="0">if</span><span data-token-index="0"> row</span><span class="token punctuation" data-token-index="0">[</span><span data-token-index="0">states_index</span><span class="token punctuation" data-token-index="0">]</span><span data-token-index="0"> </span><span class="token operator" data-token-index="0">!=</span><span data-token-index="0"> </span><span class="token string" data-token-index="0">'States'</span><span class="token punctuation" data-token-index="0">:</span><span data-token-index="0">
+          </span><span class="token keyword" data-token-index="0">if</span><span data-token-index="0"> popdict</span><span class="token punctuation" data-token-index="0">[</span><span data-token-index="0">row</span><span class="token punctuation" data-token-index="0">[</span><span data-token-index="0">states_index</span><span class="token punctuation" data-token-index="0">]</span><span class="token punctuation" data-token-index="0">]</span><span data-token-index="0"> </span><span class="token operator" data-token-index="0">!=</span><span data-token-index="0"> </span><span class="token number" data-token-index="0">0</span><span class="token punctuation" data-token-index="0">:</span><span data-token-index="0">
+              new_ratio_column</span><span class="token punctuation" data-token-index="0">.</span><span data-token-index="0">append</span><span class="token punctuation" data-token-index="0">(</span><span data-token-index="0">row</span><span class="token punctuation" data-token-index="0">[</span><span data-token-index="0">ma_index</span><span class="token punctuation" data-token-index="0">]</span><span data-token-index="0"> </span><span class="token operator" data-token-index="0">/</span><span data-token-index="0"> popdict</span><span class="token punctuation" data-token-index="0">[</span><span data-token-index="0">row</span><span class="token punctuation" data-token-index="0">[</span><span data-token-index="0">states_index</span><span class="token punctuation" data-token-index="0">]</span><span class="token punctuation" data-token-index="0">]</span><span class="token punctuation" data-token-index="0">)</span><span data-token-index="0">
+          </span><span class="token keyword" data-token-index="0">else</span><span class="token punctuation" data-token-index="0">:</span><span data-token-index="0">
+              new_ratio_column</span><span class="token punctuation" data-token-index="0">.</span><span data-token-index="0">append</span><span class="token punctuation" data-token-index="0">(</span><span class="token number" data-token-index="0">0</span><span class="token punctuation" data-token-index="0">)</span><span data-token-index="0">
+  
+  new_ratio_column </span><span class="token operator" data-token-index="0">=</span><span data-token-index="0"> np</span><span class="token punctuation" data-token-index="0">.</span><span data-token-index="0">array</span><span class="token punctuation" data-token-index="0">(</span><span data-token-index="0">new_ratio_column</span><span class="token punctuation" data-token-index="0">)</span><span class="token punctuation" data-token-index="0">.</span><span data-token-index="0">reshape</span><span class="token punctuation" data-token-index="0">(</span><span class="token operator" data-token-index="0">-</span><span class="token number" data-token-index="0">1</span><span class="token punctuation" data-token-index="0">,</span><span class="token number" data-token-index="0">1</span><span class="token punctuation" data-token-index="0">)</span><span data-token-index="0">
+  
+  Array_w_mas </span><span class="token operator" data-token-index="0">=</span><span data-token-index="0"> np</span><span class="token punctuation" data-token-index="0">.</span><span data-token-index="0">hstack</span><span class="token punctuation" data-token-index="0">(</span><span class="token punctuation" data-token-index="0">(</span><span data-token-index="0">Array_w_mas</span><span class="token punctuation" data-token-index="0">,</span><span data-token-index="0"> new_ratio_column</span><span class="token punctuation" data-token-index="0">)</span><span class="token punctuation" data-token-index="0">)</span><span data-token-index="0">
+  np</span><span class="token punctuation" data-token-index="0">.</span><span data-token-index="0">savetxt</span><span class="token punctuation" data-token-index="0">(</span><span class="token string" data-token-index="0">'Array_w_mas.csv'</span><span class="token punctuation" data-token-index="0">,</span><span data-token-index="0"> Array_w_mas</span><span class="token punctuation" data-token-index="0">.</span><span data-token-index="0">astype</span><span class="token punctuation" data-token-index="0">(</span><span data-token-index="0">np</span><span class="token punctuation" data-token-index="0">.</span><span class="token builtin" data-token-index="0">str</span><span class="token punctuation" data-token-index="0">)</span><span class="token punctuation" data-token-index="0">,</span><span data-token-index="0"> fmt</span><span class="token operator" data-token-index="0">=</span><span class="token string" data-token-index="0">'%s'</span><span class="token punctuation" data-token-index="0">,</span><span data-token-index="0"> delimiter</span><span class="token operator" data-token-index="0">=</span><span class="token string" data-token-index="0">","</span><span class="token punctuation" data-token-index="0">)</span><span>
+  </span></div>
+                    </div>
+                    <div style="position: absolute; top: 0px; right: 0px; color: rgba(55, 53, 47, 0.6); display: flex; align-items: center; justify-content: flex-end; height: 30px;"></div>
+                    <div style="position: absolute; bottom: 0px; right: 0px; color: rgba(55, 53, 47, 0.6); display: flex; align-items: center; justify-content: flex-end; height: 30px;">
+                      <div role="button" aria-disabled="true" style="user-select: none; transition: background 120ms ease-in 0s; display: inline-flex; align-items: center; white-space: nowrap; height: 20px; border-radius: 3px; font-size: 12px; line-height: 1.2; padding-left: 5px; padding-right: 5px; color: rgba(55, 53, 47, 0.6); margin-right: 5px;">Python
+                        <svg viewBox="0 0 30 30" class="chevronDown" style="width: 10px; height: 100%; display: block; fill: rgba(55, 53, 47, 0.3); flex-shrink: 0; backface-visibility: hidden; margin-left: 4px;">
+                          <polygon points="15,17.4 4.8,7 2,9.8 15,23 28,9.8 25.2,7 "></polygon>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div data-block-id="6b5ff081-c208-432a-b923-c55514dfa3c2" class="notion-selectable" style="width: 100%; max-width: calc((100vw - 0px) - 192px); margin-top: 1px; margin-bottom: 1px;">
+                <div style="color: inherit; fill: inherit;">
+                  <div style="display: flex;">
+                    <div contenteditable="false" spellcheck="true" placeholder=" " data-root="true" style="max-width: 100%; width: 100%; white-space: pre-wrap; word-break: break-word; caret-color: rgb(55, 53, 47); padding: 3px 2px;">Perfect. Now we have a comprehensive and normalized datatable with a column for moving averages, and a column comparing the moving averages to each state's population.</div>
+                  </div>
+                </div>
+              </div>
+              <div data-block-id="6521b582-bc79-4506-9eb3-4f3252f1d44a" class="notion-selectable" style="width: 100%; max-width: calc((100vw - 0px) - 192px); margin-top: 1px; margin-bottom: 1px;">
+                <div style="color: inherit; fill: inherit;">
+                  <div style="display: flex;">
+                    <div contenteditable="false" spellcheck="true" placeholder=" " data-root="true" style="max-width: 100%; width: 100%; white-space: pre-wrap; word-break: break-word; caret-color: rgb(55, 53, 47); padding: 3px 2px;">Now we can populate files in the directory we are working from to be referenced while making the frames of the animation – each day will get it's own file, and its own frame.</div>
+                  </div>
+                </div>
+              </div>
+              <div data-block-id="0154dd12-3a3c-4536-b557-356fe3393756" class="notion-selectable" style="width: 100%; max-width: calc((100vw - 0px) - 192px); margin-top: 4px; margin-bottom: 4px;">
+                <div style="display: flex;">
+                  <div style="flex-grow: 1; border-radius: 3px; text-align: left; position: relative; background: rgb(247, 246, 243); min-width: 0px; width: 100%;">
+                    <div class="line-numbers notion-code-block" style="display: flex; overflow-x: auto;">
+                      <div contenteditable="false" spellcheck="false" autocorrect="off" autocapitalize="off" data-root="true" style="flex-grow: 1; flex-shrink: 1; text-align: left; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, Courier, monospace; font-size: 85%; tab-size: 2; padding: 30px 16px 30px 20px; min-height: 1em; color: rgb(55, 53, 47); white-space: pre;"><span data-token-index="0">headers </span><span class="token operator" data-token-index="0">=</span><span data-token-index="0"> pd</span><span class="token punctuation" data-token-index="0">.</span><span data-token-index="0">read_csv</span><span class="token punctuation" data-token-index="0">(</span><span class="token string" data-token-index="0">'Array_w_mas.csv'</span><span class="token punctuation" data-token-index="0">)</span><span class="token punctuation" data-token-index="0">.</span><span data-token-index="0">columns
+  files </span><span class="token operator" data-token-index="0">=</span><span data-token-index="0"> </span><span class="token punctuation" data-token-index="0">[</span><span class="token punctuation" data-token-index="0">]</span><span data-token-index="0">
+  </span><span class="token keyword" data-token-index="0">for</span><span data-token-index="0"> date </span><span class="token keyword" data-token-index="0">in</span><span data-token-index="0"> dates_lst</span><span class="token punctuation" data-token-index="0">:</span><span data-token-index="0">
+          indices </span><span class="token operator" data-token-index="0">=</span><span data-token-index="0"> np</span><span class="token punctuation" data-token-index="0">.</span><span data-token-index="0">where</span><span class="token punctuation" data-token-index="0">(</span><span class="token punctuation" data-token-index="0">(</span><span data-token-index="0">Array_w_mas</span><span class="token punctuation" data-token-index="0">[</span><span class="token punctuation" data-token-index="0">:</span><span class="token punctuation" data-token-index="0">,</span><span data-token-index="0"> </span><span class="token number" data-token-index="0">0</span><span class="token punctuation" data-token-index="0">]</span><span data-token-index="0"> </span><span class="token operator" data-token-index="0">==</span><span data-token-index="0"> date</span><span class="token punctuation" data-token-index="0">)</span><span class="token punctuation" data-token-index="0">)</span><span data-token-index="0">
+          datedList </span><span class="token operator" data-token-index="0">=</span><span data-token-index="0"> Array_w_mas</span><span class="token punctuation" data-token-index="0">[</span><span data-token-index="0">indices</span><span class="token punctuation" data-token-index="0">]</span><span data-token-index="0">
+  
+          headers </span><span class="token operator" data-token-index="0">=</span><span data-token-index="0"> np</span><span class="token punctuation" data-token-index="0">.</span><span data-token-index="0">array</span><span class="token punctuation" data-token-index="0">(</span><span data-token-index="0">headers</span><span class="token punctuation" data-token-index="0">)</span><span data-token-index="0">
+          </span><span class="token keyword" data-token-index="0">if</span><span data-token-index="0"> datedList</span><span class="token punctuation" data-token-index="0">.</span><span data-token-index="0">size </span><span class="token operator" data-token-index="0">!=</span><span data-token-index="0"> </span><span class="token number" data-token-index="0">0</span><span class="token punctuation" data-token-index="0">:</span><span data-token-index="0">
+  
+                  active_codes </span><span class="token operator" data-token-index="0">=</span><span data-token-index="0"> datedList</span><span class="token punctuation" data-token-index="0">[</span><span class="token punctuation" data-token-index="0">:</span><span class="token punctuation" data-token-index="0">,</span><span data-token-index="0"> states_index</span><span class="token punctuation" data-token-index="0">]</span><span data-token-index="0">
+                  difference </span><span class="token operator" data-token-index="0">=</span><span data-token-index="0"> np</span><span class="token punctuation" data-token-index="0">.</span><span data-token-index="0">setdiff1d</span><span class="token punctuation" data-token-index="0">(</span><span data-token-index="0">all_codes</span><span class="token punctuation" data-token-index="0">,</span><span data-token-index="0"> active_codes</span><span class="token punctuation" data-token-index="0">)</span><span data-token-index="0">
+  
+                  array_with_correct_dimensions </span><span class="token operator" data-token-index="0">=</span><span data-token-index="0"> np</span><span class="token punctuation" data-token-index="0">.</span><span data-token-index="0">full</span><span class="token punctuation" data-token-index="0">(</span><span class="token punctuation" data-token-index="0">(</span><span data-token-index="0">difference</span><span class="token punctuation" data-token-index="0">.</span><span data-token-index="0">size</span><span class="token punctuation" data-token-index="0">,</span><span data-token-index="0"> </span><span class="token number" data-token-index="0">9</span><span class="token punctuation" data-token-index="0">)</span><span class="token punctuation" data-token-index="0">,</span><span data-token-index="0"> </span><span class="token number" data-token-index="0">.00001</span><span class="token punctuation" data-token-index="0">,</span><span data-token-index="0"> dtype</span><span class="token operator" data-token-index="0">=</span><span data-token-index="0">np</span><span class="token punctuation" data-token-index="0">.</span><span data-token-index="0">float32</span><span class="token punctuation" data-token-index="0">)</span><span class="token punctuation" data-token-index="0">.</span><span data-token-index="0">astype</span><span class="token punctuation" data-token-index="0">(</span><span class="token builtin" data-token-index="0">str</span><span class="token punctuation" data-token-index="0">)</span><span data-token-index="0">
+                  </span><span class="token keyword" data-token-index="0">for</span><span data-token-index="0"> i </span><span class="token keyword" data-token-index="0">in</span><span data-token-index="0"> </span><span class="token builtin" data-token-index="0">range</span><span class="token punctuation" data-token-index="0">(</span><span class="token number" data-token-index="0">0</span><span class="token punctuation" data-token-index="0">,</span><span data-token-index="0"> difference</span><span class="token punctuation" data-token-index="0">.</span><span data-token-index="0">size</span><span class="token operator" data-token-index="0">-</span><span class="token number" data-token-index="0">1</span><span class="token punctuation" data-token-index="0">)</span><span class="token punctuation" data-token-index="0">:</span><span data-token-index="0">
+                      array_with_correct_dimensions</span><span class="token punctuation" data-token-index="0">[</span><span data-token-index="0">i</span><span class="token punctuation" data-token-index="0">,</span><span class="token number" data-token-index="0">1</span><span class="token punctuation" data-token-index="0">]</span><span data-token-index="0"> </span><span class="token operator" data-token-index="0">=</span><span data-token-index="0"> difference</span><span class="token punctuation" data-token-index="0">[</span><span data-token-index="0">i</span><span class="token punctuation" data-token-index="0">]</span><span data-token-index="0">
+                  </span><span class="token keyword" data-token-index="0">for</span><span data-token-index="0"> i </span><span class="token keyword" data-token-index="0">in</span><span data-token-index="0"> </span><span class="token builtin" data-token-index="0">range</span><span class="token punctuation" data-token-index="0">(</span><span class="token number" data-token-index="0">0</span><span class="token punctuation" data-token-index="0">,</span><span data-token-index="0"> difference</span><span class="token punctuation" data-token-index="0">.</span><span data-token-index="0">size</span><span class="token punctuation" data-token-index="0">)</span><span class="token punctuation" data-token-index="0">:</span><span data-token-index="0">
+                      array_with_correct_dimensions</span><span class="token punctuation" data-token-index="0">[</span><span data-token-index="0">i</span><span class="token punctuation" data-token-index="0">,</span><span data-token-index="0"> </span><span class="token number" data-token-index="0">0</span><span class="token punctuation" data-token-index="0">]</span><span data-token-index="0"> </span><span class="token operator" data-token-index="0">=</span><span data-token-index="0"> datedList</span><span class="token punctuation" data-token-index="0">[</span><span class="token number" data-token-index="0">0</span><span class="token punctuation" data-token-index="0">,</span><span data-token-index="0"> </span><span class="token number" data-token-index="0">0</span><span class="token punctuation" data-token-index="0">]</span><span data-token-index="0">
+                  array_with_correct_dimensions</span><span class="token punctuation" data-token-index="0">[</span><span class="token punctuation" data-token-index="0">:</span><span class="token punctuation" data-token-index="0">,</span><span data-token-index="0"> </span><span class="token number" data-token-index="0">1</span><span class="token punctuation" data-token-index="0">]</span><span data-token-index="0"> </span><span class="token operator" data-token-index="0">=</span><span data-token-index="0"> difference  </span><span class="token comment" data-token-index="0"># this might not work ##Edit: It worked</span><span data-token-index="0">
+                  datedList </span><span class="token operator" data-token-index="0">=</span><span data-token-index="0"> np</span><span class="token punctuation" data-token-index="0">.</span><span data-token-index="0">vstack</span><span class="token punctuation" data-token-index="0">(</span><span class="token punctuation" data-token-index="0">(</span><span data-token-index="0">datedList</span><span class="token punctuation" data-token-index="0">,</span><span data-token-index="0"> array_with_correct_dimensions</span><span class="token punctuation" data-token-index="0">)</span><span class="token punctuation" data-token-index="0">)</span><span data-token-index="0">
+  
+                  datedList </span><span class="token operator" data-token-index="0">=</span><span data-token-index="0"> np</span><span class="token punctuation" data-token-index="0">.</span><span data-token-index="0">vstack</span><span class="token punctuation" data-token-index="0">(</span><span data-token-index="0"> </span><span class="token punctuation" data-token-index="0">(</span><span data-token-index="0">headers</span><span class="token punctuation" data-token-index="0">,</span><span data-token-index="0"> datedList</span><span class="token punctuation" data-token-index="0">)</span><span data-token-index="0"> </span><span class="token punctuation" data-token-index="0">)</span><span data-token-index="0">
+                  filename </span><span class="token operator" data-token-index="0">=</span><span data-token-index="0"> </span><span class="token builtin" data-token-index="0">str</span><span class="token punctuation" data-token-index="0">(</span><span data-token-index="0">date</span><span class="token punctuation" data-token-index="0">)</span><span data-token-index="0"> </span><span class="token operator" data-token-index="0">+</span><span data-token-index="0"> </span><span class="token string" data-token-index="0">".csv"</span><span data-token-index="0">
+                  filename </span><span class="token operator" data-token-index="0">=</span><span data-token-index="0"> filename</span><span class="token punctuation" data-token-index="0">.</span><span data-token-index="0">replace</span><span class="token punctuation" data-token-index="0">(</span><span class="token string" data-token-index="0">","</span><span class="token punctuation" data-token-index="0">,</span><span class="token string" data-token-index="0">""</span><span class="token punctuation" data-token-index="0">)</span><span data-token-index="0">
+                  files</span><span class="token punctuation" data-token-index="0">.</span><span data-token-index="0">append</span><span class="token punctuation" data-token-index="0">(</span><span data-token-index="0">filename</span><span class="token punctuation" data-token-index="0">)</span><span data-token-index="0">
+                  np</span><span class="token punctuation" data-token-index="0">.</span><span data-token-index="0">savetxt</span><span class="token punctuation" data-token-index="0">(</span><span data-token-index="0">filename</span><span class="token punctuation" data-token-index="0">,</span><span data-token-index="0"> datedList</span><span class="token punctuation" data-token-index="0">.</span><span data-token-index="0">astype</span><span class="token punctuation" data-token-index="0">(</span><span data-token-index="0">np</span><span class="token punctuation" data-token-index="0">.</span><span class="token builtin" data-token-index="0">str</span><span class="token punctuation" data-token-index="0">)</span><span class="token punctuation" data-token-index="0">,</span><span data-token-index="0"> fmt</span><span class="token operator" data-token-index="0">=</span><span class="token string" data-token-index="0">'%s'</span><span class="token punctuation" data-token-index="0">,</span><span data-token-index="0"> delimiter</span><span class="token operator" data-token-index="0">=</span><span class="token string" data-token-index="0">","</span><span class="token punctuation" data-token-index="0">)</span><span>
+  </span></div>
+                    </div>
+                    <div style="position: absolute; top: 0px; right: 0px; color: rgba(55, 53, 47, 0.6); display: flex; align-items: center; justify-content: flex-end; height: 30px;"></div>
+                    <div style="position: absolute; bottom: 0px; right: 0px; color: rgba(55, 53, 47, 0.6); display: flex; align-items: center; justify-content: flex-end; height: 30px;">
+                      <div role="button" aria-disabled="true" style="user-select: none; transition: background 120ms ease-in 0s; display: inline-flex; align-items: center; white-space: nowrap; height: 20px; border-radius: 3px; font-size: 12px; line-height: 1.2; padding-left: 5px; padding-right: 5px; color: rgba(55, 53, 47, 0.6); margin-right: 5px;">Python
+                        <svg viewBox="0 0 30 30" class="chevronDown" style="width: 10px; height: 100%; display: block; fill: rgba(55, 53, 47, 0.3); flex-shrink: 0; backface-visibility: hidden; margin-left: 4px;">
+                          <polygon points="15,17.4 4.8,7 2,9.8 15,23 28,9.8 25.2,7 "></polygon>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div data-block-id="e38da3ac-ed61-4524-9e30-56a81e54cbdb" class="notion-selectable" style="width: 100%; max-width: calc((100vw - 0px) - 192px); margin-top: 1px; margin-bottom: 1px;">
+                <div style="color: inherit; fill: inherit;">
+                  <div style="display: flex;">
+                    <div contenteditable="false" spellcheck="true" placeholder=" " data-root="true" style="max-width: 100%; width: 100%; white-space: pre-wrap; word-break: break-word; caret-color: rgb(55, 53, 47); padding: 3px 2px;">Now all of the information is perfectly formatted to create the choropleths. We can prompt the user for details about the chart specs, and use their answers as variables in the code.</div>
+                  </div>
+                </div>
+              </div>
+              <div data-block-id="73040e1a-9289-47df-b14f-ce161630a5b9" class="notion-selectable" style="width: 100%; max-width: calc((100vw - 0px) - 192px); margin-top: 4px; margin-bottom: 4px;">
+                <div style="display: flex;">
+                  <div style="flex-grow: 1; border-radius: 3px; text-align: left; position: relative; background: rgb(247, 246, 243); min-width: 0px; width: 100%;">
+                    <div class="line-numbers notion-code-block" style="display: flex; overflow-x: auto;">
+                      <div contenteditable="false" spellcheck="false" autocorrect="off" autocapitalize="off" data-root="true" style="flex-grow: 1; flex-shrink: 1; text-align: left; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, Courier, monospace; font-size: 85%; tab-size: 2; padding: 30px 16px 30px 20px; min-height: 1em; color: rgb(55, 53, 47); white-space: pre;"><span class="token keyword" data-token-index="0">print</span><span class="token punctuation" data-token-index="0">(</span><span class="token string" data-token-index="0">"AVAILABLE DATA:"</span><span class="token punctuation" data-token-index="0">,</span><span data-token-index="0">headers</span><span class="token punctuation" data-token-index="0">.</span><span data-token-index="0">values</span><span class="token punctuation" data-token-index="0">)</span><span data-token-index="0">
+  values </span><span class="token operator" data-token-index="0">=</span><span data-token-index="0"> </span><span class="token builtin" data-token-index="0">input</span><span class="token punctuation" data-token-index="0">(</span><span class="token string" data-token-index="0">"Enter the measure to be charted choroplethically: "</span><span class="token punctuation" data-token-index="0">)</span><span data-token-index="0">
+  </span><span class="token keyword" data-token-index="0">if</span><span data-token-index="0"> values </span><span class="token operator" data-token-index="0">==</span><span data-token-index="0"> </span><span class="token string" data-token-index="0">""</span><span class="token punctuation" data-token-index="0">:</span><span data-token-index="0">
+      values </span><span class="token operator" data-token-index="0">=</span><span data-token-index="0"> </span><span class="token string" data-token-index="0">'Units'</span><span data-token-index="0">
+  
+  color </span><span class="token operator" data-token-index="0">=</span><span data-token-index="0"> </span><span class="token builtin" data-token-index="0">input</span><span class="token punctuation" data-token-index="0">(</span><span class="token string" data-token-index="0">"Select colorscheme: (blue, red, darkred, bluered, tritonal, cuartonal): "</span><span class="token punctuation" data-token-index="0">)</span><span data-token-index="0">
+  </span><span class="token keyword" data-token-index="0">if</span><span data-token-index="0"> color </span><span class="token operator" data-token-index="0">==</span><span data-token-index="0"> </span><span class="token string" data-token-index="0">""</span><span class="token punctuation" data-token-index="0">:</span><span data-token-index="0">
+      color </span><span class="token operator" data-token-index="0">=</span><span data-token-index="0"> </span><span class="token string" data-token-index="0">'red'</span><span data-token-index="0">
+  MA_PERIODS </span><span class="token operator" data-token-index="0">=</span><span data-token-index="0"> </span><span class="token builtin" data-token-index="0">input</span><span class="token punctuation" data-token-index="0">(</span><span class="token string" data-token-index="0">"Enter num periods for which to compute moving averages: "</span><span class="token punctuation" data-token-index="0">)</span><span data-token-index="0">
+  </span><span class="token keyword" data-token-index="0">if</span><span data-token-index="0"> MA_PERIODS </span><span class="token operator" data-token-index="0">==</span><span data-token-index="0"> </span><span class="token string" data-token-index="0">""</span><span class="token punctuation" data-token-index="0">:</span><span data-token-index="0">
+      MA_PERIODS </span><span class="token operator" data-token-index="0">=</span><span data-token-index="0"> </span><span class="token number" data-token-index="0">14</span><span data-token-index="0">
+  </span><span class="token keyword" data-token-index="0">else</span><span class="token punctuation" data-token-index="0">:</span><span data-token-index="0">
+      MA_PERIODS </span><span class="token operator" data-token-index="0">=</span><span data-token-index="0"> </span><span class="token builtin" data-token-index="0">int</span><span class="token punctuation" data-token-index="0">(</span><span data-token-index="0">MA_PERIODS</span><span class="token punctuation" data-token-index="0">)</span><span data-token-index="0">
+  daily_scale </span><span class="token operator" data-token-index="0">=</span><span data-token-index="0"> </span><span class="token builtin" data-token-index="0">input</span><span class="token punctuation" data-token-index="0">(</span><span class="token string" data-token-index="0">"Daily scale? (y/n): "</span><span class="token punctuation" data-token-index="0">)</span><span data-token-index="0">
+  
+  chart_type </span><span class="token operator" data-token-index="0">=</span><span data-token-index="0"> </span><span class="token builtin" data-token-index="0">input</span><span class="token punctuation" data-token-index="0">(</span><span class="token string" data-token-index="0">"Enter chart type (ma or ma po): "</span><span class="token punctuation" data-token-index="0">)</span><span data-token-index="0">
+  </span><span class="token keyword" data-token-index="0">if</span><span data-token-index="0"> chart_type </span><span class="token operator" data-token-index="0">==</span><span data-token-index="0"> </span><span class="token string" data-token-index="0">""</span><span class="token punctuation" data-token-index="0">:</span><span data-token-index="0">
+      chart_type </span><span class="token operator" data-token-index="0">=</span><span data-token-index="0"> </span><span class="token string" data-token-index="0">'ma po'</span><span data-token-index="0">
+  </span><span class="token keyword" data-token-index="0">while</span><span data-token-index="0"> chart_type </span><span class="token operator" data-token-index="0">!=</span><span data-token-index="0"> </span><span class="token string" data-token-index="0">'ma'</span><span data-token-index="0"> </span><span class="token keyword" data-token-index="0">and</span><span data-token-index="0"> chart_type </span><span class="token operator" data-token-index="0">!=</span><span data-token-index="0"> </span><span class="token string" data-token-index="0">'ma po'</span><span class="token punctuation" data-token-index="0">:</span><span data-token-index="0">
+      chart_type </span><span class="token operator" data-token-index="0">=</span><span data-token-index="0"> </span><span class="token builtin" data-token-index="0">input</span><span class="token punctuation" data-token-index="0">(</span><span class="token string" data-token-index="0">"Enter chart type (ma or ma po): "</span><span class="token punctuation" data-token-index="0">)</span><span>
+  </span></div>
+                    </div>
+                    <div style="position: absolute; top: 0px; right: 0px; color: rgba(55, 53, 47, 0.6); display: flex; align-items: center; justify-content: flex-end; height: 30px;"></div>
+                    <div style="position: absolute; bottom: 0px; right: 0px; color: rgba(55, 53, 47, 0.6); display: flex; align-items: center; justify-content: flex-end; height: 30px;">
+                      <div role="button" aria-disabled="true" style="user-select: none; transition: background 120ms ease-in 0s; display: inline-flex; align-items: center; white-space: nowrap; height: 20px; border-radius: 3px; font-size: 12px; line-height: 1.2; padding-left: 5px; padding-right: 5px; color: rgba(55, 53, 47, 0.6); margin-right: 5px;">Python
+                        <svg viewBox="0 0 30 30" class="chevronDown" style="width: 10px; height: 100%; display: block; fill: rgba(55, 53, 47, 0.3); flex-shrink: 0; backface-visibility: hidden; margin-left: 4px;">
+                          <polygon points="15,17.4 4.8,7 2,9.8 15,23 28,9.8 25.2,7 "></polygon>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div data-block-id="ba9a38b5-4c4e-4028-8490-15b366cd7536" class="notion-selectable" style="width: 100%; max-width: calc((100vw - 0px) - 192px); margin-top: 1px; margin-bottom: 1px;">
+                <div style="color: inherit; fill: inherit;">
+                  <div style="display: flex;">
+                    <div contenteditable="false" spellcheck="true" placeholder=" " data-root="true" style="max-width: 100%; width: 100%; white-space: pre-wrap; word-break: break-word; caret-color: rgb(55, 53, 47); padding: 3px 2px;"><span style="font-style:italic" data-token-index="0">Note: The 'ma' variable refers to plotting the moving averages, and the 'mapo' variable refers to plotting the ratio of moving average to state population.</span></div>
+                  </div>
+                </div>
+              </div>
+              <div data-block-id="2fa705f6-7573-40d8-926b-44be0871179d" class="notion-selectable" style="width: 100%; max-width: calc((100vw - 0px) - 192px); margin-top: 1px; margin-bottom: 1px;">
+                <div style="color: inherit; fill: inherit;">
+                  <div style="display: flex;">
+                    <div contenteditable="false" spellcheck="true" placeholder=" " data-root="true" style="max-width: 100%; width: 100%; white-space: pre-wrap; word-break: break-word; caret-color: rgb(55, 53, 47); padding: 3px 2px;">These choropleths use a package for python called plotly, which is a very powerful tool for making data visualizations.</div>
+                  </div>
+                </div>
+              </div>
+              <div data-block-id="a38f6534-7313-4db5-a119-d827abb12e18" class="notion-selectable" style="width: 100%; max-width: calc((100vw - 0px) - 192px); margin-top: 1px; margin-bottom: 1px;">
+                <div style="color: inherit; fill: inherit;">
+                  <div style="display: flex;">
+                    <div contenteditable="false" spellcheck="true" placeholder=" " data-root="true" style="max-width: 100%; width: 100%; white-space: pre-wrap; word-break: break-word; caret-color: rgb(55, 53, 47); padding: 3px 2px;">Here's the code for plotting the choropleths, based on the choices entered by the user. The code iterates through and makes one choropleth for each day, and outputs a jpg in the specified file directory.</div>
+                  </div>
+                </div>
+              </div>
+              <div data-block-id="aec4c834-59dd-4c8b-8cd0-2b079f985bf6" class="notion-selectable" style="width: 100%; max-width: calc((100vw - 0px) - 192px); margin-top: 4px; margin-bottom: 4px;">
+                <div style="display: flex;">
+                  <div style="flex-grow: 1; border-radius: 3px; text-align: left; position: relative; background: rgb(247, 246, 243); min-width: 0px; width: 100%;">
+                    <div class="line-numbers notion-code-block" style="display: flex; overflow-x: auto;">
+                      <div contenteditable="false" spellcheck="false" autocorrect="off" autocapitalize="off" data-root="true" style="flex-grow: 1; flex-shrink: 1; text-align: left; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, Courier, monospace; font-size: 85%; tab-size: 2; padding: 30px 16px 30px 20px; min-height: 1em; color: rgb(55, 53, 47); white-space: pre;">ma_index = list(headers).index('Moving Average') ma_pop_index = list(headers).index('Moving Average : Population') ################################################################################################################### # ############################################################################################################### # # Choice One # # ############################################################################################################### # ################################################################################################################### if chart_type == 'ma': legend_max = max(Array_w_mas[1:,ma_index]) legend_min = min(Array_w_mas[1:,ma_index]) ma_values = 'Moving Average' import os import plotly.io as pio import plotly.plotly as py import plotly.graph_objs as go import pandas as pd imagefile_lst = [] # legend_min = 0 # legend_max = 5906 for filename in files: df = pd.read_csv(filename) for col in df.columns: df[col] = df[col].astype(str) ################################################################################################################# # Pick a color ################################################################################################################# if color == 'tritonal': scl = [ [0.0, 'rgb(255, 250, 204)'], [0.5, 'rgb(71, 162, 166)'], [1.0, 'rgb(1,25,147)'] ] elif color == 'blue': scl = [ [0.0, 'rgb(234,244,252)'], [1.0, 'rgb(32,80,124)'] ] elif color == 'bluered': scl = [ [0.0, 'rgb(242,240,247)'], [0.2, 'rgb(218,218,235)'], [0.4, 'rgb(188,189,220)'], [0.6, 'rgb(158,154,200)'], [0.8, 'rgb(117,107,177)'], [1.0, 'rgb(84,39,143)'] ] elif color == 'red': scl = [ [0.0, 'rgb(245, 255, 254)'], [1.0, 'rgb(110,0,107)']] elif color == 'darkred': scl = [ [0.0, 'rgb(246, 252, 253)'], [0.6, 'rgb(110, 0, 107)'], [1.0, 'rgb(65, 25, 75)'] ] elif color == 'darkerred': scl = [ [0.0, 'rgb(232, 243, 242)'], [0.6, 'rgb(110, 0, 107)'], [1.0, 'rgb(65, 25, 75)'] ] elif color == 'cuartonal': scl = [ [0.0, 'rgb(255, 250, 204)'], [0.2, 'rgb(71, 162, 166)'], [0.65, 'rgb(1,25,147)'], [1.0, 'rgb(52, 13, 84)']] ################################################################################################################# df['text'] = df['States'] + '&lt;br&gt;' + \ ma_values+' ' + df[ma_values] if not daily_scale == 'y': data = [go.Choropleth( colorscale = scl, autocolorscale = False, zmin = legend_min, zmax = legend_max, zauto = False, locations = df['States'], z = df[ma_values].astype(float), locationmode = 'USA-states', text = df['text'], marker = go.choropleth.Marker( line = go.choropleth.marker.Line( color = 'rgb(255,255,255)', width = 2 )), colorbar = go.choropleth.ColorBar( title = "Measure") )] else: data = [go.Choropleth( colorscale=scl, autocolorscale=False, # zmin=legend_min, # zmax=legend_max, # zauto=False, locations=df['States'], z=df[ma_values].astype(float), locationmode='USA-states', text=df['text'], marker=go.choropleth.Marker( line=go.choropleth.marker.Line( color='rgb(255,255,255)', width=2 )), colorbar=go.choropleth.ColorBar( title="Measure") )] layout = go.Layout( title = go.layout.Title( text = values+' Breakdown by State&lt;br&gt;'+str(MA_PERIODS)+' Period Moving Average&lt;br&gt;'+filename[:-9]+","+filename[-9:-4] ), geo = go.layout.Geo( scope = 'usa', projection = go.layout.geo.Projection(type = 'albers usa'), showlakes = True, lakecolor = 'rgb(255, 255, 255)'), # showland = True, # landcolor = 'rgb(234, 244, 252)', # showcoastlines = True, # coastlinecolor = 'rgb(0,0,0)', # coastlinewidth = 1), ) fig = go.Figure(data = data, layout = layout) if not os.path.exists('images'): os.mkdir('images') pio.write_image(fig, 'images/'+filename[:-4].replace(" ","_")+'.jpg', width=1920, height=1080, scale=2) imagefile_lst.append(filename[:-4].replace(" ","_")+'.jpg') outfile = open("imagefile_names.txt", "w") outfile.write("convert -delay 3 loop 0 ") for filename in imagefile_lst: outfile.write(filename) outfile.write(" ") outfile.close() ################################################################################################################### # ############################################################################################################### # # Choice Two # # ############################################################################################################### # ################################################################################################################### elif chart_type == 'ma po': legend_max = max(Array_w_mas[1:, ma_pop_index]) legend_min = min(Array_w_mas[1:, ma_pop_index]) ma_values = 'Moving Average : Population' import os import plotly.io as pio import plotly.plotly as py import plotly.graph_objs as go import pandas as pd imagefile_lst = [] # legend_min = 0 # legend_max = 5906 for filename in files: df = pd.read_csv(filename) for col in df.columns: df[col] = df[col].astype(str) ################################################################################################################# # Pick a color ################################################################################################################# if color == 'tritonal': scl = [ [0.0, 'rgb(255, 250, 204)'], [0.5, 'rgb(71, 162, 166)'], [1.0, 'rgb(1,25,147)'] ] elif color == 'blue': scl = [ [0.0, 'rgb(234,244,252)'], [1.0, 'rgb(32,80,124)'] ] elif color == 'bluered': scl = [ [0.0, 'rgb(242,240,247)'], [0.2, 'rgb(218,218,235)'], [0.4, 'rgb(188,189,220)'], [0.6, 'rgb(158,154,200)'], [0.8, 'rgb(117,107,177)'], [1.0, 'rgb(84,39,143)'] ] elif color == 'red': scl = [ [0.0, 'rgb(245, 255, 254)'], [1.0, 'rgb(110,0,107)']] elif color == 'darkred': scl = [ [0.0, 'rgb(246, 252, 253)'], [0.6, 'rgb(110, 0, 107)'], [1.0, 'rgb(65, 25, 75)'] ] elif color == 'darkerred': scl = [ [0.0, 'rgb(232, 243, 242)'], [0.6, 'rgb(110, 0, 107)'], [1.0, 'rgb(65, 25, 75)'] ] elif color == 'cuartonal': scl = [ [0.0, 'rgb(255, 250, 204)'], [0.2, 'rgb(71, 162, 166)'], [0.65, 'rgb(1,25,147)'], [1.0, 'rgb(52, 13, 84)']] ################################################################################################################# df['text'] = df['States'] + '&lt;br&gt;' + \ ma_values + ' ' + df[ma_values] if not daily_scale == 'y': data = [go.Choropleth( colorscale=scl, autocolorscale=False, zmin=legend_min, zmax=legend_max, zauto=False, # tickformat='μ', locations=df['States'], z=df[ma_values].astype(float), locationmode='USA-states', text=df['text'], marker=go.choropleth.Marker( line=go.choropleth.marker.Line( color='rgb(255,255,255)', width=2 )), colorbar=go.choropleth.ColorBar( title="Measure : Population") # tickformat='μ',) )] else: data = [go.Choropleth( colorscale=scl, autocolorscale=False, # zmin=legend_min, # zmax=legend_max, # zauto=False, # tickformat='μ', locations=df['States'], z=df[ma_values].astype(float), locationmode='USA-states', text=df['text'], marker=go.choropleth.Marker( line=go.choropleth.marker.Line( color='rgb(255,255,255)', width=2 )), colorbar=go.choropleth.ColorBar( title="Measure : Population", # tickformat= formatPrefix(",.0", 1e-6) ) )] layout = go.Layout( title=go.layout.Title( text=values + ' Breakdown by State&lt;br&gt;' + str(MA_PERIODS) + ' Period Moving Average&lt;br&gt;' + filename[ :-9] + "," + filename[ -9:-4] ), geo=go.layout.Geo( scope='usa', projection=go.layout.geo.Projection(type='albers usa'), showlakes=True, lakecolor='rgb(255, 255, 255)'), # showland = True, # landcolor = 'rgb(234, 244, 252)', # showcoastlines = True, # coastlinecolor = 'rgb(0,0,0)', # coastlinewidth = 1), ) fig = go.Figure(data=data, layout=layout) if not os.path.exists('images'): os.mkdir('images') pio.write_image(fig, 'images/' + filename[:-4].replace(" ", "_") + '.jpg', width=1920, height=1080, scale=2) imagefile_lst.append(filename[:-4].replace(" ", "_") + '.jpg') outfile = open("imagefile_names.txt", "w") outfile.write("convert -delay 3 loop 0 ") for filename in imagefile_lst: outfile.write(filename) outfile.write(" ") outfile.close()
+                        <span>
+  </span></div>
+                    </div>
+                    <div style="position: absolute; top: 0px; right: 0px; color: rgba(55, 53, 47, 0.6); display: flex; align-items: center; justify-content: flex-end; height: 30px;"></div>
+                    <div style="position: absolute; bottom: 0px; right: 0px; color: rgba(55, 53, 47, 0.6); display: flex; align-items: center; justify-content: flex-end; height: 30px;">
+                      <div role="button" aria-disabled="true" style="user-select: none; transition: background 120ms ease-in 0s; display: inline-flex; align-items: center; white-space: nowrap; height: 20px; border-radius: 3px; font-size: 12px; line-height: 1.2; padding-left: 5px; padding-right: 5px; color: rgba(55, 53, 47, 0.6); margin-right: 5px;">Python
+                        <svg viewBox="0 0 30 30" class="chevronDown" style="width: 10px; height: 100%; display: block; fill: rgba(55, 53, 47, 0.3); flex-shrink: 0; backface-visibility: hidden; margin-left: 4px;">
+                          <polygon points="15,17.4 4.8,7 2,9.8 15,23 28,9.8 25.2,7 "></polygon>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div data-block-id="1a7523da-9960-4cd0-991d-ddcc384d728b" class="notion-selectable" style="width: 100%; max-width: calc((100vw - 0px) - 192px); margin-top: 1px; margin-bottom: 1px;">
+                <div style="color: inherit; fill: inherit;">
+                  <div style="display: flex;">
+                    <div contenteditable="false" spellcheck="true" placeholder=" " data-root="true" style="max-width: 100%; width: 100%; white-space: pre-wrap; word-break: break-word; caret-color: rgb(55, 53, 47); padding: 3px 2px;">Perfect. Now we have a different 4k jpg for each day, that look similar to this (depending on the color, scale, and type specs):</div>
+                  </div>
+                </div>
+              </div>
+              <div data-block-id="ba8dd772-ae9c-426a-b44a-02bf891a897b" class="notion-selectable" style="width: 100%; max-width: calc(100vw - 0px); align-self: center; margin-top: 0.5em; margin-bottom: 0.5em;">
+                <div>
+                  <div style="display: flex;">
+                    <div class="notion-cursor-default" style="position: relative; overflow: hidden; flex-grow: 1;">
+                      <div style="position: relative;">
+                        <div style="height: 100%; width: 100%;"><img src="public/p5.png" style="display: block; object-fit: cover; border-radius: 1px; width: 100%; pointer-events: auto;"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div data-block-id="31b87197-6711-4869-9ec0-dd223623c022" class="notion-selectable" style="width: 100%; max-width: calc((100vw - 0px) - 192px); margin-top: 1px; margin-bottom: 1px;">
+                <div style="color: inherit; fill: inherit;">
+                  <div style="display: flex;">
+                    <div contenteditable="false" spellcheck="true" placeholder=" " data-root="true" style="max-width: 100%; width: 100%; white-space: pre-wrap; word-break: break-word; caret-color: rgb(55, 53, 47); padding: 3px 2px;">The next step is to compile the .jpg files into an animated format, either .gif or .mp4. I originally went with .gif, but .gif formatting makes the file sizes enormous so .mp4 is easier to work with. There are two wonderful command line tools called ImageMagick and Ffmpeg that we can use to compile the files easily. All you have to do (after installing the packages) is navigate to the directory with your image files, and enter some code:</div>
+                  </div>
+                </div>
+              </div>
+              <div data-block-id="a30d7da4-0789-4341-bcfb-942ae4072897" class="notion-selectable" style="width: 100%; max-width: calc((100vw - 0px) - 192px); margin-top: 4px; margin-bottom: 4px;">
+                <div style="display: flex;">
+                  <div style="flex-grow: 1; border-radius: 3px; text-align: left; position: relative; background: rgb(247, 246, 243); min-width: 0px; width: 100%;">
+                    <div class="line-numbers notion-code-block" style="display: flex; overflow-x: auto;">
+                      <div contenteditable="false" spellcheck="false" autocorrect="off" autocapitalize="off" data-root="true" style="flex-grow: 1; flex-shrink: 1; text-align: left; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, Courier, monospace; font-size: 85%; tab-size: 2; padding: 30px 16px 30px 20px; min-height: 1em; color: rgb(55, 53, 47); white-space: pre;">convert -delay 60 -loop 0 infile_1.jpg infile_2.jpg infile_3.jpg outfile.mp4<span></span></div>
+                    </div>
+                    <div style="position: absolute; top: 0px; right: 0px; color: rgba(55, 53, 47, 0.6); display: flex; align-items: center; justify-content: flex-end; height: 30px;"></div>
+                    <div style="position: absolute; bottom: 0px; right: 0px; color: rgba(55, 53, 47, 0.6); display: flex; align-items: center; justify-content: flex-end; height: 30px;">
+                      <div role="button" aria-disabled="true" style="user-select: none; transition: background 120ms ease-in 0s; display: inline-flex; align-items: center; white-space: nowrap; height: 20px; border-radius: 3px; font-size: 12px; line-height: 1.2; padding-left: 5px; padding-right: 5px; color: rgba(55, 53, 47, 0.6); margin-right: 5px;">Plain Text
+                        <svg viewBox="0 0 30 30" class="chevronDown" style="width: 10px; height: 100%; display: block; fill: rgba(55, 53, 47, 0.3); flex-shrink: 0; backface-visibility: hidden; margin-left: 4px;">
+                          <polygon points="15,17.4 4.8,7 2,9.8 15,23 28,9.8 25.2,7 "></polygon>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div data-block-id="f30258f5-fd0b-43fd-b436-4d928297eb61" class="notion-selectable" style="width: 100%; max-width: calc((100vw - 0px) - 192px); margin-top: 1px; margin-bottom: 1px;">
+                <div style="color: inherit; fill: inherit;">
+                  <div style="display: flex;">
+                    <div contenteditable="false" spellcheck="true" placeholder=" " data-root="true" style="max-width: 100%; width: 100%; white-space: pre-wrap; word-break: break-word; caret-color: rgb(55, 53, 47); padding: 3px 2px;">Since we have around 500 4k resolution files, this will take an outrageous amount of temporary work space – almost two hundred gigabytes. So to have this run, you either must have plenty of free space on your drive, or scale down the resolution of the files. In an earlier code snippet, I snuck in a line to save the exact code we need to enter into terminal to a .txt file (in lue of entering in 500 filenames maunally). We can copy and paste that file into the commandline, enter the name of our output file, and then let it run.</div>
+                  </div>
+                </div>
+              </div>
+              <div data-block-id="df738224-a0ce-4f11-ac4c-39e356923458" class="notion-selectable" style="width: 100%; max-width: calc((100vw - 0px) - 192px); margin-top: 4px; margin-bottom: 4px;">
+                <div style="display: flex;">
+                  <div style="flex-grow: 1; border-radius: 3px; text-align: left; position: relative; background: rgb(247, 246, 243); min-width: 0px; width: 100%;">
+                    <div class="line-numbers notion-code-block" style="display: flex; overflow-x: auto;">
+                      <div contenteditable="false" spellcheck="false" autocorrect="off" autocapitalize="off" data-root="true" style="flex-grow: 1; flex-shrink: 1; text-align: left; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, Courier, monospace; font-size: 85%; tab-size: 2; padding: 30px 16px 30px 20px; min-height: 1em; color: rgb(55, 53, 47); white-space: pre;">convert -delay 3 loop 0 March_21_2018.jpg March_22_2018.jpg March_23_2018.jpg March_24_2018.jpg March_25_2018.jpg March_26_2018.jpg March_27_2018.jpg March_28_2018.jpg March_29_2018.jpg March_30_2018.jpg March_31_2018.jpg April_1_2018.jpg April_2_2018.jpg April_3_2018.jpg April_4_2018.jpg April_5_2018.jpg April_6_2018.jpg April_7_2018.jpg April_8_2018.jpg April_9_2018.jpg April_10_2018.jpg April_11_2018.jpg April_12_2018.jpg April_13_2018.jpg April_14_2018.jpg April_15_2018.jpg April_16_2018.jpg April_17_2018.jpg April_18_2018.jpg April_19_2018.jpg April_20_2018.jpg April_21_2018.jpg April_22_2018.jpg April_23_2018.jpg April_24_2018.jpg April_25_2018.jpg April_26_2018.jpg April_27_2018.jpg April_28_2018.jpg April_29_2018.jpg April_30_2018.jpg May_1_2018.jpg May_2_2018.jpg May_3_2018.jpg May_4_2018.jpg May_5_2018.jpg May_6_2018.jpg May_7_2018.jpg May_8_2018.jpg May_9_2018.jpg May_10_2018.jpg May_11_2018.jpg May_12_2018.jpg May_13_2018.jpg May_14_2018.jpg May_15_2018.jpg May_16_2018.jpg May_17_2018.jpg May_18_2018.jpg May_19_2018.jpg May_20_2018.jpg May_21_2018.jpg May_22_2018.jpg May_23_2018.jpg May_24_2018.jpg May_25_2018.jpg May_26_2018.jpg May_27_2018.jpg May_28_2018.jpg May_29_2018.jpg May_30_2018.jpg May_31_2018.jpg June_1_2018.jpg June_2_2018.jpg June_3_2018.jpg June_4_2018.jpg June_5_2018.jpg June_6_2018.jpg June_7_2018.jpg June_8_2018.jpg June_9_2018.jpg June_10_2018.jpg June_11_2018.jpg June_12_2018.jpg June_13_2018.jpg June_14_2018.jpg June_15_2018.jpg June_16_2018.jpg June_17_2018.jpg June_18_2018.jpg June_19_2018.jpg June_20_2018.jpg June_21_2018.jpg June_22_2018.jpg June_23_2018.jpg June_24_2018.jpg June_25_2018.jpg June_26_2018.jpg June_27_2018.jpg June_28_2018.jpg June_29_2018.jpg June_30_2018.jpg July_1_2018.jpg July_2_2018.jpg July_3_2018.jpg July_4_2018.jpg July_5_2018.jpg July_6_2018.jpg July_7_2018.jpg July_8_2018.jpg July_9_2018.jpg July_10_2018.jpg July_11_2018.jpg July_12_2018.jpg July_13_2018.jpg July_14_2018.jpg July_15_2018.jpg July_16_2018.jpg July_17_2018.jpg July_18_2018.jpg July_19_2018.jpg July_20_2018.jpg July_21_2018.jpg July_22_2018.jpg July_23_2018.jpg July_24_2018.jpg July_25_2018.jpg July_26_2018.jpg July_27_2018.jpg July_28_2018.jpg July_29_2018.jpg July_30_2018.jpg July_31_2018.jpg August_1_2018.jpg August_2_2018.jpg August_3_2018.jpg August_4_2018.jpg August_5_2018.jpg August_6_2018.jpg August_7_2018.jpg August_8_2018.jpg August_9_2018.jpg August_10_2018.jpg August_11_2018.jpg August_12_2018.jpg August_13_2018.jpg August_14_2018.jpg August_15_2018.jpg August_16_2018.jpg August_17_2018.jpg August_18_2018.jpg August_19_2018.jpg August_20_2018.jpg August_21_2018.jpg August_22_2018.jpg August_23_2018.jpg August_24_2018.jpg August_25_2018.jpg August_26_2018.jpg August_27_2018.jpg August_28_2018.jpg August_29_2018.jpg August_30_2018.jpg August_31_2018.jpg September_1_2018.jpg September_2_2018.jpg September_3_2018.jpg September_4_2018.jpg September_5_2018.jpg September_6_2018.jpg September_7_2018.jpg September_8_2018.jpg September_9_2018.jpg September_10_2018.jpg September_11_2018.jpg September_12_2018.jpg September_13_2018.jpg September_14_2018.jpg September_15_2018.jpg September_16_2018.jpg September_17_2018.jpg September_18_2018.jpg September_19_2018.jpg September_20_2018.jpg September_21_2018.jpg September_22_2018.jpg September_23_2018.jpg September_24_2018.jpg September_25_2018.jpg September_26_2018.jpg September_27_2018.jpg September_28_2018.jpg September_29_2018.jpg September_30_2018.jpg October_1_2018.jpg October_2_2018.jpg October_3_2018.jpg October_4_2018.jpg October_5_2018.jpg October_6_2018.jpg October_7_2018.jpg October_8_2018.jpg October_9_2018.jpg October_10_2018.jpg October_11_2018.jpg October_12_2018.jpg October_13_2018.jpg October_14_2018.jpg October_15_2018.jpg October_16_2018.jpg October_17_2018.jpg October_18_2018.jpg October_19_2018.jpg October_20_2018.jpg October_21_2018.jpg October_22_2018.jpg October_23_2018.jpg October_24_2018.jpg October_25_2018.jpg October_26_2018.jpg October_27_2018.jpg October_28_2018.jpg October_29_2018.jpg October_30_2018.jpg October_31_2018.jpg November_1_2018.jpg November_2_2018.jpg November_3_2018.jpg November_4_2018.jpg November_5_2018.jpg November_6_2018.jpg November_7_2018.jpg November_8_2018.jpg November_9_2018.jpg November_10_2018.jpg November_11_2018.jpg November_12_2018.jpg November_13_2018.jpg November_14_2018.jpg November_15_2018.jpg November_16_2018.jpg November_17_2018.jpg November_18_2018.jpg November_19_2018.jpg November_20_2018.jpg November_21_2018.jpg November_22_2018.jpg November_23_2018.jpg November_24_2018.jpg November_25_2018.jpg November_26_2018.jpg November_27_2018.jpg November_28_2018.jpg November_29_2018.jpg November_30_2018.jpg December_1_2018.jpg December_2_2018.jpg December_3_2018.jpg December_4_2018.jpg December_5_2018.jpg December_6_2018.jpg December_7_2018.jpg December_8_2018.jpg December_9_2018.jpg December_10_2018.jpg December_11_2018.jpg December_12_2018.jpg December_13_2018.jpg December_14_2018.jpg December_15_2018.jpg December_16_2018.jpg December_17_2018.jpg December_18_2018.jpg December_19_2018.jpg December_20_2018.jpg December_21_2018.jpg December_22_2018.jpg December_23_2018.jpg December_24_2018.jpg December_25_2018.jpg December_26_2018.jpg December_27_2018.jpg December_28_2018.jpg December_29_2018.jpg December_30_2018.jpg December_31_2018.jpg January_1_2019.jpg January_2_2019.jpg January_3_2019.jpg January_4_2019.jpg January_5_2019.jpg January_6_2019.jpg January_7_2019.jpg January_8_2019.jpg January_9_2019.jpg January_10_2019.jpg January_11_2019.jpg January_12_2019.jpg January_13_2019.jpg January_14_2019.jpg January_15_2019.jpg January_16_2019.jpg January_17_2019.jpg January_18_2019.jpg January_19_2019.jpg January_20_2019.jpg January_21_2019.jpg January_22_2019.jpg January_23_2019.jpg January_24_2019.jpg January_25_2019.jpg January_26_2019.jpg January_27_2019.jpg January_28_2019.jpg January_29_2019.jpg January_30_2019.jpg January_31_2019.jpg February_1_2019.jpg February_2_2019.jpg February_3_2019.jpg February_4_2019.jpg February_5_2019.jpg February_6_2019.jpg February_7_2019.jpg February_8_2019.jpg February_9_2019.jpg February_10_2019.jpg February_11_2019.jpg February_12_2019.jpg February_13_2019.jpg February_14_2019.jpg February_15_2019.jpg February_16_2019.jpg February_17_2019.jpg February_18_2019.jpg February_19_2019.jpg February_20_2019.jpg February_21_2019.jpg February_22_2019.jpg February_23_2019.jpg February_24_2019.jpg February_25_2019.jpg February_26_2019.jpg February_27_2019.jpg February_28_2019.jpg March_1_2019.jpg March_2_2019.jpg March_3_2019.jpg March_4_2019.jpg March_5_2019.jpg March_6_2019.jpg March_7_2019.jpg March_8_2019.jpg March_9_2019.jpg March_10_2019.jpg March_11_2019.jpg March_12_2019.jpg March_13_2019.jpg March_14_2019.jpg March_15_2019.jpg March_16_2019.jpg March_17_2019.jpg March_18_2019.jpg March_19_2019.jpg March_20_2019.jpg March_21_2019.jpg March_22_2019.jpg March_23_2019.jpg March_24_2019.jpg March_25_2019.jpg March_26_2019.jpg March_27_2019.jpg March_28_2019.jpg March_29_2019.jpg March_30_2019.jpg March_31_2019.jpg April_1_2019.jpg April_2_2019.jpg April_3_2019.jpg April_4_2019.jpg April_5_2019.jpg April_6_2019.jpg April_7_2019.jpg April_8_2019.jpg April_9_2019.jpg April_10_2019.jpg April_11_2019.jpg April_12_2019.jpg April_13_2019.jpg April_14_2019.jpg April_15_2019.jpg April_16_2019.jpg April_17_2019.jpg April_18_2019.jpg April_19_2019.jpg April_20_2019.jpg April_21_2019.jpg April_22_2019.jpg April_23_2019.jpg April_24_2019.jpg April_25_2019.jpg April_26_2019.jpg April_27_2019.jpg April_28_2019.jpg April_29_2019.jpg April_30_2019.jpg May_1_2019.jpg May_2_2019.jpg May_3_2019.jpg May_4_2019.jpg May_5_2019.jpg May_6_2019.jpg May_7_2019.jpg May_8_2019.jpg May_9_2019.jpg May_10_2019.jpg May_11_2019.jpg May_12_2019.jpg May_13_2019.jpg May_14_2019.jpg May_15_2019.jpg May_16_2019.jpg May_17_2019.jpg May_18_2019.jpg May_19_2019.jpg May_20_2019.jpg May_21_2019.jpg May_22_2019.jpg May_23_2019.jpg May_24_2019.jpg May_25_2019.jpg May_26_2019.jpg May_27_2019.jpg May_28_2019.jpg May_29_2019.jpg May_30_2019.jpg May_31_2019.jpg June_1_2019.jpg June_2_2019.jpg June_3_2019.jpg June_4_2019.jpg June_5_2019.jpg June_6_2019.jpg June_7_2019.jpg June_8_2019.jpg June_9_2019.jpg June_10_2019.jpg June_11_2019.jpg June_12_2019.jpg June_13_2019.jpg June_14_2019.jpg June_15_2019.jpg June_16_2019.jpg June_17_2019.jpg June_18_2019.jpg June_19_2019.jpg June_20_2019.jpg June_21_2019.jpg June_22_2019.jpg June_23_2019.jpg June_24_2019.jpg June_25_2019.jpg June_26_2019.jpg June_27_2019.jpg June_28_2019.jpg June_29_2019.jpg June_30_2019.jpg basavi.mp4<span></span></div>
+                    </div>
+                    <div style="position: absolute; top: 0px; right: 0px; color: rgba(55, 53, 47, 0.6); display: flex; align-items: center; justify-content: flex-end; height: 30px;"></div>
+                    <div style="position: absolute; bottom: 0px; right: 0px; color: rgba(55, 53, 47, 0.6); display: flex; align-items: center; justify-content: flex-end; height: 30px;">
+                      <div role="button" aria-disabled="true" style="user-select: none; transition: background 120ms ease-in 0s; display: inline-flex; align-items: center; white-space: nowrap; height: 20px; border-radius: 3px; font-size: 12px; line-height: 1.2; padding-left: 5px; padding-right: 5px; color: rgba(55, 53, 47, 0.6); margin-right: 5px;">Plain Text
+                        <svg viewBox="0 0 30 30" class="chevronDown" style="width: 10px; height: 100%; display: block; fill: rgba(55, 53, 47, 0.3); flex-shrink: 0; backface-visibility: hidden; margin-left: 4px;">
+                          <polygon points="15,17.4 4.8,7 2,9.8 15,23 28,9.8 25.2,7 "></polygon>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div data-block-id="c0cb3ed6-e66f-49e6-8088-2cf5508d1474" class="notion-selectable" style="width: 100%; max-width: calc((100vw - 0px) - 192px); margin-top: 1px; margin-bottom: 1px;">
+                <div style="color: inherit; fill: inherit;">
+                  <div style="display: flex;">
+                    <div contenteditable="false" spellcheck="true" placeholder=" " data-root="true" style="max-width: 100%; width: 100%; white-space: pre-wrap; word-break: break-word; caret-color: rgb(55, 53, 47); padding: 3px 2px;">And we're done! We now have a beautiful and meaningful animated choropleth tailored to our business analysis. </div>
+                  </div>
+                </div>
+              </div>
+              <div data-block-id="51a3447f-1114-4698-b0d6-fff46acc9c67" class="notion-selectable" style="width: 912px; max-width: calc(100vw - 0px); align-self: center; margin-top: 4px; margin-bottom: 4px;">
+                <div embed-ghost="">
+                  <div style="display: flex;">
+                    <div class="notion-cursor-default" style="position: relative; overflow: hidden; flex-grow: 1;">
+                      <div style="position: relative;">
+                        <div style="position: relative;">
+                          <video controls="" preload="auto" style="display: block; width: 100%; background-color: rgb(247, 246, 245);">
+                            <source src="public/p6.mp4">
+                          </video>
+                          <!--                      <div style="position: absolute; top: 0px; left: 0px; right: 0px; bottom: 0px; display: flex; align-items: center; justify-content: center; cursor: pointer;">-->
+                          <!--                        <div style="position: relative; height: 70px; width: 70px; border-width: 3px; border-style: solid; border-color: rgb(51, 51, 51); border-radius: 70px;">-->
+                          <!--                          <div style="position: absolute; left: 50%; top: 50%; transform: translate(-30%, -50%); height: 0px; width: 0px; border-style: solid; border-color: transparent rgb(51, 51, 51); border-width: 16.1px 0px 16.1px 24.5px;"></div>-->
+                          <!--                        </div>-->
+                          <!--                      </div>-->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div data-block-id="b7de51f6-4e6b-499e-bb40-ee3cb338c6cc" class="notion-selectable" style="width: 100%; max-width: calc((100vw - 0px) - 192px); margin-top: 1px; margin-bottom: 1px;">
+                <div style="color: inherit; fill: inherit;">
+                  <div style="display: flex;">
+                    <div contenteditable="false" spellcheck="true" placeholder=" " data-root="true" style="max-width: 100%; width: 100%; white-space: pre-wrap; word-break: break-word; caret-color: rgb(55, 53, 47); padding: 3px 2px; min-height: 1em; color: rgb(55, 53, 47); -webkit-text-fill-color: rgba(55, 53, 47, 0.4);"></div>
+                  </div>
+                </div>
+              </div>
+              <div data-block-id="ae3cb713-860a-4539-9db0-3f756b44278f" class="notion-selectable" style="width: 100%; max-width: calc((100vw - 0px) - 192px); margin-top: 1px; margin-bottom: 1px;">
+                <div style="color: inherit; fill: inherit;">
+                  <div style="display: flex;">
+                    <div contenteditable="false" spellcheck="true" placeholder=" " data-root="true" style="max-width: 100%; width: 100%; white-space: pre-wrap; word-break: break-word; caret-color: rgb(55, 53, 47); padding: 3px 2px;">And here is a look at the optional reference against state population, with a dynamic scale.</div>
+                  </div>
+                </div>
+              </div>
+              <div data-block-id="cdce71e1-a14c-41f2-a0bb-d22d5475d1b4" class="notion-selectable" style="width: 1008px; max-width: calc(100vw - 0px); align-self: center; margin-top: 4px; margin-bottom: 4px;">
+                <div embed-ghost="">
+                  <div style="display: flex;">
+                    <div class="notion-cursor-default" style="position: relative; overflow: hidden; flex-grow: 1;">
+                      <div style="position: relative;">
+                        <div style="position: relative;">
+                          <video controls="" preload="auto" style="display: block; width: 100%; background-color: rgb(247, 246, 245);">
+                            <source src="public/p7.mp4">
+                          </video>
+                          <!--                        <div style="position: absolute; top: 0px; left: 0px; right: 0px; bottom: 0px; display: flex; align-items: center; justify-content: center; cursor: pointer;">-->
+                          <!--                          <div style="position: relative; height: 70px; width: 70px; border-width: 3px; border-style: solid; border-color: rgb(51, 51, 51); border-radius: 70px;">-->
+                          <!--                            <div style="position: absolute; left: 50%; top: 50%; transform: translate(-30%, -50%); height: 0px; width: 0px; border-style: solid; border-color: transparent rgb(51, 51, 51); border-width: 16.1px 0px 16.1px 24.5px;"></div>-->
+                          <!--                          </div>-->
+                          <!--                        </div>-->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div data-block-id="dc58dc1a-a357-44e6-829a-37cf2f4d6cdc" class="notion-selectable" style="width: 100%; max-width: calc((100vw - 0px) - 192px); margin-top: 1px; margin-bottom: 1px;">
+                <div style="color: inherit; fill: inherit;">
+                  <div style="display: flex;">
+                    <div contenteditable="false" spellcheck="true" placeholder=" " data-root="true" style="max-width: 100%; width: 100%; white-space: pre-wrap; word-break: break-word; caret-color: rgb(55, 53, 47); padding: 3px 2px; min-height: 1em; color: rgb(55, 53, 47); -webkit-text-fill-color: rgba(55, 53, 47, 0.4);"></div>
+                  </div>
+                </div>
+              </div>
+              <div data-block-id="2414f60e-b56c-4927-8ed4-03393d3989b9" class="notion-selectable" style="width: 100%; max-width: calc((100vw - 0px) - 192px); margin-top: 1px; margin-bottom: 1px;">
+                <div style="color: inherit; fill: inherit;">
+                  <div style="display: flex;">
+                    <div contenteditable="false" spellcheck="true" placeholder=" " data-root="true" style="max-width: 100%; width: 100%; white-space: pre-wrap; word-break: break-word; caret-color: rgb(55, 53, 47); padding: 3px 2px;">We can compile these choropleths together to make comparisions between product segments using any video editor that can handle 4 channels. Here's a look at the final products! (I had to scale them down from 8k to 4k because 8k is rediculous).</div>
+                  </div>
+                </div>
+              </div>
+              <div data-block-id="e0b4ffd8-a3ab-456a-8496-ea2b5d898596" class="notion-selectable" style="width: 100%; max-width: calc((100vw - 0px) - 192px); margin-top: 1px; margin-bottom: 1px;">
+                <div style="color: inherit; fill: inherit;">
+                  <div style="display: flex;">
+                    <div contenteditable="false" spellcheck="true" placeholder=" " data-root="true" style="max-width: 100%; width: 100%; white-space: pre-wrap; word-break: break-word; caret-color: rgb(55, 53, 47); padding: 3px 2px;">Again, this is an analysis of the X line; all X are represented in the top left, A in the top right, B bottom left, and C bottom right.</div>
+                  </div>
+                </div>
+              </div>
+              <div data-block-id="3e912c48-2fa3-4468-99f6-4d0bc0f5d9d9" class="notion-selectable" style="width: 960px; max-width: calc(100vw - 0px); align-self: center; margin-top: 4px; margin-bottom: 4px;">
+                <div embed-ghost="">
+                  <div style="display: flex;">
+                    <div class="notion-cursor-default" style="position: relative; overflow: hidden; flex-grow: 1;">
+                      <div style="position: relative;">
+                        <div style="position: relative;">
+                          <video controls="" preload="auto" style="display: block; width: 100%; background-color: rgb(247, 246, 245);">
+                            <source src="public/p8.mp4">
+                          </video>
+                          <!--                        <div style="position: absolute; top: 0px; left: 0px; right: 0px; bottom: 0px; display: flex; align-items: center; justify-content: center; cursor: pointer;">-->
+                          <!--                          <div style="position: relative; height: 70px; width: 70px; border-width: 3px; border-style: solid; border-color: rgb(51, 51, 51); border-radius: 70px;">-->
+                          <!--                            <div style="position: absolute; left: 50%; top: 50%; transform: translate(-30%, -50%); height: 0px; width: 0px; border-style: solid; border-color: transparent rgb(51, 51, 51); border-width: 16.1px 0px 16.1px 24.5px;"></div>-->
+                          <!--                          </div>-->
+                          <!--                        </div>-->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div data-block-id="ac7d84a7-6a8b-4941-bcfe-16305e98b9f8" class="notion-selectable" style="width: 1008px; max-width: calc(100vw - 0px); align-self: center; margin-top: 4px; margin-bottom: 4px;">
+                <div embed-ghost="">
+                  <div style="display: flex;">
+                    <div class="notion-cursor-default" style="position: relative; overflow: hidden; flex-grow: 1;">
+                      <div style="position: relative;">
+                        <div style="position: relative;">
+                          <video controls="" preload="auto" style="display: block; width: 100%; background-color: rgb(247, 246, 245);">
+                            <source src="public/p9.mp4">
+                          </video>
+                          <!--                        <div style="position: absolute; top: 0px; left: 0px; right: 0px; bottom: 0px; display: flex; align-items: center; justify-content: center; cursor: pointer;">-->
+                          <!--                          <div style="position: relative; height: 70px; width: 70px; border-width: 3px; border-style: solid; border-color: rgb(51, 51, 51); border-radius: 70px;">-->
+                          <!--                            <div style="position: absolute; left: 50%; top: 50%; transform: translate(-30%, -50%); height: 0px; width: 0px; border-style: solid; border-color: transparent rgb(51, 51, 51); border-width: 16.1px 0px 16.1px 24.5px;"></div>-->
+                          <!--                          </div>-->
+                          <!--                        </div>-->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--            <div data-block-id="4ee0e255-5eba-49ab-9085-e39867e72a84" class="notion-selectable" style="width: 100%; max-width: calc((100vw - 0px) - 192px); margin-top: 1px; margin-bottom: 1px;"><div style="color: inherit; fill: inherit;"><div style="display: flex;"><div contenteditable="false" spellcheck="true" placeholder=" " data-root="true" style="max-width: 100%; width: 100%; white-space: pre-wrap; word-break: break-word; caret-color: rgb(55, 53, 47); padding: 3px 2px; min-height: 1em; color: rgb(55, 53, 47); -webkit-text-fill-color: rgba(55, 53, 47, 0.4);"></div></div></div></div><div data-block-id="d3180d45-929e-4b6e-afcf-56f7e7a995d5" class="notion-selectable" style="width: 100%; max-width: calc((100vw - 0px) - 192px); margin-top: 1px; margin-bottom: 1px;"><div style="color: inherit; fill: inherit;"><div style="display: flex;"><div contenteditable="false" spellcheck="true" placeholder=" " data-root="true" style="max-width: 100%; width: 100%; white-space: pre-wrap; word-break: break-word; caret-color: rgb(55, 53, 47); padding: 3px 2px;">I hope whoever read this to the end enjoyed the tutorial, and definitely feel free to reach out to me if you want to talk!</div></div></div></div><div data-block-id="95f9af54-720b-4e9f-839f-f06a048f267e" class="notion-selectable" style="width: 100%; max-width: calc((100vw - 0px) - 192px); margin-top: 1px; margin-bottom: 1px;"><div style="color: inherit; fill: inherit;"><div style="display: flex;"><div contenteditable="false" spellcheck="true" placeholder=" " data-root="true" style="max-width: 100%; width: 100%; white-space: pre-wrap; word-break: break-word; caret-color: rgb(55, 53, 47); padding: 3px 2px; min-height: 1em; color: rgb(55, 53, 47); -webkit-text-fill-color: rgba(55, 53, 47, 0.4);"></div></div></div></div><div data-block-id="cc6de299-a833-430d-8b35-b5b9d4cc4f58" class="notion-selectable" style="width: 100%; max-width: calc((100vw - 0px) - 192px); margin-top: 1px; margin-bottom: 1px;"><div style="color: inherit; fill: inherit;"><div style="display: flex;"><div contenteditable="false" spellcheck="true" placeholder=" " data-root="true" style="max-width: 100%; width: 100%; white-space: pre-wrap; word-break: break-word; caret-color: rgb(55, 53, 47); padding: 3px 2px;">Tristan</div></div></div></div><div data-block-id="7c5f3605-0a49-4d50-ba42-90a6e1295422" class="notion-selectable" style="width: 100%; max-width: calc((100vw - 0px) - 192px); margin-top: 1px; margin-bottom: 1px;"><div style="color: inherit; fill: inherit;"><div style="display: flex;"><div contenteditable="false" spellcheck="true" placeholder=" " data-root="true" style="max-width: 100%; width: 100%; white-space: pre-wrap; word-break: break-word; caret-color: rgb(55, 53, 47); padding: 3px 2px; min-height: 1em; color: rgb(55, 53, 47); -webkit-text-fill-color: rgba(55, 53, 47, 0.4);"></div></div></div></div><div data-block-id="3c0e357c-be0c-43bc-ac3c-f65ab67e9063" class="notion-selectable" style="width: 100%; max-width: calc((100vw - 0px) - 192px); margin-top: 1px; margin-bottom: 1px;"><div style="color: inherit; fill: inherit;"><div style="display: flex;"><div contenteditable="false" spellcheck="true" placeholder=" " data-root="true" style="max-width: 100%; width: 100%; white-space: pre-wrap; word-break: break-word; caret-color: rgb(55, 53, 47); padding: 3px 2px; min-height: 1em; color: rgb(55, 53, 47); -webkit-text-fill-color: rgba(55, 53, 47, 0.4);"></div></div></div></div><div data-block-id="0a5d0ed0-dac0-4f1a-9691-751e0e5a1b2a" class="notion-selectable" style="width: 100%; max-width: calc((100vw - 0px) - 192px); margin-top: 1px; margin-bottom: 1px;"><div style="color: inherit; fill: inherit;"><div style="display: flex;"><div contenteditable="false" spellcheck="true" placeholder=" " data-root="true" style="max-width: 100%; width: 100%; white-space: pre-wrap; word-break: break-word; caret-color: rgb(55, 53, 47); padding: 3px 2px; min-height: 1em; color: rgb(55, 53, 47); -webkit-text-fill-color: rgba(55, 53, 47, 0.4);"></div></div></div></div><div data-block-id="8d8c5887-1d0d-4a56-b6bc-1ba5490c6c38" class="notion-selectable" style="width: 100%; max-width: calc((100vw - 0px) - 192px); margin-top: 1px; margin-bottom: 1px;"><div style="color: inherit; fill: inherit;"><div style="display: flex;"><div contenteditable="false" spellcheck="true" placeholder=" " data-root="true" style="max-width: 100%; width: 100%; white-space: pre-wrap; word-break: break-word; caret-color: rgb(55, 53, 47); padding: 3px 2px; min-height: 1em; color: rgb(55, 53, 47); -webkit-text-fill-color: rgba(55, 53, 47, 0.4);"></div></div></div></div><div data-block-id="a160cd00-368e-4b2a-80db-50715bb1c278" class="notion-selectable" style="width: 100%; max-width: calc((100vw - 0px) - 192px); margin-top: 1px; margin-bottom: 1px;"><div style="color: inherit; fill: inherit;"><div style="display: flex;"><div contenteditable="false" spellcheck="true" placeholder=" " data-root="true" style="max-width: 100%; width: 100%; white-space: pre-wrap; word-break: break-word; caret-color: rgb(55, 53, 47); padding: 3px 2px; min-height: 1em; color: rgb(55, 53, 47); -webkit-text-fill-color: rgba(55, 53, 47, 0.4);"></div></div></div></div><div data-block-id="167dcffc-2ec2-44c5-ad3b-6f8b95cf8077" class="notion-selectable" style="width: 100%; max-width: calc((100vw - 0px) - 192px); margin-top: 1px; margin-bottom: 0px;">-->
+              <!--            <div style="display: flex; align-items: flex-start; width: 100%; padding-left: 2px; color: inherit; fill: inherit;">-->
+              <!--              <div style="margin-right: 4px; width: 24px; display: flex; align-items: center; justify-content: center; flex-grow: 0; flex-shrink: 0; min-height: calc(1.5em + 3px + 3px); padding-right: 2px;">-->
+              <!--                <div role="button" style="user-select: none; transition: background 120ms ease-in 0s; cursor: pointer; display: flex; align-items: center; justify-content: center; width: 24px; height: 24px; border-radius: 3px;"><svg viewBox="0 0 100 100" class="triangle" style="width: 0.6875em; height: 0.6875em; display: block; fill: inherit; flex-shrink: 0; backface-visibility: hidden; transition: transform 200ms ease-out 0s; transform: rotateZ(90deg);"><polygon points="5.9,88.2 50,11.8 94.1,88.2 "></polygon></svg>-->
+              <!--                </div>-->
+              <!--              </div>-->
+              <!--              <div style="flex: 1 1 0px; min-width: 1px;">-->
+              <!--                <div style="display: flex;">-->
+              <!--                  <div contenteditable="false" spellcheck="true" placeholder="Toggle" data-root="true" style="max-width: 100%; width: 100%; white-space: pre-wrap; word-break: break-word; caret-color: rgb(55, 53, 47); padding-top: 3px; padding-bottom: 3px; text-align: left;">Files</div></div></div></div></div></div><div class="notion-presence-container" style="position: absolute; top: 0px; left: 0px; pointer-events: none; z-index: 1;"><div></div></div></div></div></div><div class="notion-overlay-container notion-default-overlay-container" style="position: fixed; top: 0px; left: 0px; right: 0px; bottom: 0px; z-index: 999; pointer-events: none; overflow: hidden;"><div style="position: relative; z-index: 0;"></div></div><div class="notion-overlay-container" style="position: fixed; top: 0px; left: 0px; right: 0px; bottom: 0px; z-index: 1001; pointer-events: none; overflow: hidden;"><div style="position: relative; z-index: 0;"></div></div></div></div><script type="text/javascript" src="/pdf-extra-285cab246cec5e7d08f5.js"></script><script type="text/javascript" src="/vendors-3d49e1f526a51f93e592.js"></script><script type="text/javascript" src="/app-4b76a8cea63493db15a0.js"></script><textarea style="opacity: 0; pointer-events: none; position: fixed; left: 0px; top: 0px;"></textarea><textarea style="opacity: 0; pointer-events: none; position: fixed; left: 0px; top: 0px;"></textarea><iframe id="intercom-frame" style="position: absolute !important; opacity: 0 !important; width: 1px !important; height: 1px !important; top: 0 !important; left: 0 !important; border: none !important; display: block !important; z-index: -1 !important;" aria-hidden="true" tabindex="-1" title="Intercom"></iframe><div id="intercom-css-container"><style data-emotion="intercom-global"></style></div><div id="intercom-container" class="intercom-namespace"><style>html.intercom-mobile-messenger-active,html.intercom-mobile-messenger-active > body,html.intercom-modal-open,#intercom-container-body{overflow:hidden !important;}html.intercom-mobile-messenger-active,html.intercom-mobile-messenger-active > body{position:static !important;}html.intercom-mobile-messenger-active > body{height:0 !important;margin:0 !important;}iframe#intercom-frame{position:absolute !important;opacity:0 !important;width:1px !important;height:1px !important;top:0 !important;left:0 !important;border:none !important;display:block !important;z-index:-1 !important;}</style><div class="intercom-app" aria-live="polite"><div id="intercom-modal-container"></div></div></div></body>-->
+              <script src="navbarHome.js" type="text/javascript"></script>
+</body>
+</html>
